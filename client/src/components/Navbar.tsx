@@ -2,7 +2,9 @@
  * DESIGN: Industrial Brutalism — Dark sticky nav, Barlow Condensed logo, orange CTA
  */
 import { useState, useEffect } from "react";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/contractor5x-real-logo_be9501fc.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -42,16 +44,12 @@ export default function Navbar() {
       <div className="container">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-[#F97316] flex items-center justify-center rounded-sm">
-              <Zap className="w-4 h-4 text-black fill-black" />
-            </div>
-            <span
-              className="font-display text-2xl font-900 tracking-tight text-white"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
-            >
-              CONTRACTOR<span className="text-[#F97316]">5X</span>
-            </span>
+          <a href="/" className="flex items-center group">
+            <img
+              src={LOGO_URL}
+              alt="Contractor5x"
+              className="h-9 md:h-11 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Nav */}
