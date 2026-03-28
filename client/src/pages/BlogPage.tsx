@@ -9,11 +9,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/lib/blogData";
 
-const categories = ["All", "Lead Generation", "Google & Reviews", "Website & SEO", "Social Media", "AI Marketing", "Customer Retention", "Business Growth"];
+const categories = ["Todo", "Lead Generation", "Google & Reviews", "Website & SEO", "Social Media", "AI Marketing", "Customer Retention", "Business Growth"];
 
 export default function BlogPage() {
   const pageRef = useRef<HTMLDivElement>(null);
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("Todo");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -30,7 +30,7 @@ export default function BlogPage() {
     return () => observer.disconnect();
   }, [activeCategory]);
 
-  const filtered = activeCategory === "All" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory);
+  const filtered = activeCategory === "Todo" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory);
   const featured = blogPosts[0];
 
   return (
@@ -43,19 +43,19 @@ export default function BlogPage() {
           style={{ backgroundImage: "linear-gradient(#F97316 1px, transparent 1px), linear-gradient(90deg, #F97316 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
         <div className="container relative">
           <div className="fade-up mb-4">
-            <span className="section-label">The Contractor's Playbook</span>
+            <span className="section-label">El Manual del Contractor</span>
           </div>
           <h1
             className="fade-up text-[clamp(3rem,7vw,5.5rem)] font-900 text-white uppercase leading-[0.9] mb-4"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            Learn How to <span className="text-[#F97316]">Grow Your</span> Trade Business
+            Aprende Cómo <span className="text-[#F97316]">Hacer Crecer Tu</span> Negocio de Trade
           </h1>
           <p
             className="fade-up text-white/60 text-xl max-w-2xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "150ms" }}
           >
-            Practical, no-fluff guides written specifically for contractors. No tech jargon, no complicated strategies — just what works.
+            Guías prácticas, sin rodeos, escritas específicamente para contractors. Sin jerga tech, sin estrategias complicadas — solo lo que funciona.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function BlogPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#111]/40" />
                 <div className="absolute top-4 left-4">
                   <span className="bg-[#F97316] text-black text-xs font-700 px-3 py-1 uppercase tracking-wider" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}>
-                    Featured
+                    Destacado
                   </span>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function BlogPage() {
                   {featured.excerpt}
                 </p>
                 <div className="flex items-center gap-2 text-[#F97316] text-sm font-medium group-hover:gap-3 transition-all duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  Read Article <ArrowRight className="w-4 h-4" />
+                  Leer Artículo <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function BlogPage() {
                     {post.excerpt}
                   </p>
                   <div className="flex items-center gap-2 text-[#F97316] text-sm font-medium group-hover:gap-3 transition-all duration-200 mt-auto" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    Read More <ArrowRight className="w-3.5 h-3.5" />
+                    Leer Más <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </div>
               </Link>
@@ -187,17 +187,17 @@ export default function BlogPage() {
             className="fade-up text-[clamp(2rem,5vw,3.5rem)] font-900 text-white uppercase mb-4"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
           >
-            Ready to Put This Into <span className="text-[#F97316]">Action?</span>
+            ¿Listo para Poner Esto en <span className="text-[#F97316]">Acción?</span>
           </h2>
           <p className="fade-up text-white/55 text-lg mb-8 max-w-xl mx-auto" style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "100ms" }}>
-            Stop reading about marketing and start doing it. Our AI system handles everything for you — automatically.
+            Deja de leer sobre marketing y empieza a hacerlo. Nuestro sistema AI hace todo por ti — automáticamente.
           </p>
           <a
             href="/#contact"
             className="fade-up btn-glow pulse-glow inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-8 py-4 rounded-sm transition-all duration-200 text-base"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "150ms" }}
           >
-            Get Started <ArrowRight className="w-4 h-4" />
+            Empieza Ya <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </section>

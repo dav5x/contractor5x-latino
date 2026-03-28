@@ -1,8 +1,8 @@
 /*
- * DESIGN: Industrial Brutalism — Five pricing tiers, orange popular badge, dark cards
- * Monthly/Annual toggle (20% off), Job Promoter in all plans at tiered volumes
- * $500 setup fee waived — limited-time promo banner
- * Link to /pricing for full details
+ * DESIGN: Industrial Brutalism — Cinco niveles de precios, badge naranja popular, tarjetas oscuras
+ * Toggle Mensual/Anual (20% off), Job Promoter en todos los planes con volúmenes escalonados
+ * $500 setup fee waived — banner promo por tiempo limitado
+ * Link a /pricing para detalles completos
  */
 import { useState, useEffect, useRef } from "react";
 import { CheckCircle2, Zap, Tag, ArrowRight } from "lucide-react";
@@ -13,62 +13,62 @@ const basePlans = [
     name: "Essentials",
     price: { monthly: 199, yearly: 159 },
     badge: null,
-    tagline: "Great for solo operators on a tight budget",
-    subTagline: "Build your online reputation and get found locally.",
+    tagline: "Perfecto para operadores solos con presupuesto ajustado",
+    subTagline: "Construye tu reputación online y que te encuentren localmente.",
     jobPromoterLabel: "Low Volume",
-    jobPromoterDetail: "Up to 2 posts/month",
+    jobPromoterDetail: "Hasta 2 posts/mes",
     features: [
       "Google Listing Optimizer",
-      "Automated Review Generation",
-      "AI-Powered Review Replies",
-      "Reputation Monitoring",
-      "Monthly Performance Report",
-      "Onboarding Support",
-      "$20 Usage Credits/Month",
+      "Generación Automática de Reviews",
+      "Respuestas a Reviews con AI",
+      "Monitoreo de Reputación",
+      "Reporte Mensual de Performance",
+      "Soporte de Onboarding",
+      "$20 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: false,
     highlight: false,
   },
   {
     name: "Starter",
     price: { monthly: 299, yearly: 239 },
-    badge: "Best Way to Start",
-    tagline: "The smart entry point for growing contractors",
-    subTagline: "Capture leads automatically and start showing up online.",
+    badge: "La Mejor Forma de Empezar",
+    tagline: "El punto smart para contractors que quieren crecer",
+    subTagline: "Captura leads automáticamente y empieza a aparecer online.",
     jobPromoterLabel: "Medium Volume",
-    jobPromoterDetail: "Up to 10 posts/month",
+    jobPromoterDetail: "Hasta 10 posts/mes",
     features: [
-      "Everything in Essentials, plus:",
-      "Lead Closer (CRM + Automation)",
-      "AI Agent (Calls & Chat)",
-      "Two-way SMS & Call Tracking",
-      "Email & SMS Campaigns",
-      "Bi-Monthly Check-In Call",
-      "$30 Usage Credits/Month",
+      "Todo en Essentials, más:",
+      "Lead Closer (CRM + Automatización)",
+      "AI Agent (Llamadas & Chat)",
+      "SMS & Call Tracking bidireccional",
+      "Campañas por Email & SMS",
+      "Llamada Check-In cada dos meses",
+      "$30 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: false,
     highlight: true,
   },
   {
     name: "Growth",
     price: { monthly: 499, yearly: 399 },
-    badge: "Most Popular",
-    tagline: "The complete AI marketing system",
-    subTagline: "Full automation, more content, and a hands-off smart website.",
+    badge: "Más Popular",
+    tagline: "El sistema completo de marketing con AI",
+    subTagline: "Automatización total, más contenido y un smart website sin que tengas que mover un dedo.",
     jobPromoterLabel: "Higher Volume",
-    jobPromoterDetail: "Up to 15 posts/month + video",
+    jobPromoterDetail: "Hasta 15 posts/mes + video",
     features: [
-      "Everything in Starter, plus:",
-      "Hands Off Smart Website",
-      "Customer Base Re-Activator",
-      "Up to 15 Videos/Month",
-      "Bi-Weekly Strategy Calls",
-      "Priority Support",
-      "$50 Usage Credits/Month",
+      "Todo en Starter, más:",
+      "Smart Website sin esfuerzo",
+      "Re-Activator para tu base de clientes",
+      "Hasta 15 videos/mes",
+      "Llamadas de estrategia quincenales",
+      "Soporte prioritario",
+      "$50 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: true,
     highlight: false,
   },
@@ -76,43 +76,43 @@ const basePlans = [
     name: "Dominator",
     price: { monthly: 999, yearly: 799 },
     badge: null,
-    tagline: "For contractors ready to own their market",
-    subTagline: "Maximum output, dedicated support, and paid ad management.",
+    tagline: "Para contractors listos para dominar su mercado",
+    subTagline: "Máximo output, soporte dedicado y manejo de ads pagados.",
     jobPromoterLabel: "Max Volume",
-    jobPromoterDetail: "Up to 25 posts/month + video",
+    jobPromoterDetail: "Hasta 25 posts/mes + video",
     features: [
-      "Everything in Growth, plus:",
-      "Dedicated Account Manager",
-      "Custom AI Agent Training",
-      "Advanced SEO & AIO Strategy",
-      "Paid Ad Management",
-      "Weekly Strategy Calls",
-      "White-Glove Onboarding",
-      "$100 Usage Credits/Month",
+      "Todo en Growth, más:",
+      "Account Manager dedicado",
+      "Entrenamiento custom de AI Agent",
+      "SEO avanzado & estrategia AIO",
+      "Manejo de ads pagados",
+      "Llamadas de estrategia semanales",
+      "Onboarding White-Glove",
+      "$100 Créditos de Uso/Mes",
     ],
-    cta: "Book a Call",
+    cta: "Agenda una Llamada",
     popular: false,
     highlight: false,
   },
   {
     name: "Elite",
     price: { monthly: 1999, yearly: 1599 },
-    badge: "Full Market Takeover",
-    tagline: "For contractors who want to dominate their entire region",
-    subTagline: "Multi-location, custom build-out, and enterprise-grade AI.",
+    badge: "Dominio Total del Mercado",
+    tagline: "Para contractors que quieren dominar toda su región",
+    subTagline: "Multi-locación, build-out custom y AI de nivel enterprise.",
     jobPromoterLabel: "Unlimited Volume",
-    jobPromoterDetail: "Unlimited posts/month + video",
+    jobPromoterDetail: "Posts ilimitados/mes + video",
     features: [
-      "Everything in Dominator, plus:",
-      "Multi-Location Management",
-      "Custom AI Workflow Build-Out",
-      "Advanced Paid Ads (Google + Meta)",
-      "Competitor Conquest Campaigns",
-      "Dedicated Creative Team",
-      "Monthly Executive Report",
-      "$200 Usage Credits/Month",
+      "Todo en Dominator, más:",
+      "Gestión multi-locación",
+      "Build-out custom de workflows AI",
+      "Ads pagados avanzados (Google + Meta)",
+      "Campañas para conquistar competencia",
+      "Equipo creativo dedicado",
+      "Reporte ejecutivo mensual",
+      "$200 Créditos de Uso/Mes",
     ],
-    cta: "Book a Call",
+    cta: "Agenda una Llamada",
     popular: false,
     highlight: false,
   },
@@ -143,20 +143,20 @@ export default function PricingSection() {
         {/* Header */}
         <div className="mb-8 text-center">
           <div className="fade-up mb-4 flex justify-center">
-            <span className="section-label">Simple, Transparent Pricing</span>
+            <span className="section-label">Precios Simples y Transparentes</span>
           </div>
           <h2
             className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            Invest in Your{" "}
-            <span className="text-[#F97316]">Growth</span>
+            Invierte en Tu{" "}
+            <span className="text-[#F97316]">Crecimiento</span>
           </h2>
           <p
             className="fade-up text-white/60 text-lg mt-3 max-w-xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            Every plan includes a 30-day money back guarantee. Cancel anytime.
+            Cada plan incluye garantía de devolución de dinero por 30 días. Cancela cuando quieras.
           </p>
 
           {/* Monthly / Annual toggle */}
@@ -165,7 +165,7 @@ export default function PricingSection() {
               className={`text-sm font-medium transition-colors ${!annual ? "text-white" : "text-white/40"}`}
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Monthly
+              Mensual
             </span>
             <button
               onClick={() => setAnnual(!annual)}
@@ -180,9 +180,9 @@ export default function PricingSection() {
               className={`text-sm font-medium transition-colors ${annual ? "text-white" : "text-white/40"}`}
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Annual
+              Anual
               <span className="ml-2 bg-[#F97316]/20 text-[#F97316] text-xs font-bold px-2 py-0.5 rounded-sm">
-                SAVE 20%
+                AHORRA 20%
               </span>
             </span>
           </div>
@@ -193,11 +193,11 @@ export default function PricingSection() {
           <div className="flex items-center justify-center gap-3 bg-[#F97316]/10 border border-[#F97316]/40 rounded-sm px-6 py-4">
             <Tag className="w-5 h-5 text-[#F97316] flex-shrink-0" />
             <p className="text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              <span className="text-[#F97316] font-bold">LIMITED TIME:</span>{" "}
-              <span className="text-white font-medium">$500 Setup Fee</span>{" "}
+              <span className="text-[#F97316] font-bold">PROMO POR TIEMPO LIMITADO:</span>{" "}
+              <span className="text-white font-medium">Setup Fee de $500</span>{" "}
               <span className="text-white/70 line-through mr-1">$500</span>
-              <span className="text-[#F97316] font-bold">WAIVED</span>
-              <span className="text-white/60 ml-2 text-sm">— Start today, pay nothing to get set up.</span>
+              <span className="text-[#F97316] font-bold">GRATIS</span>
+              <span className="text-white/60 ml-2 text-sm">— Empieza hoy, no pagas nada para configurar.</span>
             </p>
           </div>
         </div>
@@ -265,13 +265,13 @@ export default function PricingSection() {
                   </div>
                   {annual && (
                     <div className="mt-0.5 text-white/35 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      Billed annually · was ${plan.price.monthly}/mo
+                      Facturado anualmente · antes ${plan.price.monthly}/mo
                     </div>
                   )}
                   {/* Setup fee waived inline note */}
                   <div className="mt-1.5 flex items-center gap-1.5">
                     <span className="text-white/35 text-xs line-through" style={{ fontFamily: "'DM Sans', sans-serif" }}>+$500 setup</span>
-                    <span className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>FREE</span>
+                    <span className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>GRATIS</span>
                   </div>
                 </div>
 
@@ -339,14 +339,14 @@ export default function PricingSection() {
         {/* Bottom note + link to full pricing page */}
         <div className="mt-10 text-center fade-up flex flex-col items-center gap-4" style={{ transitionDelay: "500ms" }}>
           <p className="text-white/40 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            All plans include onboarding support · No long-term contracts · Cancel anytime
+            Todos los planes incluyen soporte de onboarding · Sin contratos largos · Cancela cuando quieras
           </p>
           <Link
             href="/pricing"
             className="inline-flex items-center gap-2 text-[#F97316] hover:text-white border border-[#F97316]/40 hover:border-[#F97316] hover:bg-[#F97316]/10 text-sm font-semibold px-6 py-2.5 rounded-sm transition-all duration-200"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            See Full Plan Details & Compare All Features
+            Ver Detalles Completos & Comparar Todas las Features
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

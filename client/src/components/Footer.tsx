@@ -13,24 +13,24 @@ const footerLinks = {
     { label: "Google Optimizer", href: "#services" },
   ],
   Company: [
-    { label: "About Us", href: "#" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Sobre Nosotros", href: "#" },
+    { label: "Cómo Funciona", href: "#how-it-works" },
+    { label: "Precios", href: "#pricing" },
     { label: "Blog", href: "#" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contacto", href: "#contact" },
   ],
   Industries: [
     { label: "HVAC", href: "#industries" },
-    { label: "Plumbing", href: "#industries" },
-    { label: "Electrical", href: "#industries" },
-    { label: "General Contracting", href: "#industries" },
+    { label: "Plomería", href: "#industries" },
+    { label: "Eléctrico", href: "#industries" },
+    { label: "Contratista General", href: "#industries" },
     { label: "Roofing", href: "#industries" },
-    { label: "All Trades", href: "#industries" },
+    { label: "Todos los Trades", href: "#industries" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
+    { label: "Política de Privacidad", href: "#" },
+    { label: "Términos de Servicio", href: "#" },
+    { label: "Política de Cookies", href: "#" },
   ],
 };
 
@@ -56,13 +56,12 @@ export default function Footer() {
               className="text-white/45 text-sm leading-relaxed mb-6 max-w-xs"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Helping local trade companies implement AI marketing solutions that free up 
-              their workload and help them attract better jobs.
+              Ayudando a las compañías locales de trades a implementar soluciones de marketing con AI que liberan su carga de trabajo y les ayudan a atraer mejores jobs.
             </p>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                500+ contractors growing with us
+                500+ contractors creciendo con nosotros
               </span>
             </div>
           </div>
@@ -74,7 +73,7 @@ export default function Footer() {
                 className="text-white font-600 text-sm uppercase tracking-wider mb-4"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 600 }}
               >
-                {category}
+                {category === "Product" ? "Producto" : category === "Company" ? "Compañía" : category === "Industries" ? "Industrias" : category === "Legal" ? "Legal" : category}
               </h4>
               <ul className="space-y-2.5">
                 {links.map((link) => (
@@ -100,15 +99,15 @@ export default function Footer() {
             className="text-white/30 text-xs"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            © 2026 Contractor5x. All rights reserved. AI Marketing For The Trades.
+            © 2026 Contractor5x. Todos los derechos reservados. AI Marketing Para Los Trades.
           </p>
           <div className="flex items-center gap-1">
             <span className="text-white/20 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Built with
+              Hecho con
             </span>
             <span className="text-[#F97316] text-xs">♥</span>
             <span className="text-white/20 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              for contractors everywhere
+              para contractors everywhere
             </span>
           </div>
         </div>

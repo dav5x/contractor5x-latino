@@ -23,7 +23,7 @@ export default function MobileCTA() {
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
         <Phone className="w-4 h-4" />
-        Call Us
+        Llámanos
       </a>
       <a
         href="#contact"
@@ -34,7 +34,7 @@ export default function MobileCTA() {
         className="flex-2 flex-grow flex items-center justify-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold py-3 rounded-sm text-sm"
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
-        Get Started
+        Empieza Ya
       </a>
     </div>
   );

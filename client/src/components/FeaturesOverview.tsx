@@ -9,23 +9,23 @@ const AI_DASHBOARD = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/D
 const features = [
   {
     icon: Bot,
-    title: "AI Employees, Not Just Tools",
-    desc: "Unlike software you have to manage, our AI agents work autonomously — answering calls, posting content, and following up with leads without any input from you.",
+    title: "Empleados AI, No Solo Herramientas",
+    desc: "A diferencia del software que tienes que manejar, nuestros agentes AI trabajan autónomos — contestan llamadas, publican contenido y hacen follow-up con leads sin que tú tengas que hacer nada.",
   },
   {
     icon: TrendingUp,
-    title: "Done-For-You Implementation",
-    desc: "Our human team sets everything up, trains your AI agents, and handles all the technical work. You never touch a dashboard unless you want to.",
+    title: "Implementación Listo Para Ti",
+    desc: "Nuestro equipo humano configura todo, entrena a tus agentes AI y se encarga de todo el trabajo técnico. Tú no tocas ningún dashboard a menos que quieras.",
   },
   {
     icon: Clock,
-    title: "Results in 30 Days or Less",
-    desc: "Most contractors see measurable results — more leads, better Google ranking, higher close rates — within the first month of working with us.",
+    title: "Resultados en 30 Días o Menos",
+    desc: "La mayoría de los contractors ven resultados medibles — más leads, mejor ranking en Google, más cierres — en el primer mes trabajando con nosotros.",
   },
   {
     icon: Shield,
-    title: "Built Specifically for Trades",
-    desc: "We don't serve everyone. Our AI is trained on contractor-specific scenarios, language, and workflows — not generic business templates.",
+    title: "Hecho Específicamente Para los Trades",
+    desc: "No servimos a todos. Nuestro AI está entrenado en escenarios, lenguaje y workflows específicos para contractors — no en plantillas genéricas de negocios.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function FeaturesOverview() {
                 +312%
               </div>
               <div className="text-white/50 text-xs mt-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                Average lead increase
+                Incremento promedio de leads
               </div>
             </div>
           </div>
@@ -78,21 +78,21 @@ export default function FeaturesOverview() {
           {/* Right: Content */}
           <div className="order-1 lg:order-2">
             <div className="fade-up mb-4">
-              <span className="section-label">The AI Advantage</span>
+              <span className="section-label">La Ventaja AI</span>
             </div>
             <h2
               className="fade-up text-[clamp(2.5rem,5vw,3.5rem)] font-900 text-white uppercase leading-tight mb-6"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              AI That Works Like a{" "}
-              <span className="text-[#F97316]">Full Marketing Team</span>
+              AI Que Trabaja Como un{" "}
+              <span className="text-[#F97316]">Equipo Completo de Marketing</span>
             </h2>
             <p
               className="fade-up text-white/65 text-lg leading-relaxed mb-10"
               style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
             >
-              2026 is the year AI goes from a "tool I use" to an "employee that does things for me." 
-              Don't miss this opportunity — let us build your AI marketing team.
+              2026 es el año en que el AI deja de ser una "herramienta que uso" para ser un "empleado que hace cosas por mí." 
+              No pierdas esta oportunidad — deja que armemos tu equipo AI de marketing.
             </p>
 
             <div className="space-y-6">

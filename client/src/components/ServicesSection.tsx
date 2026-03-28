@@ -25,16 +25,16 @@ const services = [
     id: "lead-closer",
     number: "01",
     icon: Zap,
-    label: "Your 24/7 Sales Machine",
+    label: "Tu Máquina de Ventas 24/7",
     title: "Lead Closer",
-    tagline: "Never lose a lead to a competitor again.",
+    tagline: "Nunca pierdas un lead a la competencia otra vez.",
     quote:
-      '"You\'re out on a job site, covered in drywall dust, and your phone buzzes with 3 new quote requests. By the time you get home, those leads have already called your competitor."',
-    desc: "Lead Closer responds instantly, qualifies leads, and keeps them warm until you're ready to close. Your pipeline stays full while you focus on the work you love.",
+      '"Estás en un job site, cubierto de polvo de drywall, y tu teléfono vibra con 3 nuevas solicitudes de cotización. Para cuando llegas a casa, esos leads ya llamaron a tu competencia."',
+    desc: "Lead Closer responde al instante, califica leads y los mantiene calientes hasta que estés listo para cerrar. Tu pipeline se mantiene lleno mientras tú haces el trabajo que amas.",
     stats: [
-      { value: "78%", label: "of leads go to first responder" },
-      { value: "5 min", label: "optimal response time" },
-      { value: "3X", label: "more conversions" },
+      { value: "78%", label: "de los leads van al primer respondedor" },
+      { value: "5 min", label: "tiempo óptimo de respuesta" },
+      { value: "3X", label: "más conversiones" },
     ],
     features: [
       "Smart Pipeline Dashboard",
@@ -45,137 +45,137 @@ const services = [
       "Email & SMS Outreach",
     ],
     image: LEAD_CLOSER,
-    imageAlt: "Contractor checking leads on phone at job site",
+    imageAlt: "Contratista revisando leads en el teléfono en el job site",
   },
   {
     id: "job-promoter",
     number: "02",
     icon: Camera,
-    label: "Your Work Speaks — We Make It Loud",
+    label: "Tu Trabajo Habla — Nosotros Lo Hacemos Sonar",
     title: "Job Promoter",
-    tagline: "Your craftsmanship finally gets the attention it deserves.",
+    tagline: "Tu craftsmanship finalmente recibe la atención que merece.",
     quote:
-      '"Your Instagram is empty. Your website shows work from 3 years ago. Meanwhile, a competitor with half your skill is booking jobs because they look more professional online."',
-    desc: "We capture your best work with professional lookbooks, videos, and before/afters — then distribute them across every platform that matters.",
+      '"Tu Instagram está vacío. Tu website muestra trabajos de hace 3 años. Mientras tanto, un competidor con la mitad de tu skill está cerrando jobs porque se ve más profesional online."',
+    desc: "Capturamos tu mejor trabajo con lookbooks profesionales, videos y antes/después — y los distribuimos en todas las plataformas que importan.",
     stats: [
-      { value: "93%", label: "check reviews before hiring" },
-      { value: "4X", label: "more engagement with video" },
-      { value: "87%", label: "trust visuals over text" },
+      { value: "93%", label: "revisan reviews antes de contratar" },
+      { value: "4X", label: "más engagement con video" },
+      { value: "87%", label: "confían más en visuales que en texto" },
     ],
     features: [
-      "Magazine-Quality Lookbooks",
-      "Organized Photo Gallery",
-      "Detailed Case Studies",
+      "Lookbooks de calidad revista",
+      "Galería de fotos organizada",
+      "Estudios de caso detallados",
       "SEO & AI Optimization",
-      "Up to 25 Videos/Month",
-      "Consistent Social Posting",
+      "Hasta 25 videos/mes",
+      "Publicaciones sociales consistentes",
     ],
     image: CONTRACTOR_WORK,
-    imageAlt: "Professional contractors at work on residential project",
+    imageAlt: "Contratistas profesionales trabajando en proyecto residencial",
   },
   {
     id: "ai-agent",
     number: "03",
     icon: Bot,
-    label: "Never Miss Another Call",
+    label: "Nunca Pierdas Otra Llamada",
     title: "AI Agent",
-    tagline: "Every call answered. Every lead captured. 24/7.",
+    tagline: "Cada llamada contestada. Cada lead capturado. 24/7.",
     quote:
-      '"You can\'t answer every call when you\'re 20 feet up on a ladder or knee-deep in a renovation. But every missed call is money walking out the door."',
-    desc: "Our AI Agent answers every call and chat instantly, 24/7. It sounds natural, answers questions, qualifies leads, and books appointments — all while you focus on the job.",
+      '"No puedes contestar cada llamada cuando estás a 20 pies en una escalera o hasta las rodillas en una remodelación. Pero cada llamada perdida es dinero saliendo por la puerta."',
+    desc: "Nuestro AI Agent contesta cada llamada y chat al instante, 24/7. Suena natural, responde preguntas, califica leads y agenda citas — mientras tú te concentras en el trabajo.",
     stats: [
-      { value: "85%", label: "of callers won't leave voicemail" },
-      { value: "24/7", label: "availability without hiring" },
-      { value: "$0", label: "extra staff cost" },
+      { value: "85%", label: "de los que llaman no dejan buzón" },
+      { value: "24/7", label: "disponibilidad sin contratar más gente" },
+      { value: "$0", label: "costo extra de personal" },
     ],
     features: [
-      "Natural-Sounding AI Voice",
-      "Instant Lead Qualification",
-      "Appointment Booking",
-      "FAQ Auto-Responses",
-      "Call Recording & Transcripts",
-      "Seamless CRM Integration",
+      "Voz AI que suena natural",
+      "Calificación instantánea de leads",
+      "Agendamiento de citas",
+      "Respuestas automáticas a FAQs",
+      "Grabación de llamadas y transcripciones",
+      "Integración perfecta con CRM",
     ],
     image: AI_DASHBOARD,
-    imageAlt: "AI marketing dashboard with lead pipeline",
+    imageAlt: "Dashboard de marketing AI con pipeline de leads",
   },
   {
     id: "smart-website",
     number: "04",
     icon: Globe,
-    label: "A Website That Works As Hard As You Do",
+    label: "Un Website Que Trabaja Tan Duro Como Tú",
     title: "Hands Off Smart Website",
-    tagline: "Professional, converting, and completely maintenance-free.",
+    tagline: "Profesional, que convierte, y sin mantenimiento para ti.",
     quote:
-      '"You know you need a professional website, but who has time to manage it? Between estimates, jobs, and running a business, web design is the last thing on your mind."',
-    desc: "We build, maintain, and continuously optimize your website — you never touch it. It's always updated, always secure, and always converting visitors into leads.",
+      '"Sabes que necesitas un website profesional, pero ¿quién tiene tiempo para manejarlo? Entre estimados, jobs y manejar el negocio, el diseño web es lo último en tu mente."',
+    desc: "Construimos, mantenemos y optimizamos continuamente tu website — tú nunca lo tocas. Siempre actualizado, seguro y convirtiendo visitantes en leads.",
     stats: [
-      { value: "75%", label: "judge credibility by website" },
-      { value: "0.05s", label: "to make first impression" },
-      { value: "0hrs", label: "maintenance on your end" },
+      { value: "75%", label: "juzgan credibilidad por el website" },
+      { value: "0.05s", label: "para causar primera impresión" },
+      { value: "0hrs", label: "mantenimiento de tu parte" },
     ],
     features: [
-      "Custom Professional Design",
-      "Regular Content Updates",
-      "Security & Maintenance",
+      "Diseño profesional personalizado",
+      "Actualizaciones regulares de contenido",
+      "Seguridad y mantenimiento",
       "Smart Chat Widget",
-      "Universal Inbox",
-      "Local SEO Optimized",
+      "Bandeja de entrada universal",
+      "Optimizado para SEO local",
     ],
     image: CONTRACTOR_WORK,
-    imageAlt: "Professional contractor team",
+    imageAlt: "Equipo profesional de contratistas",
   },
   {
     id: "reactivator",
     number: "05",
     icon: RefreshCw,
-    label: "Your Past Customers Are Gold",
+    label: "Tus Clientes Pasados Son Oro",
     title: "Customer Re-Activator",
-    tagline: "Turn your existing customer base into a revenue engine.",
+    tagline: "Convierte tu base de clientes en una máquina de ingresos.",
     quote:
-      '"You\'ve served hundreds of customers over the years, but you only hear from them when something breaks. Meanwhile, they\'re hiring other contractors for jobs you could have had."',
-    desc: "Re-Activator automatically stays in touch with your past customers — birthday wishes, seasonal reminders, special offers. When they need a contractor, your name is first.",
+      '"Has servido a cientos de clientes con los años, pero solo escuchas de ellos cuando algo se rompe. Mientras tanto, están contratando otros contractors para jobs que tú pudiste haber tenido."',
+    desc: "Re-Activator se mantiene en contacto automáticamente con tus clientes pasados — deseos de cumpleaños, recordatorios estacionales, ofertas especiales. Cuando necesiten un contractor, tu nombre es el primero.",
     stats: [
-      { value: "5X", label: "cheaper than new customers" },
-      { value: "67%", label: "more likely to buy again" },
-      { value: "∞", label: "lifetime value potential" },
+      { value: "5X", label: "más barato que conseguir clientes nuevos" },
+      { value: "67%", label: "más probable que compren otra vez" },
+      { value: "∞", label: "potencial de valor de por vida" },
     ],
     features: [
-      "Automated Holiday Campaigns",
-      "Win-Back Targeted Offers",
-      "Birthday & Anniversary Touches",
-      "Seasonal Service Reminders",
-      "Referral Program Automation",
-      "Feedback & Review Requests",
+      "Campañas automáticas para fiestas",
+      "Ofertas dirigidas para recuperar clientes",
+      "Toques de cumpleaños y aniversarios",
+      "Recordatorios de servicio estacionales",
+      "Automatización de programa de referidos",
+      "Solicitudes de feedback y reviews",
     ],
     image: LEAD_CLOSER,
-    imageAlt: "Contractor managing customer relationships",
+    imageAlt: "Contratista manejando relaciones con clientes",
   },
   {
     id: "google-optimizer",
     number: "06",
     icon: Star,
-    label: "Own Your Local Search Results",
+    label: "Dueño de Tus Resultados Locales",
     title: "Google Listing Optimizer",
-    tagline: "Dominate local search and become the obvious choice.",
+    tagline: "Domina la búsqueda local y sé la opción obvia.",
     quote:
-      '"Your Google listing has 4 reviews from 2019. Your competitor has 87 reviews and shows up first for every search. You\'re invisible to customers actively looking for you."',
-    desc: "We optimize your Google Business Profile, generate consistent reviews, and respond to every one with AI. Your listing climbs the rankings and becomes a lead machine.",
+      '"Tu Google listing tiene 4 reviews de 2019. Tu competencia tiene 87 reviews y aparece primero en todas las búsquedas. Eres invisible para clientes que te buscan activamente."',
+    desc: "Optimizamos tu Google Business Profile, generamos reviews consistentes y respondemos a cada una con AI. Tu listing sube en el ranking y se vuelve una máquina de leads.",
     stats: [
-      { value: "46%", label: "of Google searches are local" },
-      { value: "88%", label: "trust online reviews" },
-      { value: "#1", label: "position gets 33% of clicks" },
+      { value: "46%", label: "de las búsquedas en Google son locales" },
+      { value: "88%", label: "confían en reviews online" },
+      { value: "#1", label: "la posición #1 recibe 33% de clicks" },
     ],
     features: [
-      "Complete Profile Optimization",
-      "Automated Review Generation",
-      "AI-Powered Review Replies",
-      "4 Google Posts/Month",
-      "Reputation Monitoring",
-      "Competitor Analysis",
+      "Optimización completa del perfil",
+      "Generación automática de reviews",
+      "Respuestas con AI a reviews",
+      "4 posts de Google/mes",
+      "Monitoreo de reputación",
+      "Análisis de competencia",
     ],
     image: GOOGLE_REVIEWS,
-    imageAlt: "Google Business Profile with 5-star reviews",
+    imageAlt: "Google Business Profile con reviews de 5 estrellas",
   },
 ];
 
@@ -211,21 +211,20 @@ export default function ServicesSection() {
         {/* Section header */}
         <div className="mb-12">
           <div className="fade-up mb-4">
-            <span className="section-label">Powerful Solutions for Contractors</span>
+            <span className="section-label">Soluciones Poderosas para Contratistas</span>
           </div>
           <h2
             className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            Everything You Need to{" "}
-            <span className="text-[#F97316]">Grow 5X</span>
+            Todo Lo Que Necesitas Para{" "}
+            <span className="text-[#F97316]">Crecer 5X</span>
           </h2>
           <p
             className="fade-up text-white/60 text-lg mt-3 max-w-xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            Six AI-powered tools designed specifically for contractors who want to spend less
-            time chasing leads and more time doing what they love.
+            Seis herramientas con AI diseñadas específicamente para contratistas que quieren pasar menos tiempo persiguiendo leads y más tiempo haciendo lo que aman.
           </p>
         </div>
 
@@ -325,7 +324,7 @@ export default function ServicesSection() {
               className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-6 py-3 rounded-sm transition-all duration-200 text-sm"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Learn More About {activeService.title}
+              Aprende Más Sobre {activeService.title}
               <ChevronRight className="w-4 h-4" />
             </Link>
           </div>

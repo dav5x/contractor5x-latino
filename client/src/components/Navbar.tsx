@@ -1,6 +1,6 @@
 /*
  * DESIGN: Industrial Brutalism — Dark sticky nav, orange CTA
- * Mega menus: Solutions (6 tools), Learn (blog categories), Trades (12 trades)
+ * Mega menus: Soluciones (6 tools), Aprende (blog categories), Oficios (12 trades)
  */
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown, Zap, Camera, Bot, Globe, RefreshCw, Star, BookOpen, ArrowRight, Wrench } from "lucide-react";
@@ -9,20 +9,20 @@ import { tradesData } from "@/lib/tradesData";
 import LogoLatino from "./LogoLatino";
 
 const solutions = [
-  { id: "lead-closer", title: "Lead Closer", label: "24/7 Sales Machine", icon: Zap, href: "/solutions/lead-closer" },
-  { id: "job-promoter", title: "Job Promoter", label: "Visual Content Engine", icon: Camera, href: "/solutions/job-promoter" },
-  { id: "ai-agent", title: "AI Agent", label: "Never Miss a Call", icon: Bot, href: "/solutions/ai-agent" },
-  { id: "smart-website", title: "Smart Website", label: "Done-For-You Website", icon: Globe, href: "/solutions/smart-website" },
-  { id: "reactivator", title: "Re-Activator", label: "Win Back Past Customers", icon: RefreshCw, href: "/solutions/reactivator" },
-  { id: "google-optimizer", title: "Google Optimizer", label: "Dominate Local Search", icon: Star, href: "/solutions/google-optimizer" },
+  { id: "lead-closer", title: "Lead Closer", label: "Máquina de Ventas 24/7", icon: Zap, href: "/solutions/lead-closer" },
+  { id: "job-promoter", title: "Job Promoter", label: "Motor de Contenido Visual", icon: Camera, href: "/solutions/job-promoter" },
+  { id: "ai-agent", title: "AI Agent", label: "Nunca Pierdas una Llamada", icon: Bot, href: "/solutions/ai-agent" },
+  { id: "smart-website", title: "Smart Website", label: "Website Listo Para Ti", icon: Globe, href: "/solutions/smart-website" },
+  { id: "reactivator", title: "Re-Activator", label: "Recupera Clientes Pasados", icon: RefreshCw, href: "/solutions/reactivator" },
+  { id: "google-optimizer", title: "Google Optimizer", label: "Domina la Búsqueda Local", icon: Star, href: "/solutions/google-optimizer" },
 ];
 
 const learnLinks = [
-  { label: "All Articles", href: "/learn", desc: "Browse all contractor guides" },
-  { label: "Lead Generation", href: "/learn?cat=Lead+Generation", desc: "Get more leads, close more jobs" },
-  { label: "Google & Reviews", href: "/learn?cat=Google+%26+Reviews", desc: "Rank higher, get more reviews" },
-  { label: "AI Marketing", href: "/learn?cat=AI+Marketing", desc: "How AI is changing the trades" },
-  { label: "Business Growth", href: "/learn?cat=Business+Growth", desc: "Scale your trade business" },
+  { label: "Todos los Artículos", href: "/learn", desc: "Explora todas las guías para contractors" },
+  { label: "Generación de Leads", href: "/learn?cat=Lead+Generation", desc: "Consigue más leads, cierra más jobs" },
+  { label: "Google y Reviews", href: "/learn?cat=Google+%26+Reviews", desc: "Mejora tu ranking, consigue más reviews" },
+  { label: "Marketing con AI", href: "/learn?cat=AI+Marketing", desc: "Cómo el AI está cambiando los trades" },
+  { label: "Crecimiento de Negocio", href: "/learn?cat=Business+Growth", desc: "Escala tu negocio de trade" },
 ];
 
 export default function Navbar() {
@@ -95,7 +95,7 @@ export default function Navbar() {
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${solutionsOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`}
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
-                Solutions
+                Soluciones
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${solutionsOpen ? "rotate-180 text-[#F97316]" : ""}`} />
               </button>
 
@@ -103,11 +103,11 @@ export default function Navbar() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[640px] bg-[#0D0D0D] border border-white/10 shadow-2xl shadow-black/60 rounded-sm overflow-hidden">
                   <div className="px-6 py-4 border-b border-white/5 flex items-center justify-between">
                     <div>
-                      <p className="text-white text-sm uppercase font-black" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>AI Marketing Solutions</p>
-                      <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>Six tools built specifically for trade contractors</p>
+                      <p className="text-white text-sm uppercase font-black" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Soluciones de Marketing con AI</p>
+                      <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>Seis tools hechos para contractors de trade</p>
                     </div>
                     <Link href="/solutions" onClick={closeAll} className="text-[#F97316] text-xs font-medium flex items-center gap-1 hover:gap-2 transition-all duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      View All <ArrowRight className="w-3 h-3" />
+                      Ver Todas <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                   <div className="grid grid-cols-2 gap-px bg-white/5 p-px">
@@ -127,9 +127,9 @@ export default function Navbar() {
                     })}
                   </div>
                   <div className="px-6 py-3 bg-[#F97316]/5 border-t border-[#F97316]/10 flex items-center justify-between">
-                    <p className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>All solutions work together as one unified system</p>
+                    <p className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>Todas las soluciones trabajan juntas como un sistema unificado</p>
                     <a href="/#contact" onClick={closeAll} className="bg-[#F97316] hover:bg-[#EA6C0A] text-black text-xs font-semibold px-4 py-2 rounded-sm transition-colors duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      Get Started
+                      Empieza Ya
                     </a>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Navbar() {
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${learnOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`}
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
-                Learn
+                Aprende
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${learnOpen ? "rotate-180 text-[#F97316]" : ""}`} />
               </button>
 
@@ -151,9 +151,9 @@ export default function Navbar() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 bg-[#0D0D0D] border border-white/10 shadow-2xl shadow-black/60 rounded-sm overflow-hidden">
                   <div className="px-5 py-3 border-b border-white/5">
                     <p className="text-white text-sm uppercase font-black flex items-center gap-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                      <BookOpen className="w-4 h-4 text-[#F97316]" /> The Contractor's Playbook
+                      <BookOpen className="w-4 h-4 text-[#F97316]" /> El Manual del Contractor
                     </p>
-                    <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>Practical guides for trade business owners</p>
+                    <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>Guías prácticas para dueños de negocios de trade</p>
                   </div>
                   <div className="py-2">
                     {learnLinks.map((link) => (
@@ -174,7 +174,7 @@ export default function Navbar() {
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${tradesOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`}
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
-                Trades
+                Oficios
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${tradesOpen ? "rotate-180 text-[#F97316]" : ""}`} />
               </button>
 
@@ -182,11 +182,11 @@ export default function Navbar() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[720px] bg-[#0D0D0D] border border-white/10 shadow-2xl shadow-black/60 rounded-sm overflow-hidden">
                   <div className="px-6 py-4 border-b border-white/5 flex items-center justify-between">
                     <div>
-                      <p className="text-white text-sm uppercase font-black" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Trades We Serve</p>
-                      <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>AI marketing tailored to your specific trade</p>
+                      <p className="text-white text-sm uppercase font-black" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Oficios a los que Servimos</p>
+                      <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>Marketing con AI hecho para tu trade específico</p>
                     </div>
                     <Link href="/trades" onClick={closeAll} className="text-[#F97316] text-xs font-medium flex items-center gap-1 hover:gap-2 transition-all duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      View All Trades <ArrowRight className="w-3 h-3" />
+                      Ver Todos los Oficios <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                   <div className="grid grid-cols-3 gap-px bg-white/5 p-px">
@@ -201,9 +201,9 @@ export default function Navbar() {
                     ))}
                   </div>
                   <div className="px-6 py-3 bg-[#F97316]/5 border-t border-[#F97316]/10 flex items-center justify-between">
-                    <p className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>Don't see your trade? We work with all local service businesses.</p>
+                    <p className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>¿No ves tu trade? Trabajamos con todos los negocios locales de servicios.</p>
                     <a href="/#contact" onClick={closeAll} className="bg-[#F97316] hover:bg-[#EA6C0A] text-black text-xs font-semibold px-4 py-2 rounded-sm transition-colors duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      Get Started
+                      Empieza Ya
                     </a>
                   </div>
                 </div>
@@ -216,24 +216,24 @@ export default function Navbar() {
               className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Results
+              Resultados
             </a>
             <a
               href="/pricing"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Pricing
+              Precios
             </a>
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a href="https://contractor5x.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-white transition-colors px-3 py-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Login
+              Entrar
             </a>
             <a href="/#contact" onClick={(e) => scrollToSection(e, "#contact")} className="bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold text-sm px-5 py-2.5 rounded-sm transition-all duration-200 flex items-center gap-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Get Started
+              Empieza Ya
             </a>
           </div>
 
@@ -250,7 +250,7 @@ export default function Navbar() {
           <div className="container py-4 flex flex-col gap-1">
             {/* Solutions accordion */}
             <button onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)} className="flex items-center justify-between text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Solutions
+              Soluciones
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileSolutionsOpen ? "rotate-180 text-[#F97316]" : ""}`} />
             </button>
             {mobileSolutionsOpen && (
@@ -265,14 +265,14 @@ export default function Navbar() {
                   );
                 })}
                 <Link href="/solutions" onClick={() => setMenuOpen(false)} className="flex items-center gap-2 py-2 text-[#F97316] text-sm font-medium" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  View All Solutions <ArrowRight className="w-3.5 h-3.5" />
+                  Ver Todas las Soluciones <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             )}
 
             {/* Learn accordion */}
             <button onClick={() => setMobileLearnOpen(!mobileLearnOpen)} className="flex items-center justify-between text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Learn
+              Aprende
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileLearnOpen ? "rotate-180 text-[#F97316]" : ""}`} />
             </button>
             {mobileLearnOpen && (
@@ -287,7 +287,7 @@ export default function Navbar() {
 
             {/* Trades accordion */}
             <button onClick={() => setMobileTradesOpen(!mobileTradesOpen)} className="flex items-center justify-between text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Trades
+              Oficios
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileTradesOpen ? "rotate-180 text-[#F97316]" : ""}`} />
             </button>
             {mobileTradesOpen && (
@@ -299,21 +299,21 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Link href="/trades" onClick={() => setMenuOpen(false)} className="flex items-center gap-2 py-2 text-[#F97316] text-sm font-medium" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  View All Trades <ArrowRight className="w-3.5 h-3.5" />
+                  Ver Todos los Oficios <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             )}
 
             <Link href="/results" onClick={() => setMenuOpen(false)} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Results
+              Resultados
             </Link>
 
             <Link href="/pricing" onClick={() => setMenuOpen(false)} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Pricing
+              Precios
             </Link>
 
             <a href="/#contact" onClick={(e) => { scrollToSection(e, "#contact"); setMenuOpen(false); }} className="mt-4 bg-[#F97316] text-black font-semibold text-sm px-5 py-3 rounded-sm text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Get Started
+              Empieza Ya
             </a>
           </div>
         </div>

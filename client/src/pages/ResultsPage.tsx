@@ -11,10 +11,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const overallStats = [
-  { metric: "4.2×", label: "Average Lead Increase", icon: TrendingUp },
-  { metric: "200+", label: "5-Star Reviews Generated", icon: Star },
-  { metric: "30 Days", label: "Average Time to First Results", icon: Award },
-  { metric: "100%", label: "Client Retention Rate", icon: Users },
+  { metric: "4.2×", label: "Incremento Promedio de Leads", icon: TrendingUp },
+  { metric: "200+", label: "Reviews 5 Estrellas Generadas", icon: Star },
+  { metric: "30 Days", label: "Tiempo Promedio para Primeros Resultados", icon: Award },
+  { metric: "100%", label: "Tasa de Retención de Clientes", icon: Users },
 ];
 
 export default function ResultsPage() {
@@ -28,15 +28,15 @@ export default function ResultsPage() {
         <div className="container max-w-6xl mx-auto px-6 relative z-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-              Real Results
+              Resultados Reales
             </span>
           </div>
           <h1 className="font-['Barlow_Condensed'] text-5xl md:text-7xl font-black uppercase leading-none mb-6">
-            CONTRACTORS WHO <br />
-            <span className="text-orange-500">CHOSE TO 5X</span>
+            CONTRACTORS QUE <br />
+            <span className="text-orange-500">ESCOGIERON 5X</span>
           </h1>
           <p className="text-zinc-400 text-xl max-w-2xl leading-relaxed">
-            Real trade businesses. Real numbers. See how local contractors across San Diego are using AI marketing to fill their calendars and dominate local search.
+            Negocios reales de trades. Números reales. Mira cómo contractors locales en San Diego están usando AI marketing para llenar sus calendarios y dominar la búsqueda local.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function ResultsPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent md:hidden" />
                     <div className="absolute top-4 left-4">
                       <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                        Case Study #{i + 1}
+                        Caso de Estudio #{i + 1}
                       </span>
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export default function ResultsPage() {
                     </div>
 
                     <div className="mt-6 flex items-center gap-2 text-orange-400 font-bold text-sm uppercase tracking-wide group-hover:gap-4 transition-all">
-                      Read Full Case Study <ArrowRight className="w-4 h-4" />
+                      Leer Caso Completo <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
                 </div>
@@ -139,20 +139,20 @@ export default function ResultsPage() {
       <section className="bg-[#111111] border-t border-zinc-800 py-20">
         <div className="container max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-['Barlow_Condensed'] text-4xl md:text-5xl font-black uppercase text-white mb-4">
-            YOUR BUSINESS COULD BE <span className="text-orange-500">NEXT</span>
+            TU NEGOCIO PODRÍA SER <span className="text-orange-500">EL SIGUIENTE</span>
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">
-            Join the trade contractors across San Diego who are using AI to fill their calendars and grow their revenue.
+            Únete a los contractors de trades en San Diego que están usando AI para llenar sus calendarios y crecer sus ingresos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 text-lg">
-                Get Started Today
+                Empieza Ya Hoy
               </Button>
             </Link>
             <Link href="/pricing">
               <Button variant="outline" className="border-zinc-700 text-white hover:bg-zinc-800 px-8 py-3 text-lg">
-                View Pricing
+                Ver Precios
               </Button>
             </Link>
           </div>

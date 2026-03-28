@@ -6,28 +6,28 @@ import { XCircle } from "lucide-react";
 
 const problems = [
   {
-    title: "Amazing Work, Zero Visibility",
-    desc: "You complete high-quality projects, but potential clients never see them. Your best work is gathering dust in your phone's camera roll.",
+    title: "Trabajo Increíble, Cero Visibilidad",
+    desc: "Haces proyectos de alta calidad, pero los clientes potenciales nunca los ven. Tu mejor trabajo está acumulando polvo en el rollo de la cámara de tu teléfono.",
   },
   {
-    title: "Wearing Too Many Hats",
-    desc: "Running the business, managing crews, answering calls, following up on leads — there aren't enough hours in the day.",
+    title: "Demasiados Roles a la Vez",
+    desc: "Manejar el negocio, coordinar crews, contestar llamadas, dar seguimiento a leads — no hay suficientes horas en el día.",
   },
   {
-    title: "Leads Falling Through the Cracks",
-    desc: "Someone inquires, you get busy with a job, and by the time you follow up, they've already hired someone else.",
+    title: "Leads Que Se Pierden",
+    desc: "Alguien pregunta, te ocupas con un job, y cuando das follow-up, ya contrataron a otro.",
   },
   {
-    title: "Invisible on Google",
-    desc: "Your competitor with half your skill is showing up first in local search because they have more reviews and an optimized listing.",
+    title: "Invisible en Google",
+    desc: "Tu competidor con la mitad de tu skill aparece primero en la búsqueda local porque tiene más reviews y un listing optimizado.",
   },
   {
-    title: "Past Customers Forget You",
-    desc: "You've served hundreds of customers, but you only hear from them when something breaks — missing out on repeat and referral revenue.",
+    title: "Clientes Viejos Te Olvidan",
+    desc: "Has servido a cientos de clientes, pero solo te buscan cuando algo se rompe — perdiendo ingresos de repeat y referrals.",
   },
   {
-    title: "No Time for Marketing",
-    desc: "You know you need a professional website and social presence, but between estimates and jobs, marketing is the last thing on your mind.",
+    title: "Sin Tiempo Para Marketing",
+    desc: "Sabes que necesitas un website profesional y presencia social, pero entre estimates y jobs, el marketing es lo último en tu mente.",
   },
 ];
 
@@ -60,20 +60,20 @@ export default function ProblemsSection() {
         {/* Header */}
         <div className="mb-14">
           <div className="fade-up mb-4">
-            <span className="section-label">Sound Familiar?</span>
+            <span className="section-label">¿Te Suena Familiar?</span>
           </div>
           <h2
             className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight max-w-2xl"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            The Problems Holding Contractors Back
+            Los Problemas Que Frenan a los Contractors
           </h2>
           <p
             className="fade-up text-white/60 text-lg mt-4 max-w-xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            Every contractor we talk to faces the same six challenges. 
-            We built Contractor5x specifically to eliminate all of them.
+            Cada contractor con quien hablamos enfrenta estos seis retos. 
+            Construimos Contractor5x específicamente para eliminarlos todos.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function ProblemsSection() {
               className="text-xl text-white/80 font-medium"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              We built <span className="text-[#F97316] font-semibold">six AI-powered tools</span> to solve every single one of these.
+              Construimos <span className="text-[#F97316] font-semibold">seis herramientas con AI</span> para resolver cada uno de estos problemas.
             </p>
           </div>
         </div>

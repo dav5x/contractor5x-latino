@@ -36,19 +36,19 @@ export default function SolutionsPage() {
           style={{ backgroundImage: "linear-gradient(#F97316 1px, transparent 1px), linear-gradient(90deg, #F97316 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
         <div className="container relative text-center">
           <div className="fade-up mb-4">
-            <span className="section-label">AI-Powered Solutions</span>
+            <span className="section-label">Soluciones con AI</span>
           </div>
           <h1
             className="fade-up text-[clamp(3rem,7vw,5.5rem)] font-900 text-white uppercase leading-[0.9] mb-4"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            Six Tools. One <span className="text-[#F97316]">Mission.</span>
+            Seis Tools. Una <span className="text-[#F97316]">Misión.</span>
           </h1>
           <p
             className="fade-up text-white/60 text-xl max-w-2xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "150ms" }}
           >
-            Every solution is built specifically for trade contractors — designed to fill your pipeline, protect your reputation, and grow your revenue without adding to your workload.
+            Cada solución está hecha específicamente para trade contractors — diseñada para llenar tu pipeline, proteger tu reputación y crecer tus ingresos sin aumentar tu carga de trabajo.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function SolutionsPage() {
                   </div>
 
                   <div className="flex items-center gap-2 text-[#F97316] text-sm font-medium group-hover:gap-3 transition-all duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    Learn More <ArrowRight className="w-4 h-4" />
+                    Aprende Más <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>
               );
@@ -121,17 +121,17 @@ export default function SolutionsPage() {
             className="fade-up text-[clamp(2rem,5vw,4rem)] font-900 text-white uppercase mb-4"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
           >
-            Ready to <span className="text-[#F97316]">Get Started?</span>
+            Listo para <span className="text-[#F97316]">Empieza Ya?</span>
           </h2>
           <p className="fade-up text-white/55 text-lg mb-8 max-w-xl mx-auto" style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "100ms" }}>
-            All six solutions work together as one unified AI marketing system for your trade business.
+            Las seis soluciones trabajan juntas como un sistema unificado de marketing con AI para tu negocio de trades.
           </p>
           <a
             href="/#contact"
             className="fade-up btn-glow pulse-glow inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-8 py-4 rounded-sm transition-all duration-200 text-base"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "150ms" }}
           >
-            Get Started <ArrowRight className="w-4 h-4" />
+            Empieza Ya <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </section>

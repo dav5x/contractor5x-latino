@@ -10,10 +10,10 @@ import { caseStudies } from "@/lib/caseStudiesData";
 import { Button } from "@/components/ui/button";
 
 const bigStats = [
-  { value: 420, suffix: "%", label: "Average Lead Increase", decimal: false },
-  { value: 200, suffix: "+", label: "5-Star Reviews Generated", decimal: false },
-  { value: 4.9, suffix: "★", label: "Average Client Rating", decimal: true },
-  { value: 100, suffix: "%", label: "Client Retention Rate", decimal: false },
+  { value: 420, suffix: "%", label: "Aumento Promedio de Leads", decimal: false },
+  { value: 200, suffix: "+", label: "Reseñas 5 Estrellas Generadas", decimal: false },
+  { value: 4.9, suffix: "★", label: "Calificación Promedio de Clientes", decimal: true },
+  { value: 100, suffix: "%", label: "Tasa de Retención de Clientes", decimal: false },
 ];
 
 function AnimatedCounter({ value, suffix, decimal }: { value: number; suffix: string; decimal?: boolean }) {
@@ -78,14 +78,14 @@ export default function ResultsSection() {
         {/* Header */}
         <div className="mb-12">
           <div className="fade-up mb-4">
-            <span className="section-label">Real Results</span>
+            <span className="section-label">Resultados Reales</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <h2
               className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              Contractors Love To{" "}
+              A los Contractors Les Encanta{" "}
               <span className="text-[#F97316]">5X</span>
             </h2>
             <Link href="/results">
@@ -94,7 +94,7 @@ export default function ResultsSection() {
                 className="border-orange-500/50 text-orange-400 hover:bg-orange-500/10 whitespace-nowrap fade-up"
                 style={{ transitionDelay: "200ms" }}
               >
-                All Case Studies <ArrowRight className="w-4 h-4 ml-2" />
+                Todos los Case Studies <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
@@ -176,7 +176,7 @@ export default function ResultsSection() {
                   </div>
 
                   <div className="flex items-center gap-2 text-orange-400 text-sm font-bold uppercase tracking-wide group-hover:gap-4 transition-all">
-                    Read Full Story <ArrowRight className="w-4 h-4" />
+                    Lee la Historia Completa <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
               </div>
@@ -186,10 +186,10 @@ export default function ResultsSection() {
 
         {/* Bottom CTA */}
         <div className="fade-up text-center">
-          <p className="text-white/40 text-sm mb-4">Want results like these for your trade business?</p>
+          <p className="text-white/40 text-sm mb-4">¿Quieres resultados así para tu negocio de trade?</p>
           <Link href="/#contact">
             <Button className="bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold px-8 py-3">
-              Get Started Today
+              Empieza Ya Hoy
             </Button>
           </Link>
         </div>

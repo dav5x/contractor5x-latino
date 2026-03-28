@@ -34,8 +34,8 @@ export default function TradePage() {
     return (
       <div className="min-h-screen bg-[#0D0D0D] flex flex-col items-center justify-center text-white">
         <Navbar />
-        <h1 className="text-4xl font-black mb-4 mt-32">Trade Not Found</h1>
-        <Link href="/trades"><Button className="bg-orange-500 hover:bg-orange-600">View All Trades</Button></Link>
+        <h1 className="text-4xl font-black mb-4 mt-32">Trade No Encontrado</h1>
+        <Link href="/trades"><Button className="bg-orange-500 hover:bg-orange-600">Ver Todos los Trades</Button></Link>
         <Footer />
       </div>
     );
@@ -58,9 +58,9 @@ export default function TradePage() {
         <div className="relative z-10 container max-w-7xl mx-auto px-6 py-24">
           {/* breadcrumb */}
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-8">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-orange-400 transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link href="/trades" className="hover:text-orange-400 transition-colors">Trades</Link>
+            <Link href="/trades" className="hover:text-orange-400 transition-colors">Oficios</Link>
             <ChevronRight className="w-3 h-3" />
             <span className="text-orange-400">{trade.name}</span>
           </div>
@@ -74,7 +74,7 @@ export default function TradePage() {
             <h1 className="font-display text-5xl md:text-7xl font-black uppercase leading-none mb-6 tracking-tight">
               {trade.headline.split("for ")[0]}
               <br />
-              <span className="text-orange-500">for {trade.name}</span>
+              <span className="text-orange-500">para {trade.name}</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-4 max-w-2xl leading-relaxed">
@@ -87,12 +87,12 @@ export default function TradePage() {
             <div className="flex flex-wrap items-center gap-4 mb-12">
               <Link href="/#contact">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 text-base rounded-sm uppercase tracking-wide">
-                  Get Started <ArrowRight className="ml-2 w-4 h-4" />
+                  Empieza Ya <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
               <Link href="/#how-it-works">
                 <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-bold px-8 py-4 text-base rounded-sm uppercase tracking-wide">
-                  See How It Works
+                  Mira Cómo Funciona
                 </Button>
               </Link>
             </div>
@@ -134,12 +134,12 @@ function PainPointsSection({ trade }: { trade: TradeData }) {
     <section ref={ref} className="py-24 bg-[#111111]">
       <div className="container max-w-7xl mx-auto px-6">
         <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">The Real Problems</div>
+          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">Los Problemas Reales</div>
           <h2 className="font-display text-4xl md:text-5xl font-black uppercase mb-4">
-            What's Holding Your <span className="text-orange-500">{trade.name} Business</span> Back
+            Qué Está Deteniendo Tu Negocio de <span className="text-orange-500">{trade.name}</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mb-16">
-            These aren't just inconveniences — they're costing you thousands of dollars every month. Here's what we see most {trade.name.toLowerCase()} contractors struggling with.
+            No son solo molestias — te están costando miles de dólares cada mes. Esto es lo que más vemos que luchan los contratistas de {trade.name.toLowerCase()}.
           </p>
         </div>
 
@@ -189,12 +189,12 @@ function SolutionsSection({ trade }: { trade: TradeData }) {
     <section ref={ref} className="py-24 bg-[#0D0D0D]">
       <div className="container max-w-7xl mx-auto px-6">
         <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">The Fix</div>
+          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">La Solución</div>
           <h2 className="font-display text-4xl md:text-5xl font-black uppercase mb-4">
-            AI Tools Built for <span className="text-orange-500">{trade.name} Contractors</span>
+            Herramientas AI Hechas para Contratistas de <span className="text-orange-500">{trade.name}</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mb-16">
-            Every tool is configured specifically for the {trade.name.toLowerCase()} industry — not generic marketing software.
+            Cada herramienta está configurada específicamente para la industria de {trade.name.toLowerCase()} — no es software genérico de marketing.
           </p>
         </div>
 
@@ -216,7 +216,7 @@ function SolutionsSection({ trade }: { trade: TradeData }) {
               </div>
               <Link href={`/solutions/${sol.tool.toLowerCase().replace(/\s+/g, "-")}`}>
                 <button className="mt-4 text-orange-400 text-sm font-bold uppercase tracking-wide flex items-center gap-1 hover:gap-2 transition-all">
-                  Learn More <ArrowRight className="w-3 h-3" />
+                  Aprende Más <ArrowRight className="w-3 h-3" />
                 </button>
               </Link>
             </div>
@@ -226,7 +226,7 @@ function SolutionsSection({ trade }: { trade: TradeData }) {
         <div className="mt-12 text-center">
           <Link href="/#contact">
             <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 text-base rounded-sm uppercase tracking-wide">
-              Get All Tools for Your {trade.name} Business <ArrowRight className="ml-2 w-4 h-4" />
+              Consigue Todas las Herramientas para Tu Negocio de {trade.name} <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </Link>
         </div>
@@ -265,9 +265,9 @@ function FAQSection({ trade }: { trade: TradeData }) {
     <section ref={ref} className="py-24 bg-[#111111]">
       <div className="container max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">FAQ</div>
+          <div className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4">Preguntas Frecuentes</div>
           <h2 className="font-display text-4xl font-black uppercase mb-12">
-            Common Questions from <span className="text-orange-500">{trade.name} Contractors</span>
+            Preguntas Comunes de Contratistas de <span className="text-orange-500">{trade.name}</span>
           </h2>
         </div>
         <div className="space-y-3">
@@ -300,7 +300,7 @@ function OtherTradesSection({ otherTrades }: { otherTrades: TradeData[] }) {
       <div className="container max-w-7xl mx-auto px-6">
         <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="font-display text-3xl font-black uppercase mb-12">
-            We Also Serve <span className="text-orange-500">These Trades</span>
+            También Servimos a <span className="text-orange-500">Estos Trades</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -326,25 +326,25 @@ function BottomCTA({ trade }: { trade: TradeData }) {
         <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <Zap className="w-12 h-12 text-orange-500 mx-auto mb-6" />
           <h2 className="font-display text-4xl md:text-5xl font-black uppercase mb-4">
-            Ready to Grow Your <span className="text-orange-500">{trade.name} Business?</span>
+            ¿Listo para Crecer Tu Negocio de <span className="text-orange-500">{trade.name}?</span>
           </h2>
           <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-            Join hundreds of {trade.name.toLowerCase()} contractors already using Contractor5x to fill their pipeline and grow their revenue.
+            Únete a cientos de contratistas de {trade.name.toLowerCase()} que ya usan Contractor5x para llenar su pipeline y aumentar sus ingresos.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Link href="/#contact">
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 text-base rounded-sm uppercase tracking-wide">
-                Get Started Today <ArrowRight className="ml-2 w-4 h-4" />
+                Empieza Hoy <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
             <Link href="/#pricing">
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-bold px-10 py-4 text-base rounded-sm uppercase tracking-wide">
-                View Pricing
+                Ver Precios
               </Button>
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-            {["30-day money back guarantee", "Results in 30 days or less", "Dedicated onboarding support"].map((t) => (
+            {["Garantía de 30 días o te devolvemos tu dinero", "Resultados en 30 días o menos", "Soporte dedicado para onboarding"].map((t) => (
               <div key={t} className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-orange-500" />
                 <span>{t}</span>

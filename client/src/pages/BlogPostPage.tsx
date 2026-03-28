@@ -109,9 +109,9 @@ export default function BlogPostPage() {
             <div className="lg:col-span-2">
               {/* Breadcrumb */}
               <div className="flex items-center gap-2 mb-6 text-sm text-white/35" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                <Link href="/" className="hover:text-white/60 transition-colors">Home</Link>
+                <Link href="/" className="hover:text-white/60 transition-colors">Inicio</Link>
                 <ChevronRight className="w-3.5 h-3.5" />
-                <Link href="/learn" className="hover:text-white/60 transition-colors">Learn</Link>
+                <Link href="/learn" className="hover:text-white/60 transition-colors">Aprende</Link>
                 <ChevronRight className="w-3.5 h-3.5" />
                 <span className="text-[#F97316] truncate max-w-[200px]">{post.title}</span>
               </div>
@@ -157,17 +157,17 @@ export default function BlogPostPage() {
                   className="text-2xl font-900 text-white uppercase mb-2"
                   style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
                 >
-                  Ready to Put This Into <span className="text-[#F97316]">Action?</span>
+                  ¿Listo para Poner Esto en <span className="text-[#F97316]">Acción?</span>
                 </h3>
                 <p className="text-white/55 text-sm mb-5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  Let us handle your marketing so you can focus on the work you love.
+                  Deja que manejemos tu marketing para que tú te enfoques en el trabajo que amas.
                 </p>
                 <a
                   href="/#contact"
                   className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-6 py-3 rounded-sm transition-all duration-200 text-sm"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  Get Started <ArrowRight className="w-4 h-4" />
+                  Empieza Ya <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
@@ -178,7 +178,7 @@ export default function BlogPostPage() {
                   className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm transition-colors"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  <ArrowLeft className="w-4 h-4" /> Back to All Articles
+                  <ArrowLeft className="w-4 h-4" /> Volver a Todos los Artículos
                 </Link>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function BlogPostPage() {
                     className="text-white/40 text-xs uppercase tracking-widest mb-4"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    Related Articles
+                    Artículos Relacionados
                   </h3>
                   <div className="space-y-4">
                     {related.map((rp) => (
@@ -221,7 +221,7 @@ export default function BlogPostPage() {
                   className="text-white/40 text-xs uppercase tracking-widest mb-4"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  More Articles
+                  Más Artículos
                 </h3>
                 <div className="space-y-3">
                   {otherPosts.map((op) => (
@@ -241,7 +241,7 @@ export default function BlogPostPage() {
                   className="inline-flex items-center gap-2 text-[#F97316] text-sm font-medium mt-4 hover:gap-3 transition-all duration-200"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  View All Articles <ArrowRight className="w-3.5 h-3.5" />
+                  Ver Todos los Artículos <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
 
@@ -251,17 +251,17 @@ export default function BlogPostPage() {
                   className="text-white font-900 text-xl uppercase mb-2"
                   style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
                 >
-                  Want More Leads?
+                  ¿Quieres Más Leads?
                 </h4>
                 <p className="text-white/55 text-sm mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  We handle all your marketing on autopilot. Get started today.
+                  Nosotros manejamos todo tu marketing en piloto automático. Empieza hoy.
                 </p>
                 <a
                   href="/#contact"
                   className="block text-center bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold text-sm px-4 py-3 rounded-sm transition-all duration-200"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  Get Started Free
+                  Empieza Gratis
                 </a>
               </div>
             </div>

@@ -1,7 +1,7 @@
 /**
- * DESIGN: Industrial Brutalism — Case Study Detail Page
- * Dark background, orange accents, Barlow Condensed headlines
- * Full-bleed hero, metrics grid, quote block, body narrative
+ * DESIGN: Industrial Brutalism — Página Detalle de Caso de Estudio
+ * Fondo oscuro, acentos naranjas, titulares Barlow Condensed
+ * Hero full-bleed, grid de métricas, bloque de cita, narrativa principal
  */
 import { Link, useParams } from "wouter";
 import { ArrowLeft, ArrowRight, ExternalLink, Play, Quote, CheckCircle2 } from "lucide-react";
@@ -19,9 +19,9 @@ export default function CaseStudyPage() {
       <div className="min-h-screen bg-[#0D0D0D] flex items-center justify-center">
         <Navbar />
         <div className="text-center text-white">
-          <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
+          <h1 className="text-4xl font-bold mb-4">Caso de Estudio No Encontrado</h1>
           <Link href="/results">
-            <Button>Back to Results</Button>
+            <Button>Volver a Resultados</Button>
           </Link>
         </div>
       </div>
@@ -46,12 +46,12 @@ export default function CaseStudyPage() {
         <div className="relative z-10 container max-w-6xl mx-auto px-6 pb-16 pt-32">
           <Link href="/results" className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors mb-6 text-sm font-medium tracking-wide uppercase">
             <ArrowLeft className="w-4 h-4" />
-            Back to Results
+            Volver a Resultados
           </Link>
 
           <div className="flex items-center gap-3 mb-4">
             <span className="bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-              Case Study
+              Caso de Estudio
             </span>
             <span className="text-zinc-400 text-sm">{study.trade}</span>
             <span className="text-zinc-600">·</span>
@@ -94,7 +94,7 @@ export default function CaseStudyPage() {
             {/* Challenge */}
             <div>
               <h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase text-orange-500 tracking-wide mb-4">
-                The Challenge
+                El Reto
               </h2>
               <p className="text-zinc-300 leading-relaxed text-lg">{study.challenge}</p>
             </div>
@@ -102,7 +102,7 @@ export default function CaseStudyPage() {
             {/* Solution */}
             <div>
               <h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase text-orange-500 tracking-wide mb-4">
-                The Solution
+                La Solución
               </h2>
               <p className="text-zinc-300 leading-relaxed text-lg">{study.solution}</p>
             </div>
@@ -111,12 +111,12 @@ export default function CaseStudyPage() {
             {study.videoTestimonial && (
               <div>
                 <h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase text-orange-500 tracking-wide mb-4">
-                  Hear It From {study.ownerName}
+                  Escucha a {study.ownerName}
                 </h2>
                 <div className="relative aspect-video rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800">
                   <iframe
                     src={`https://www.youtube.com/embed/${study.videoTestimonial}`}
-                    title={`${study.company} Testimonial`}
+                    title={`Testimonio de ${study.company}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute inset-0 w-full h-full"
@@ -128,7 +128,7 @@ export default function CaseStudyPage() {
             {/* Full Story */}
             <div>
               <h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase text-orange-500 tracking-wide mb-6">
-                The Full Story
+                La Historia Completa
               </h2>
               <div className="space-y-5">
                 {study.bodyParagraphs.map((para, i) => (
@@ -157,7 +157,7 @@ export default function CaseStudyPage() {
             {/* Services Used */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <h3 className="font-['Barlow_Condensed'] text-lg font-bold uppercase text-white tracking-wide mb-4">
-                Solutions Used
+                Soluciones Usadas
               </h3>
               <div className="space-y-3">
                 {study.services.map((svc, i) => (
@@ -172,19 +172,19 @@ export default function CaseStudyPage() {
             {/* Company Info */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <h3 className="font-['Barlow_Condensed'] text-lg font-bold uppercase text-white tracking-wide mb-4">
-                About {study.company}
+                Sobre {study.company}
               </h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-zinc-500">Trade</span>
+                  <span className="text-zinc-500">Oficio</span>
                   <span className="text-zinc-300 font-medium text-right">{study.trade}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-zinc-500">Location</span>
+                  <span className="text-zinc-500">Ubicación</span>
                   <span className="text-zinc-300 font-medium">{study.location}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-zinc-500">Industry</span>
+                  <span className="text-zinc-500">Industria</span>
                   <span className="text-zinc-300 font-medium">{study.industry}</span>
                 </div>
               </div>
@@ -194,21 +194,21 @@ export default function CaseStudyPage() {
                 rel="noopener noreferrer"
                 className="mt-4 flex items-center gap-2 text-orange-400 hover:text-orange-300 text-sm font-medium transition-colors"
               >
-                Visit Website <ExternalLink className="w-3 h-3" />
+                Visitar Website <ExternalLink className="w-3 h-3" />
               </a>
             </div>
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl p-6">
               <h3 className="font-['Barlow_Condensed'] text-xl font-black uppercase text-white mb-2">
-                Want Results Like These?
+                ¿Quieres Resultados Así?
               </h3>
               <p className="text-orange-100 text-sm mb-4 leading-relaxed">
-                See how Contractor5x can grow your trade business with AI marketing.
+                Mira cómo Contractor5x puede hacer crecer tu negocio de trade con marketing AI.
               </p>
               <Link href="/#contact">
                 <Button className="w-full bg-white text-orange-600 hover:bg-orange-50 font-bold">
-                  Get Started Today
+                  Empieza Ya
                 </Button>
               </Link>
             </div>
@@ -220,7 +220,7 @@ export default function CaseStudyPage() {
       <section className="bg-[#111111] border-t border-zinc-800 py-16">
         <div className="container max-w-6xl mx-auto px-6">
           <h2 className="font-['Barlow_Condensed'] text-3xl font-black uppercase text-white mb-8">
-            More Success Stories
+            Más Historias de Éxito
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {otherStudies.map((cs) => (
@@ -241,7 +241,7 @@ export default function CaseStudyPage() {
                     </h3>
                     <p className="text-zinc-500 text-xs leading-relaxed line-clamp-2">{cs.tagline}</p>
                     <div className="mt-3 flex items-center gap-1 text-orange-400 text-xs font-bold uppercase tracking-wide">
-                      Read Story <ArrowRight className="w-3 h-3" />
+                      Leer Historia <ArrowRight className="w-3 h-3" />
                     </div>
                   </div>
                 </div>

@@ -18,18 +18,18 @@ import {
 } from "lucide-react";
 
 const industries = [
-  { icon: Thermometer, name: "HVAC", desc: "Heating, cooling & ventilation" },
-  { icon: Bug, name: "Pest Control", desc: "Residential & commercial" },
-  { icon: HardHat, name: "General Contracting", desc: "Build & renovate" },
-  { icon: Square, name: "Windows & Doors", desc: "Installation & replacement" },
-  { icon: TreePine, name: "Tree Service", desc: "Trimming & removal" },
-  { icon: Layers, name: "Hardscaping", desc: "Patios, walkways & more" },
-  { icon: Droplets, name: "Plumbing", desc: "Residential & commercial" },
-  { icon: Zap, name: "Electrical", desc: "Wiring & installations" },
-  { icon: Paintbrush, name: "Painting", desc: "Interior & exterior" },
-  { icon: Wrench, name: "Appliance Repair", desc: "All major brands" },
-  { icon: Home, name: "Roofing", desc: "Repair & replacement" },
-  { icon: MoreHorizontal, name: "And More", desc: "We serve all trades" },
+  { icon: Thermometer, name: "HVAC", desc: "Calefacción, cooling y ventilación" },
+  { icon: Bug, name: "Control de Plagas", desc: "Residencial y comercial" },
+  { icon: HardHat, name: "Contratista General", desc: "Construye y renueva" },
+  { icon: Square, name: "Ventanas y Puertas", desc: "Instalación y reemplazo" },
+  { icon: TreePine, name: "Servicio de Árboles", desc: "Poda y remoción" },
+  { icon: Layers, name: "Hardscaping", desc: "Patios, caminos y más" },
+  { icon: Droplets, name: "Plomería", desc: "Residencial y comercial" },
+  { icon: Zap, name: "Eléctrico", desc: "Cableado e instalaciones" },
+  { icon: Paintbrush, name: "Pintura", desc: "Interior y exterior" },
+  { icon: Wrench, name: "Reparación de Electrodomésticos", desc: "Todas las marcas principales" },
+  { icon: Home, name: "Roofing", desc: "Reparación y reemplazo" },
+  { icon: MoreHorizontal, name: "Y Más", desc: "Atendemos todos los trades" },
 ];
 
 export default function IndustriesSection() {
@@ -55,21 +55,20 @@ export default function IndustriesSection() {
       <div className="container">
         <div className="mb-14">
           <div className="fade-up mb-4">
-            <span className="section-label">Built for Every Trade</span>
+            <span className="section-label">Hecho Para Cada Trade</span>
           </div>
           <h2
             className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight max-w-2xl"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            From HVAC to Hardscaping —{" "}
-            <span className="text-[#F97316]">We've Got You</span>
+            Desde HVAC hasta Hardscaping —{" "}
+            <span className="text-[#F97316]">Aquí Estamos Para Ti</span>
           </h2>
           <p
             className="fade-up text-white/60 text-lg mt-3 max-w-xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            Our AI marketing solutions are tailored to the specific needs of local trade businesses
-            across every specialty.
+            Nuestras soluciones de marketing con AI están hechas a la medida para las necesidades específicas de los negocios locales en todos los specialties.
           </p>
         </div>
 

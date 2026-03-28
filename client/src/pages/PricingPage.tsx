@@ -13,23 +13,23 @@ const plans = [
     name: "Essentials",
     price: { monthly: 199, yearly: 159 },
     badge: null,
-    tagline: "Good for low-budget solo operations",
-    subTagline: "Build your reputation and get found locally — without breaking the bank.",
-    jobPromoterLabel: "Low Volume",
-    jobPromoterPosts: "Up to 2 posts/month",
+    tagline: "Bueno para operaciones solas con bajo presupuesto",
+    subTagline: "Construye tu reputación y hazte visible localmente — sin gastar mucho.",
+    jobPromoterLabel: "Bajo Volumen",
+    jobPromoterPosts: "Hasta 2 posts/mes",
     credits: 20,
     features: [
       "Google Listing Optimizer",
-      "Automated Review Generation",
-      "AI-Powered Review Replies",
-      "2 Google Posts/Month",
-      "Reputation Monitoring",
-      "Job Promoter — Low Volume (2 posts/mo)",
-      "Monthly Performance Report",
-      "Onboarding Support",
-      "$20 Usage Credits/Month",
+      "Generación Automática de Reviews",
+      "Respuestas a Reviews con AI",
+      "2 Google Posts/Mes",
+      "Monitoreo de Reputación",
+      "Job Promoter — Bajo Volumen (2 posts/mes)",
+      "Reporte Mensual de Rendimiento",
+      "Soporte de Onboarding",
+      "$20 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: false,
     highlight: false,
     color: "border-white/10",
@@ -37,24 +37,24 @@ const plans = [
   {
     name: "Starter",
     price: { monthly: 299, yearly: 239 },
-    badge: "Best Way to Start",
-    tagline: "The smart entry point for growing contractors",
-    subTagline: "Capture leads automatically and start showing up online.",
-    jobPromoterLabel: "Medium Volume",
-    jobPromoterPosts: "Up to 10 posts/month",
+    badge: "La Mejor Forma de Empezar",
+    tagline: "El punto inteligente para crecer como contractor",
+    subTagline: "Captura leads automáticamente y empieza a aparecer online.",
+    jobPromoterLabel: "Volumen Medio",
+    jobPromoterPosts: "Hasta 10 posts/mes",
     credits: 30,
     features: [
-      "Everything in Essentials, plus:",
-      "Lead Closer (CRM + Automation)",
-      "AI Agent (Calls & Chat)",
-      "Custom Branded Intake Forms",
-      "Two-way SMS & Call Tracking",
-      "Email & SMS Campaigns",
-      "Job Promoter — Medium Volume (10 posts/mo)",
-      "Bi-Monthly Check-In Call",
-      "$30 Usage Credits/Month",
+      "Todo en Essentials, más:",
+      "Lead Closer (CRM + Automatización)",
+      "AI Agent (Llamadas & Chat)",
+      "Formularios de Intake con Marca Personalizada",
+      "SMS Bidireccional & Seguimiento de Llamadas",
+      "Campañas por Email & SMS",
+      "Job Promoter — Volumen Medio (10 posts/mes)",
+      "Llamada de Revisión Bimensual",
+      "$30 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: false,
     highlight: true,
     color: "border-sky-500/40",
@@ -62,23 +62,23 @@ const plans = [
   {
     name: "Growth",
     price: { monthly: 499, yearly: 399 },
-    badge: "Most Popular",
-    tagline: "The complete AI marketing system",
-    subTagline: "Full automation, more content, and a hands-off smart website.",
-    jobPromoterLabel: "Higher Volume",
-    jobPromoterPosts: "Up to 15 posts/month + video",
+    badge: "El Más Popular",
+    tagline: "El sistema completo de marketing con AI",
+    subTagline: "Automatización total, más contenido y un smart website sin que tengas que mover un dedo.",
+    jobPromoterLabel: "Volumen Alto",
+    jobPromoterPosts: "Hasta 15 posts/mes + video",
     credits: 50,
     features: [
-      "Everything in Starter, plus:",
-      "Hands Off Smart Website",
-      "Customer Base Re-Activator",
-      "Job Promoter — Higher Volume (15 posts/mo + video)",
-      "Up to 15 Videos/Month",
-      "Bi-Weekly Strategy Calls",
-      "Priority Support",
-      "$50 Usage Credits/Month",
+      "Todo en Starter, más:",
+      "Smart Website Hands Off",
+      "Re-Activator para Base de Clientes",
+      "Job Promoter — Volumen Alto (15 posts/mes + video)",
+      "Hasta 15 Videos/Mes",
+      "Llamadas Estratégicas Quincenales",
+      "Soporte Prioritario",
+      "$50 Créditos de Uso/Mes",
     ],
-    cta: "Get Started",
+    cta: "Empieza Ya",
     popular: true,
     highlight: false,
     color: "border-[#F97316]",
@@ -87,24 +87,24 @@ const plans = [
     name: "Dominator",
     price: { monthly: 999, yearly: 799 },
     badge: null,
-    tagline: "Own your local market",
-    subTagline: "Maximum output, dedicated support, and paid ad management.",
-    jobPromoterLabel: "Max Volume",
-    jobPromoterPosts: "Up to 25 posts/month + video",
+    tagline: "Domina tu mercado local",
+    subTagline: "Máximo rendimiento, soporte dedicado y manejo de ads pagados.",
+    jobPromoterLabel: "Volumen Máximo",
+    jobPromoterPosts: "Hasta 25 posts/mes + video",
     credits: 100,
     features: [
-      "Everything in Growth, plus:",
-      "Dedicated Account Manager",
-      "Custom AI Agent Training",
-      "Advanced SEO & AIO Strategy",
-      "Paid Ad Management",
-      "Job Promoter — Max Volume (25 posts/mo + video)",
-      "Up to 25 Videos/Month",
-      "Weekly Strategy Calls",
-      "White-Glove Onboarding",
-      "$100 Usage Credits/Month",
+      "Todo en Growth, más:",
+      "Account Manager Dedicado",
+      "Entrenamiento AI Agent Personalizado",
+      "SEO Avanzado & Estrategia AIO",
+      "Manejo de Ads Pagados",
+      "Job Promoter — Volumen Máximo (25 posts/mes + video)",
+      "Hasta 25 Videos/Mes",
+      "Llamadas Estratégicas Semanales",
+      "Onboarding White-Glove",
+      "$100 Créditos de Uso/Mes",
     ],
-    cta: "Book a Call",
+    cta: "Agenda una Llamada",
     popular: false,
     highlight: false,
     color: "border-white/10",
@@ -112,25 +112,25 @@ const plans = [
   {
     name: "Elite",
     price: { monthly: 1999, yearly: 1599 },
-    badge: "Full Market Takeover",
-    tagline: "Dominate your entire region",
-    subTagline: "Multi-location, custom AI build-out, and enterprise-grade marketing.",
-    jobPromoterLabel: "Unlimited Volume",
-    jobPromoterPosts: "Unlimited posts/month + video",
+    badge: "Dominio Total del Mercado",
+    tagline: "Domina toda tu región",
+    subTagline: "Multi-locación, AI customizada y marketing de nivel enterprise.",
+    jobPromoterLabel: "Volumen Ilimitado",
+    jobPromoterPosts: "Posts ilimitados/mes + video",
     credits: 200,
     features: [
-      "Everything in Dominator, plus:",
-      "Multi-Location Management",
-      "Custom AI Workflow Build-Out",
-      "Advanced Paid Ads (Google + Meta)",
-      "Competitor Conquest Campaigns",
-      "Dedicated Creative Team",
-      "Job Promoter — Unlimited Volume",
-      "Unlimited Videos/Month",
-      "Monthly Executive Report",
-      "$200 Usage Credits/Month",
+      "Todo en Dominator, más:",
+      "Manejo Multi-Locación",
+      "Construcción Custom de Workflow AI",
+      "Ads Pagados Avanzados (Google + Meta)",
+      "Campañas de Conquista a Competidores",
+      "Equipo Creativo Dedicado",
+      "Job Promoter — Volumen Ilimitado",
+      "Videos Ilimitados/Mes",
+      "Reporte Ejecutivo Mensual",
+      "$200 Créditos de Uso/Mes",
     ],
-    cta: "Book a Call",
+    cta: "Agenda una Llamada",
     popular: false,
     highlight: false,
     color: "border-amber-400/40",
@@ -138,62 +138,62 @@ const plans = [
 ];
 
 const usageRates = [
-  { icon: Phone, category: "Phone Calls", rows: [
-    { label: "Making Calls (Outbound)", rate: "$0.0147 / min", example: "10-min call ≈ $0.15" },
-    { label: "Receiving Calls (Inbound)", rate: "$0.0089 / min", example: "10-min call ≈ $0.09" },
+  { icon: Phone, category: "Llamadas Telefónicas", rows: [
+    { label: "Hacer Llamadas (Outbound)", rate: "$0.0147 / min", example: "Llamada de 10 min ≈ $0.15" },
+    { label: "Recibir Llamadas (Inbound)", rate: "$0.0089 / min", example: "Llamada de 10 min ≈ $0.09" },
   ]},
-  { icon: MessageSquare, category: "Text Messaging", rows: [
-    { label: "SMS (per segment)", rate: "$0.0087 / segment", example: "100 texts ≈ $0.87" },
-    { label: "WhatsApp", rate: "$0.0777 / message", example: "100 messages ≈ $7.77" },
+  { icon: MessageSquare, category: "Mensajes de Texto", rows: [
+    { label: "SMS (por segmento)", rate: "$0.0087 / segmento", example: "100 textos ≈ $0.87" },
+    { label: "WhatsApp", rate: "$0.0777 / mensaje", example: "100 mensajes ≈ $7.77" },
   ]},
   { icon: Mail, category: "Email Marketing", rows: [
-    { label: "Email (per email sent)", rate: "$0.0020 / email", example: "1,000 emails = $2.00" },
+    { label: "Email (por email enviado)", rate: "$0.0020 / email", example: "1,000 emails = $2.00" },
   ]},
   { icon: Bot, category: "Content AI", rows: [
-    { label: "Text Generation", rate: "$0.27 / 1,000 words", example: "500-word article ≈ $0.14" },
-    { label: "Image Generation", rate: "$0.18 / image", example: "10 images = $1.80" },
+    { label: "Generación de Texto", rate: "$0.27 / 1,000 palabras", example: "Artículo de 500 palabras ≈ $0.14" },
+    { label: "Generación de Imágenes", rate: "$0.18 / imagen", example: "10 imágenes = $1.80" },
   ]},
-  { icon: Workflow, category: "Workflow Automation (AI Models)", rows: [
-    { label: "Input Processing", rate: "$1.80 / 750K words", example: "≈ $0.0024 per 1,000 words" },
-    { label: "Output Generation", rate: "$7.20 / 750K words", example: "≈ $0.0096 per 1,000 words" },
+  { icon: Workflow, category: "Automatización de Workflow (Modelos AI)", rows: [
+    { label: "Procesamiento de Entrada", rate: "$1.80 / 750K palabras", example: "≈ $0.0024 por 1,000 palabras" },
+    { label: "Generación de Salida", rate: "$7.20 / 750K palabras", example: "≈ $0.0096 por 1,000 palabras" },
   ]},
-  { icon: Mic, category: "Conversation & Voice AI", rows: [
-    { label: "Chat Messages", rate: "$0.06 / message", example: "50 chats ≈ $3.00" },
-    { label: "Voice AI Calls", rate: "$0.39 / minute", example: "5-min AI call = $1.95" },
+  { icon: Mic, category: "Conversación & Voz AI", rows: [
+    { label: "Mensajes de Chat", rate: "$0.06 / mensaje", example: "50 chats ≈ $3.00" },
+    { label: "Llamadas con Voz AI", rate: "$0.39 / minuto", example: "Llamada AI de 5 min = $1.95" },
   ]},
   { icon: Star, category: "Reviews AI", rows: [
-    { label: "Review Responses", rate: "$0.03 / response", example: "100 replies = $3.00" },
+    { label: "Respuestas a Reviews", rate: "$0.03 / respuesta", example: "100 respuestas = $3.00" },
   ]},
 ];
 
 const faqs = [
   {
-    q: "What are usage credits?",
-    a: "Usage credits are a pre-loaded wallet balance included with your plan each month. They cover pay-per-use actions like phone calls, SMS, emails, and AI-powered features. Think of them like minutes on a phone plan — you only pay for what you actually use.",
+    q: "¿Qué son los créditos de uso?",
+    a: "Los créditos de uso son un saldo pre-cargado en tu wallet que viene con tu plan cada mes. Cubren acciones de pago por uso como llamadas, SMS, emails y funciones con AI. Piensa en ellos como minutos en un plan telefónico — solo pagas por lo que realmente usas.",
   },
   {
-    q: "What happens if I use more than my included credits?",
-    a: "Your account has a wallet you can top up at any time. You can set a minimum balance and an auto-recharge rule so your AI never stops working. You'll always see a detailed breakdown of exactly what was charged.",
+    q: "¿Qué pasa si uso más créditos de los incluidos?",
+    a: "Tu cuenta tiene una wallet que puedes recargar en cualquier momento. Puedes poner un saldo mínimo y reglas de recarga automática para que tu AI nunca se detenga. Siempre verás un desglose detallado de lo que se cobró.",
   },
   {
-    q: "Can I change plans later?",
-    a: "Yes — you can upgrade or downgrade your plan at any time. There are no long-term contracts. If you upgrade mid-month, you'll be prorated for the difference.",
+    q: "¿Puedo cambiar de plan después?",
+    a: "Sí — puedes subir o bajar de plan cuando quieras. No hay contratos a largo plazo. Si subes de plan a mitad de mes, te cobramos la diferencia prorrateada.",
   },
   {
-    q: "What does the 20% annual discount apply to?",
-    a: "The 20% discount applies to the base monthly subscription price when you pay annually upfront. Usage credits and any top-up amounts are billed separately at the same per-unit rates.",
+    q: "¿A qué aplica el 20% de descuento anual?",
+    a: "El 20% de descuento aplica al precio base mensual cuando pagas todo el año por adelantado. Los créditos de uso y recargas se facturan aparte con las mismas tarifas por unidad.",
   },
   {
-    q: "Is the $500 setup fee really waived?",
-    a: "Yes — for a limited time, the one-time $500 onboarding and setup fee is completely waived for all new accounts. Our team handles your full setup: Google listing, AI agent configuration, website build, and lead pipeline — all done for you.",
+    q: "¿De verdad se quita la tarifa de setup de $500?",
+    a: "Sí — por tiempo limitado, la tarifa única de onboarding y setup de $500 está completamente gratis para todas las cuentas nuevas. Nuestro equipo hace todo el setup: Google listing, configuración del AI agent, construcción del website y pipeline de leads — todo listo para ti.",
   },
   {
-    q: "Do unused credits roll over?",
-    a: "Monthly included credits do not roll over — they refresh each billing cycle. However, any credits you manually top up to your wallet do carry over month to month.",
+    q: "¿Los créditos no usados se acumulan?",
+    a: "Los créditos incluidos mensualmente no se acumulan — se renuevan cada ciclo de facturación. Pero los créditos que recargas manualmente sí se acumulan mes a mes.",
   },
   {
-    q: "What is an SMS segment and why does it matter?",
-    a: "When you send a text message, mobile carriers break it into segments — small data chunks used to calculate billing and delivery. Each segment equals 160 characters if you use standard text (letters, numbers, and common symbols). If your message includes emojis or special characters, the limit drops to 70 characters per segment. So a longer message automatically becomes 2 or more segments, even though it looks like one text to the recipient. For example: a short message like 'Hi, we got your request!' is 1 segment. A longer follow-up with a link and emoji might be 2–3 segments. SMS pricing is based on segments, not messages — so keeping texts short and clear helps stretch your credits further. Avoid unnecessary emojis, use link shorteners, and keep messages under 160 characters when possible.",
+    q: "¿Qué es un segmento SMS y por qué importa?",
+    a: "Cuando envías un texto, las compañías móviles lo dividen en segmentos — pedacitos de datos usados para calcular el cobro y la entrega. Cada segmento tiene 160 caracteres si usas texto estándar (letras, números y símbolos comunes). Si usas emojis o caracteres especiales, el límite baja a 70 caracteres por segmento. Así que un mensaje largo se convierte en 2 o más segmentos, aunque para el receptor parezca un solo texto. Por ejemplo: un mensaje corto como '¡Hola, recibimos tu solicitud!' es 1 segmento. Un mensaje más largo con link y emoji puede ser 2–3 segmentos. El precio del SMS se basa en segmentos, no mensajes — por eso mantener los textos cortos y claros ayuda a estirar tus créditos. Evita emojis innecesarios, usa acortadores de links y mantén los mensajes bajo 160 caracteres cuando puedas.",
   },
 ];
 
@@ -223,20 +223,20 @@ export default function PricingPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 text-center px-4">
         <div className="fade-up mb-4 flex justify-center">
-          <span className="section-label">Simple, Transparent Pricing</span>
+          <span className="section-label">Precios Simples y Transparentes</span>
         </div>
         <h1
           className="fade-up text-[clamp(2.8rem,6vw,5rem)] font-900 text-white uppercase leading-tight"
           style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
         >
-          Invest in Your{" "}
-          <span className="text-[#F97316]">Growth</span>
+          Invierte en Tu{" "}
+          <span className="text-[#F97316]">Crecimiento</span>
         </h1>
         <p
           className="fade-up text-white/60 text-lg mt-4 max-w-2xl mx-auto"
           style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
         >
-          Four plans built for every stage of your trade business. All include a 30-day money back guarantee, onboarding support, and monthly usage credits.
+          Cuatro planes para cada etapa de tu negocio de trade. Todos incluyen garantía de devolución de dinero por 30 días, soporte de onboarding y créditos mensuales de uso.
         </p>
 
         {/* Monthly / Annual toggle */}
@@ -245,7 +245,7 @@ export default function PricingPage() {
             className={`text-sm font-medium transition-colors ${!annual ? "text-white" : "text-white/40"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            Monthly
+            Mensual
           </span>
           <button
             onClick={() => setAnnual(!annual)}
@@ -260,9 +260,9 @@ export default function PricingPage() {
             className={`text-sm font-medium transition-colors flex items-center gap-2 ${annual ? "text-white" : "text-white/40"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            Annual
+            Anual
             <span className="bg-[#F97316]/20 text-[#F97316] text-xs font-bold px-2 py-0.5 rounded-sm whitespace-nowrap">
-              SAVE 20%
+              AHORRA 20%
             </span>
           </span>
         </div>
@@ -273,11 +273,11 @@ export default function PricingPage() {
         <div className="flex items-center justify-center gap-3 bg-[#F97316]/10 border border-[#F97316]/40 rounded-sm px-6 py-4">
           <Tag className="w-5 h-5 text-[#F97316] flex-shrink-0" />
           <p className="text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            <span className="text-[#F97316] font-bold">LIMITED TIME:</span>{" "}
-            <span className="text-white font-medium">$500 Setup Fee</span>{" "}
+            <span className="text-[#F97316] font-bold">TIEMPO LIMITADO:</span>{" "}
+            <span className="text-white font-medium">Tarifa de Setup de $500</span>{" "}
             <span className="text-white/50 line-through mr-1">$500</span>
-            <span className="text-[#F97316] font-bold">WAIVED</span>
-            <span className="text-white/60 ml-2 text-sm">— Start today, pay nothing to get set up.</span>
+            <span className="text-[#F97316] font-bold">GRATIS</span>
+            <span className="text-white/60 ml-2 text-sm">— Empieza hoy, no pagas nada por el setup.</span>
           </p>
         </div>
       </div>
@@ -336,16 +336,16 @@ export default function PricingPage() {
                   >
                     {annual ? plan.price.yearly : plan.price.monthly}
                   </span>
-                  <span className="text-white/50 text-sm mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>/mo</span>
+                  <span className="text-white/50 text-sm mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>/mes</span>
                 </div>
                 {annual && (
                   <div className="mt-1 text-white/35 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    Billed annually · was ${plan.price.monthly}/mo
+                    Facturado anualmente · antes ${plan.price.monthly}/mes
                   </div>
                 )}
                 <div className="mt-1.5 flex items-center gap-1.5">
                   <span className="text-white/35 text-xs line-through" style={{ fontFamily: "'DM Sans', sans-serif" }}>+$500 setup</span>
-                  <span className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>FREE</span>
+                  <span className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>GRATIS</span>
                 </div>
               </div>
 
@@ -366,7 +366,7 @@ export default function PricingPage() {
               <div className="mb-4 flex items-center gap-2 bg-[#F97316]/8 border border-[#F97316]/20 rounded-sm px-3 py-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0" />
                 <div className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  ${plan.credits} Usage Credits Included/Month
+                  ${plan.credits} Créditos de Uso Incluidos/Mes
                 </div>
               </div>
 
@@ -411,7 +411,7 @@ export default function PricingPage() {
         </div>
 
         <p className="text-center text-white/40 text-sm mt-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-          All plans include onboarding support · No long-term contracts · Cancel anytime
+          Todos los planes incluyen soporte de onboarding · Sin contratos a largo plazo · Cancela cuando quieras
         </p>
       </section>
 
@@ -420,20 +420,20 @@ export default function PricingPage() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="fade-up mb-4 flex justify-center">
-              <span className="section-label">Pay Only for What You Use</span>
+              <span className="section-label">Paga Solo Por Lo Que Usas</span>
             </div>
             <h2
               className="fade-up text-[clamp(2rem,4vw,3.5rem)] font-900 text-white uppercase leading-tight"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              Usage Rates &{" "}
-              <span className="text-[#F97316]">Credits</span>
+              Tarifas de Uso &{" "}
+              <span className="text-[#F97316]">Créditos</span>
             </h2>
           <p
             className="fade-up text-white/55 text-base mt-4 max-w-2xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            For certain actions — phone calls, SMS, emails, and AI-powered features — there is a small pay-per-use charge. Each plan includes monthly credits to cover your typical usage. Think of it like a phone plan: you get a monthly allowance, and you only pay extra if you go over.
+            Para ciertas acciones — llamadas telefónicas, SMS, emails y funciones con AI — hay un pequeño cargo por uso. Cada plan incluye créditos mensuales para cubrir tu uso típico. Piénsalo como un plan telefónico: tienes un límite mensual y solo pagas extra si te pasas.
           </p>
           <a
             href="#faq"
@@ -441,7 +441,7 @@ export default function PricingPage() {
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "250ms" }}
           >
             <ChevronDown className="w-4 h-4" />
-            How do SMS segments work? See explanation below
+            ¿Cómo funcionan los segmentos SMS? Mira la explicación abajo
           </a>
 
             {/* Credits summary */}
@@ -450,7 +450,7 @@ export default function PricingPage() {
                 <div key={p.name} className="bg-[#141414] border border-white/8 rounded-sm p-4 text-center">
                   <div className="text-white/50 text-xs uppercase tracking-wide mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>{p.name}</div>
                   <div className="text-[#F97316] text-2xl font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>${p.credits}</div>
-                  <div className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>credits/mo</div>
+                  <div className="text-white/40 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>créditos/mes</div>
                 </div>
               ))}
             </div>
@@ -489,13 +489,13 @@ export default function PricingPage() {
             <div className="flex items-start gap-3">
               <Info className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-white font-semibold text-sm mb-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>Usage Quick Facts</p>
+                <p className="text-white font-semibold text-sm mb-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>Datos Rápidos de Uso</p>
                 <ul className="space-y-1 text-white/55 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  <li>• A single text message can span multiple segments depending on length (standard SMS = 160 characters per segment)</li>
-                  <li>• Workflow automation pricing is based on processed word count for both input and output</li>
-                  <li>• All rates are estimates — actual billing reflects real usage and is itemized in your dashboard</li>
-                  <li>• You can set a minimum wallet balance and auto-recharge rules so your AI never stops working</li>
-                  <li>• Manually topped-up wallet credits carry over month to month; included plan credits refresh monthly</li>
+                  <li>• Un solo mensaje de texto puede dividirse en varios segmentos según su longitud (SMS estándar = 160 caracteres por segmento)</li>
+                  <li>• El precio de automatización de workflows se basa en la cantidad de palabras procesadas para entrada y salida</li>
+                  <li>• Todas las tarifas son estimaciones — la facturación real refleja el uso y se detalla en tu dashboard</li>
+                  <li>• Puedes establecer un saldo mínimo en tu wallet y reglas de recarga automática para que tu AI nunca se detenga</li>
+                  <li>• Los créditos recargados manualmente en la wallet se acumulan mes a mes; los créditos incluidos en el plan se renuevan mensualmente</li>
                 </ul>
               </div>
             </div>
@@ -508,13 +508,13 @@ export default function PricingPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="fade-up mb-4 flex justify-center">
-              <span className="section-label">Side-by-Side Breakdown</span>
+              <span className="section-label">Comparación Lado a Lado</span>
             </div>
             <h2
               className="fade-up text-[clamp(2rem,4vw,3.5rem)] font-900 text-white uppercase leading-tight"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              Compare All <span className="text-[#F97316]">Plans</span>
+              Compara Todos los <span className="text-[#F97316]">Planes</span>
             </h2>
           </div>
 
@@ -522,7 +522,7 @@ export default function PricingPage() {
             <table className="w-full min-w-[700px] border-collapse">
               <thead style={{ position: "sticky", top: "64px", zIndex: 20 }}>
                 <tr>
-                  <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Feature</th>
+                  <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Funcionalidad</th>
                   {[
                     { name: "Essentials", price: annual ? 159 : 199, popular: false, highlight: false, elite: false },
                     { name: "Starter", price: annual ? 239 : 299, popular: false, highlight: true, elite: false },
@@ -534,7 +534,7 @@ export default function PricingPage() {
                       p.popular ? "bg-[#1A1208] border-[#F97316]/40 text-[#F97316]" : p.highlight ? "bg-[#111820] border-sky-500/20 text-sky-400" : p.elite ? "bg-[#1A1500] border-amber-400/30 text-amber-400" : "bg-[#111111] border-white/8 text-white/60"
                     }`} style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}>
                       <div>{p.name}</div>
-                      <div className="text-lg font-bold mt-0.5">${p.price}<span className="text-xs font-normal opacity-60">/mo</span></div>
+                      <div className="text-lg font-bold mt-0.5">${p.price}<span className="text-xs font-normal opacity-60">/mes</span></div>
                     </th>
                   ))}
                 </tr>
@@ -542,54 +542,54 @@ export default function PricingPage() {
               <tbody>
                 {[
                   { category: "Job Promoter", rows: [
-                    { label: "Monthly Posts", vals: ["Up to 2", "Up to 10", "Up to 15", "Up to 25", "Unlimited"] },
-                    { label: "Video Posts", vals: ["—", "—", "✓ Included", "✓ Included", "✓ Unlimited"] },
-                    { label: "Volume Level", vals: ["Low", "Medium", "Higher", "Max", "Unlimited"] },
+                    { label: "Posts Mensuales", vals: ["Hasta 2", "Hasta 10", "Hasta 15", "Hasta 25", "Ilimitados"] },
+                    { label: "Posts con Video", vals: ["—", "—", "✓ Incluido", "✓ Incluido", "✓ Ilimitado"] },
+                    { label: "Nivel de Volumen", vals: ["Bajo", "Medio", "Alto", "Máximo", "Ilimitado"] },
                   ]},
-                  { category: "Lead Generation", rows: [
+                  { category: "Generación de Leads", rows: [
                     { label: "Lead Closer (CRM)", vals: ["—", "✓", "✓", "✓", "✓"] },
-                    { label: "Automated Follow-Up", vals: ["—", "✓", "✓", "✓", "✓"] },
-                    { label: "Custom Intake Forms", vals: ["—", "✓", "✓", "✓", "✓"] },
-                    { label: "Two-Way SMS & Calls", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Seguimiento Automático", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Formularios Personalizados", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "SMS & Llamadas Bidireccionales", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "AI Agent", rows: [
                     { label: "AI Phone & Chat Agent", vals: ["—", "✓", "✓", "✓", "✓"] },
-                    { label: "Custom AI Training", vals: ["—", "—", "—", "✓", "✓ Advanced"] },
-                    { label: "Voice AI Calls", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Entrenamiento AI Personalizado", vals: ["—", "—", "—", "✓", "✓ Avanzado"] },
+                    { label: "Llamadas con Voz AI", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "Google & Reviews", rows: [
                     { label: "Google Listing Optimizer", vals: ["✓", "✓", "✓", "✓", "✓"] },
-                    { label: "Automated Review Requests", vals: ["✓", "✓", "✓", "✓", "✓"] },
-                    { label: "AI Review Replies", vals: ["✓", "✓", "✓", "✓", "✓"] },
-                    { label: "Reputation Monitoring", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "Solicitudes Automáticas de Reviews", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "Respuestas a Reviews con AI", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "Monitoreo de Reputación", vals: ["✓", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "Website", rows: [
-                    { label: "Smart Website (Done-For-You)", vals: ["—", "—", "✓", "✓", "✓ Custom Build"] },
-                    { label: "SEO & AIO Strategy", vals: ["—", "—", "—", "✓ Advanced", "✓ Enterprise"] },
+                    { label: "Smart Website (Hecho Para Ti)", vals: ["—", "—", "✓", "✓", "✓ Construcción Custom"] },
+                    { label: "Estrategia SEO & AIO", vals: ["—", "—", "—", "✓ Avanzada", "✓ Enterprise"] },
                   ]},
                   { category: "Re-Activator", rows: [
-                    { label: "Past Customer Campaigns", vals: ["—", "—", "✓", "✓", "✓"] },
-                    { label: "Email & SMS Campaigns", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Campañas para Clientes Pasados", vals: ["—", "—", "✓", "✓", "✓"] },
+                    { label: "Campañas por Email & SMS", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
-                  { category: "Paid Ads", rows: [
-                    { label: "Paid Ad Management", vals: ["—", "—", "—", "✓", "✓ Google + Meta"] },
-                    { label: "Competitor Conquest Campaigns", vals: ["—", "—", "—", "—", "✓"] },
+                  { category: "Ads Pagados", rows: [
+                    { label: "Manejo de Ads Pagados", vals: ["—", "—", "—", "✓", "✓ Google + Meta"] },
+                    { label: "Campañas de Conquista a Competidores", vals: ["—", "—", "—", "—", "✓"] },
                   ]},
-                  { category: "Multi-Location", rows: [
-                    { label: "Multi-Location Management", vals: ["—", "—", "—", "—", "✓"] },
-                    { label: "Custom AI Workflow Build-Out", vals: ["—", "—", "—", "—", "✓"] },
-                    { label: "Dedicated Creative Team", vals: ["—", "—", "—", "—", "✓"] },
+                  { category: "Multi-Locación", rows: [
+                    { label: "Manejo Multi-Locación", vals: ["—", "—", "—", "—", "✓"] },
+                    { label: "Construcción Custom de Workflow AI", vals: ["—", "—", "—", "—", "✓"] },
+                    { label: "Equipo Creativo Dedicado", vals: ["—", "—", "—", "—", "✓"] },
                   ]},
-                  { category: "Support & Reporting", rows: [
-                    { label: "Monthly Performance Report", vals: ["✓", "✓", "✓", "✓", "✓ Executive"] },
-                    { label: "Onboarding Support", vals: ["✓", "✓", "✓", "White-Glove", "White-Glove"] },
-                    { label: "Check-In Calls", vals: ["—", "Bi-Monthly", "Bi-Weekly", "Weekly", "Weekly"] },
-                    { label: "Dedicated Account Manager", vals: ["—", "—", "—", "✓", "✓"] },
-                    { label: "Priority Support", vals: ["—", "—", "✓", "✓", "✓"] },
+                  { category: "Soporte & Reportes", rows: [
+                    { label: "Reporte Mensual de Rendimiento", vals: ["✓", "✓", "✓", "✓", "✓ Ejecutivo"] },
+                    { label: "Soporte de Onboarding", vals: ["✓", "✓", "✓", "White-Glove", "White-Glove"] },
+                    { label: "Llamadas de Revisión", vals: ["—", "Bimensual", "Quincenal", "Semanal", "Semanal"] },
+                    { label: "Account Manager Dedicado", vals: ["—", "—", "—", "✓", "✓"] },
+                    { label: "Soporte Prioritario", vals: ["—", "—", "✓", "✓", "✓"] },
                   ]},
-                  { category: "Usage Credits", rows: [
-                    { label: "Monthly Credits Included", vals: ["$20", "$30", "$50", "$100", "$200"] },
-                    { label: "Setup Fee", vals: ["$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*"] },
+                  { category: "Créditos de Uso", rows: [
+                    { label: "Créditos Mensuales Incluidos", vals: ["$20", "$30", "$50", "$100", "$200"] },
+                    { label: "Tarifa de Setup", vals: ["$500 GRATIS*", "$500 GRATIS*", "$500 GRATIS*", "$500 GRATIS*", "$500 GRATIS*"] },
                   ]},
                 ].map((section, si) => (
                   <React.Fragment key={`section-${si}`}>
@@ -616,7 +616,7 @@ export default function PricingPage() {
                                 <span className="text-white/20">—</span>
                               ) : (
                                 <span className={`font-semibold ${
-                                  val.startsWith("$") || val === "FREE" ? "text-[#F97316]" :
+                                  val.startsWith("$") || val === "GRATIS" ? "text-[#F97316]" :
                                   val.startsWith("✓") ? "text-[#F97316]" : "text-white/70"
                                 }`}>{val}</span>
                               )}
@@ -635,7 +635,7 @@ export default function PricingPage() {
 
       {/* Comparison table footnote */}
       <div className="max-w-6xl mx-auto px-4 pb-4">
-        <p className="text-white/30 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>* $500 setup fee is waived for a limited time for all new accounts. Standard setup fee of $500 applies when this promotion ends.</p>
+        <p className="text-white/30 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>* La tarifa de setup de $500 está gratis por tiempo limitado para todas las cuentas nuevas. La tarifa estándar de $500 aplica cuando esta promoción termina.</p>
       </div>
 
       {/* FAQ Section */}
@@ -643,13 +643,13 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="fade-up mb-4 flex justify-center">
-              <span className="section-label">Common Questions</span>
+              <span className="section-label">Preguntas Comunes</span>
             </div>
             <h2
               className="fade-up text-[clamp(2rem,4vw,3.5rem)] font-900 text-white uppercase"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              Pricing <span className="text-[#F97316]">FAQ</span>
+              Preguntas <span className="text-[#F97316]">Frecuentes</span>
             </h2>
           </div>
 
@@ -689,10 +689,10 @@ export default function PricingPage() {
             className="text-[clamp(2rem,4vw,3.5rem)] font-900 text-white uppercase leading-tight mb-4"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
           >
-            Ready to <span className="text-[#F97316]">Get Started?</span>
+            ¿Listo para <span className="text-[#F97316]">Empezar?</span>
           </h2>
           <p className="text-white/55 text-base mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            No long-term contracts. 30-day money back guarantee. Setup fee waived — limited time.
+            Sin contratos a largo plazo. Garantía de devolución de dinero por 30 días. Tarifa de setup gratis — tiempo limitado.
           </p>
           <a
             href="/#contact"
@@ -700,7 +700,7 @@ export default function PricingPage() {
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             <Zap className="w-5 h-5 fill-black" />
-            Get Started Today
+            Empieza Hoy
           </a>
         </div>
       </section>

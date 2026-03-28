@@ -8,26 +8,26 @@ const steps = [
   {
     number: "01",
     icon: Upload,
-    title: "We Onboard Your Business",
-    desc: "Our team sets up your AI agents, optimizes your Google listing, builds your website, and configures your lead pipeline — all done for you in under a week.",
+    title: "Ponemos Tu Negocio en Marcha",
+    desc: "Nuestro equipo configura tus AI agents, optimiza tu Google listing, crea tu website y arma tu lead pipeline — todo listo para ti en menos de una semana.",
   },
   {
     number: "02",
     icon: Settings,
-    title: "AI Goes to Work 24/7",
-    desc: "Your AI team answers calls, responds to leads, posts your work on social media, and keeps your past customers engaged — automatically, around the clock.",
+    title: "El AI Trabaja 24/7",
+    desc: "Tu equipo de AI contesta llamadas, responde leads, publica tu trabajo en social media y mantiene a tus clientes pasados activos — todo automático, todo el tiempo.",
   },
   {
     number: "03",
     icon: TrendingUp,
-    title: "Leads Flow In Consistently",
-    desc: "Your Google ranking climbs, your online presence grows, and qualified leads start coming to you instead of you chasing them down.",
+    title: "Los Leads Llegan Consistentemente",
+    desc: "Tu ranking en Google sube, tu presencia online crece, y los leads calificados vienen a ti en vez de que tú los persigas.",
   },
   {
     number: "04",
     icon: DollarSign,
-    title: "You Close More & Earn More",
-    desc: "When a lead is hot, you get notified. You jump in, close the deal, and get back to doing what you love — delivering exceptional work.",
+    title: "Cierras Más y Ganas Más",
+    desc: "Cuando un lead está caliente, te notificamos. Tú entras, cierras el trato y vuelves a lo que te gusta — entregar trabajo excepcional.",
   },
 ];
 
@@ -54,20 +54,20 @@ export default function HowItWorksSection() {
       <div className="container">
         <div className="mb-16">
           <div className="fade-up mb-4">
-            <span className="section-label">Simple Process</span>
+            <span className="section-label">Proceso Simple</span>
           </div>
           <h2
             className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
           >
-            Up and Running in{" "}
-            <span className="text-[#F97316]">Under a Week</span>
+            Listo y Funcionando en{" "}
+            <span className="text-[#F97316]">Menos de Una Semana</span>
           </h2>
           <p
             className="fade-up text-white/60 text-lg mt-3 max-w-xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            No technical skills required. Our team handles everything — you just show up and do great work.
+            No necesitas skills técnicas. Nuestro equipo se encarga de todo — tú solo llegas y haces buen trabajo.
           </p>
         </div>
 
@@ -136,10 +136,10 @@ export default function HowItWorksSection() {
             className="btn-glow pulse-glow inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-8 py-4 rounded-sm transition-all duration-200 text-base"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            Get Started Today — Free Demo
+            Empieza Ya — Demo Gratis
           </a>
           <p className="text-white/40 text-sm mt-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            30-day money back guarantee · Results in 30 days or less
+            Garantía de 30 días o te devolvemos tu dinero · Resultados en 30 días o menos
           </p>
         </div>
       </div>

@@ -8,14 +8,14 @@ import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-no-qr_785ff1fc.png";
 
 const stats = [
-  { value: "5X", label: "Average Revenue Growth" },
-  { value: "78%", label: "More Leads Closed" },
-  { value: "24/7", label: "AI Works For You" },
+  { value: "5X", label: "Crecimiento Promedio de Ingresos" },
+  { value: "78%", label: "Más Leads Cerrados" },
+  { value: "24/7", label: "El AI Trabaja Para Ti" },
 ];
 
 const badges = [
-  "30-day money back guarantee",
-  "Results in 30 days or less",
+  "Garantía de 30 días o te devolvemos tu dinero",
+  "Resultados en 30 días o menos",
 ];
 
 export default function HeroSection() {
@@ -63,7 +63,7 @@ export default function HeroSection() {
           <div className="fade-up mb-6">
             <span className="section-label">
               <span className="w-1.5 h-1.5 bg-[#F97316] rounded-full inline-block" />
-              AI Marketing For The Trades — 2026
+              AI Marketing Para los Trades — 2026
             </span>
           </div>
 
@@ -73,13 +73,13 @@ export default function HeroSection() {
               className="text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] font-900 text-white uppercase mb-2"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
             >
-              MULTIPLY YOUR
+              MULTIPLICA TUS
             </h1>
             <h1
               className="text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] font-900 uppercase mb-6"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
             >
-              <span className="text-[#F97316]">RESULTS</span>
+              <span className="text-[#F97316]">RESULTADOS</span>
             </h1>
           </div>
 
@@ -89,8 +89,8 @@ export default function HeroSection() {
               className="text-lg md:text-xl text-white/75 max-w-xl leading-relaxed mb-8"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              We deploy a team of AI agents inside your trade business — handling leads, 
-              showcasing your work, and filling your pipeline while you focus on the job site.
+              Ponemos un equipo de agentes AI dentro de tu negocio de trades — manejando leads, 
+              mostrando tu trabajo, y llenando tu pipeline mientras tú te concentras en el job site.
             </p>
           </div>
 
@@ -105,7 +105,7 @@ export default function HeroSection() {
               className="btn-glow pulse-glow bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-7 py-4 rounded-sm transition-all duration-200 flex items-center gap-2 text-base"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Get Started
+              Empieza Ya
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
@@ -118,7 +118,7 @@ export default function HeroSection() {
               <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
                 <Play className="w-3.5 h-3.5 fill-white text-white ml-0.5" />
               </div>
-              <span className="text-sm font-medium">See How It Works</span>
+              <span className="text-sm font-medium">Mira Cómo Funciona</span>
             </a>
           </div>
 

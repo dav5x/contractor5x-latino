@@ -1,16 +1,16 @@
 /*
- * DESIGN: Industrial Brutalism — Dark trust bar with scrolling stats/logos
+ * DISEÑO: Brutalismo Industrial — Barra de confianza oscura con estadísticas/logos en scroll
  */
 import { useEffect, useRef } from "react";
 import { Star, Shield, Award, Users } from "lucide-react";
 
 const trustItems = [
-  { icon: Users, text: "500+ Active Contractors" },
-  { icon: Star, text: "4.9★ Average Rating" },
-  { icon: Shield, text: "30-Day Money Back Guarantee" },
-  { icon: Award, text: "#1 AI Marketing for Trades" },
+  { icon: Users, text: "500+ Contratistas Activos" },
+  { icon: Star, text: "4.9★ Calificación Promedio" },
+  { icon: Shield, text: "Garantía de 30 Días o Te Devolvemos Tu Dinero" },
+  { icon: Award, text: "#1 Marketing AI para Trades" },
   { icon: Users, text: "HVAC · Plumbing · Electrical · Roofing" },
-  { icon: Star, text: "Results in 30 Days or Less" },
+  { icon: Star, text: "Resultados en 30 Días o Menos" },
 ];
 
 export default function TrustBar() {

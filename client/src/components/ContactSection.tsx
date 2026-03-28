@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Phone, Mail, MapPin, CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "See all 6 AI tools in action",
-  "Get a custom growth plan for your trade",
-  "No pressure, no obligation",
-  "Takes only 15 minutes",
+  "Mira las 6 herramientas de AI en acción",
+  "Recibe un plan de crecimiento custom para tu trade",
+  "Sin presión, sin compromiso",
+  "Solo toma 15 minutos",
 ];
 
 export default function ContactSection() {
@@ -53,22 +53,22 @@ export default function ContactSection() {
           {/* Left: Content */}
           <div>
             <div className="fade-up mb-4">
-              <span className="section-label">Free 15-Minute Demo</span>
+              <span className="section-label">Demo Gratis de 15 Minutos</span>
             </div>
             <h2
               className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight mb-6"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
             >
-              Ready to{" "}
-              <span className="text-[#F97316]">5X Your Business?</span>
+              ¿Listo para{" "}
+              <span className="text-[#F97316]">5X Tu Negocio?</span>
             </h2>
             <p
               className="fade-up text-white/65 text-lg leading-relaxed mb-8"
               style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
             >
-              Book a free 15-minute demo and see exactly how Contractor5x can transform your 
-              trade business. We'll show you the tools, walk through your specific situation, 
-              and give you a custom growth plan — no strings attached.
+              Agenda una demo gratis de 15 minutos y mira exactamente cómo Contractor5x puede transformar tu 
+              negocio de trade. Te mostramos las herramientas, revisamos tu situación específica, 
+              y te damos un plan de crecimiento custom — sin compromiso.
             </p>
 
             {/* Benefits */}
@@ -100,7 +100,7 @@ export default function ContactSection() {
               <div className="flex items-center gap-3 text-white/50">
                 <MapPin className="w-4 h-4 text-[#F97316]" />
                 <span className="text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  Serving contractors across the United States
+                  Sirviendo a contractors por todo Estados Unidos
                 </span>
               </div>
             </div>
@@ -118,11 +118,11 @@ export default function ContactSection() {
                     className="text-white text-2xl font-700 uppercase mb-3"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
                   >
-                    You're All Set!
+                    ¡Listo!
                   </h3>
                   <p className="text-white/60 text-sm leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    We'll reach out within 24 hours to schedule your free demo. 
-                    Get ready to see what AI can do for your business.
+                    Te contactaremos en menos de 24 horas para agendar tu demo gratis. 
+                    Prepárate para ver lo que el AI puede hacer por tu negocio.
                   </p>
                 </div>
               ) : (
@@ -131,13 +131,13 @@ export default function ContactSection() {
                     className="text-white text-xl font-700 uppercase mb-6"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
                   >
-                    Get Started Today
+                    Empieza Ya
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label className="block text-white/60 text-xs mb-1.5 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                          Your Name *
+                          Tu Nombre *
                         </label>
                         <input
                           type="text"
@@ -152,7 +152,7 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <label className="block text-white/60 text-xs mb-1.5 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                          Phone *
+                          Teléfono *
                         </label>
                         <input
                           type="tel"
@@ -185,7 +185,7 @@ export default function ContactSection() {
 
                     <div>
                       <label className="block text-white/60 text-xs mb-1.5 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                        Your Trade *
+                        Tu Trade *
                       </label>
                       <select
                         name="trade"
@@ -195,7 +195,7 @@ export default function ContactSection() {
                         className="w-full bg-[#0D0D0D] border border-white/10 text-white px-4 py-3 rounded-sm text-sm focus:border-[#F97316]/50 focus:outline-none transition-colors appearance-none"
                         style={{ fontFamily: "'DM Sans', sans-serif" }}
                       >
-                        <option value="" className="bg-[#0D0D0D]">Select your trade...</option>
+                        <option value="" className="bg-[#0D0D0D]">Selecciona tu trade...</option>
                         <option value="hvac" className="bg-[#0D0D0D]">HVAC</option>
                         <option value="plumbing" className="bg-[#0D0D0D]">Plumbing</option>
                         <option value="electrical" className="bg-[#0D0D0D]">Electrical</option>
@@ -205,19 +205,19 @@ export default function ContactSection() {
                         <option value="landscaping" className="bg-[#0D0D0D]">Landscaping/Hardscaping</option>
                         <option value="painting" className="bg-[#0D0D0D]">Painting</option>
                         <option value="tree" className="bg-[#0D0D0D]">Tree Service</option>
-                        <option value="other" className="bg-[#0D0D0D]">Other Trade</option>
+                        <option value="other" className="bg-[#0D0D0D]">Otro Trade</option>
                       </select>
                     </div>
 
                     <div>
                       <label className="block text-white/60 text-xs mb-1.5 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                        Biggest Challenge (Optional)
+                        Mayor Reto (Opcional)
                       </label>
                       <textarea
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="What's your biggest marketing challenge right now?"
+                        placeholder="¿Cuál es tu mayor reto de marketing ahorita?"
                         rows={3}
                         className="w-full bg-[#0D0D0D] border border-white/10 text-white placeholder-white/25 px-4 py-3 rounded-sm text-sm focus:border-[#F97316]/50 focus:outline-none transition-colors resize-none"
                         style={{ fontFamily: "'DM Sans', sans-serif" }}
@@ -229,12 +229,12 @@ export default function ContactSection() {
                       className="btn-glow w-full bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold py-4 rounded-sm transition-all duration-200 flex items-center justify-center gap-2 text-base"
                       style={{ fontFamily: "'DM Sans', sans-serif" }}
                     >
-                      Get Started
+                      Empieza Ya
                       <ArrowRight className="w-4 h-4" />
                     </button>
 
                     <p className="text-center text-white/35 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      No spam. No pressure. We'll reach out within 24 hours.
+                      No spam. Sin presión. Te contactamos en menos de 24 horas.
                     </p>
                   </form>
                 </>
