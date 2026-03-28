@@ -5,7 +5,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-v2-XE4JDCKHTb3urUncENhcgf.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-no-qr_785ff1fc.png";
 
 const stats = [
   { value: "5X", label: "Average Revenue Growth" },
