@@ -51,9 +51,9 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})`, backgroundPosition: "70% center" }}
       />
-      {/* Dark overlay — heavier on left for text, lighter on right to reveal van */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-[#0A0A0A]/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/50" />
+      {/* Dark overlay — heavy on far left for text, fades to nearly transparent on right to reveal van */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #0A0A0A 30%, rgba(10,10,10,0.75) 55%, rgba(10,10,10,0.05) 100%)' }} />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/30" />
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
