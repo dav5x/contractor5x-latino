@@ -213,8 +213,7 @@ export default function Navbar() {
 
             {/* Static links */}
             <a
-              href="#pricing"
-              onClick={(e) => scrollToSection(e, "#pricing")}
+              href="/pricing"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
@@ -299,9 +298,9 @@ export default function Navbar() {
               </div>
             )}
 
-            <a href="#pricing" onClick={(e) => { scrollToSection(e, "#pricing"); setMenuOpen(false); }} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <Link href="/pricing" onClick={() => setMenuOpen(false)} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Pricing
-            </a>
+            </Link>
 
             <a href="/#contact" onClick={(e) => { scrollToSection(e, "#contact"); setMenuOpen(false); }} className="mt-4 bg-[#F97316] text-black font-semibold text-sm px-5 py-3 rounded-sm text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Get Started
