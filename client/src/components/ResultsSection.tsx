@@ -135,13 +135,23 @@ export default function ResultsSection() {
           <div className="fade-up mb-4">
             <span className="section-label">Proven Results</span>
           </div>
-          <h2
-            className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
-            style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
+          <div
+            className="fade-up flex flex-wrap items-center gap-x-4 gap-y-2"
+            style={{ transitionDelay: "100ms" }}
           >
-            Contractors Love{" "}
-            <span className="text-[#F97316]">Contractor5x</span>
-          </h2>
+            <span
+              className="text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
+            >
+              Contractors Love
+            </span>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/contractor5x-real-logo_be9501fc.png"
+              alt="Contractor5x"
+              className="h-[clamp(2.2rem,4.5vw,3.5rem)] w-auto object-contain inline-block"
+              style={{ verticalAlign: "middle" }}
+            />
+          </div>
         </div>
 
         {/* Big stats */}
