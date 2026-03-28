@@ -6,8 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown, Zap, Camera, Bot, Globe, RefreshCw, Star, BookOpen, ArrowRight, Wrench } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { tradesData } from "@/lib/tradesData";
-
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/contractor5x-real-logo_be9501fc.png";
+import LogoLatino from "./LogoLatino";
 
 const solutions = [
   { id: "lead-closer", title: "Lead Closer", label: "24/7 Sales Machine", icon: Zap, href: "/solutions/lead-closer" },
@@ -84,7 +83,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <img src={LOGO_URL} alt="Contractor5x" className="h-9 md:h-11 w-auto object-contain" />
+            <LogoLatino heightClass="h-9 md:h-11" />
           </Link>
 
           {/* Desktop Nav */}

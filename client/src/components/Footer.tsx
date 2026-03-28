@@ -1,7 +1,7 @@
 /*
  * DESIGN: Industrial Brutalism — Dark footer with orange logo, clean link columns
  */
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/contractor5x-real-logo_be9501fc.png";
+import LogoLatino from "./LogoLatino";
 
 const footerLinks = {
   Product: [
@@ -50,11 +50,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="mb-5">
-              <img
-                src={LOGO_URL}
-                alt="Contractor5x"
-                className="h-10 w-auto object-contain"
-              />
+              <LogoLatino heightClass="h-10" />
             </div>
             <p
               className="text-white/45 text-sm leading-relaxed mb-6 max-w-xs"
