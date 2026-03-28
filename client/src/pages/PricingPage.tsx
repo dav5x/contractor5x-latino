@@ -4,7 +4,7 @@
  * full usage rates table from local5x.com, FAQ section
  */
 import { useState, useEffect, useRef } from "react";
-import { CheckCircle2, Zap, Tag, Info, Phone, MessageSquare, Mail, Bot, Mic, Star, Workflow } from "lucide-react";
+import { CheckCircle2, Zap, Tag, Info, Phone, MessageSquare, Mail, Bot, Mic, Star, Workflow, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -165,6 +165,10 @@ const faqs = [
     q: "Do unused credits roll over?",
     a: "Monthly included credits do not roll over — they refresh each billing cycle. However, any credits you manually top up to your wallet do carry over month to month.",
   },
+  {
+    q: "What is an SMS segment and why does it matter?",
+    a: "When you send a text message, mobile carriers break it into segments — small data chunks used to calculate billing and delivery. Each segment equals 160 characters if you use standard text (letters, numbers, and common symbols). If your message includes emojis or special characters, the limit drops to 70 characters per segment. So a longer message automatically becomes 2 or more segments, even though it looks like one text to the recipient. For example: a short message like 'Hi, we got your request!' is 1 segment. A longer follow-up with a link and emoji might be 2–3 segments. SMS pricing is based on segments, not messages — so keeping texts short and clear helps stretch your credits further. Avoid unnecessary emojis, use link shorteners, and keep messages under 160 characters when possible.",
+  },
 ];
 
 export default function PricingPage() {
@@ -227,11 +231,11 @@ export default function PricingPage() {
             />
           </button>
           <span
-            className={`text-sm font-medium transition-colors ${annual ? "text-white" : "text-white/40"}`}
+            className={`text-sm font-medium transition-colors flex items-center gap-2 ${annual ? "text-white" : "text-white/40"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Annual
-            <span className="ml-2 bg-[#F97316]/20 text-[#F97316] text-xs font-bold px-2 py-0.5 rounded-sm">
+            <span className="bg-[#F97316]/20 text-[#F97316] text-xs font-bold px-2 py-0.5 rounded-sm whitespace-nowrap">
               SAVE 20%
             </span>
           </span>
@@ -399,12 +403,20 @@ export default function PricingPage() {
               Usage Rates &{" "}
               <span className="text-[#F97316]">Credits</span>
             </h2>
-            <p
-              className="fade-up text-white/55 text-base mt-4 max-w-2xl mx-auto"
-              style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
-            >
-              For certain actions — phone calls, SMS, emails, and AI-powered features — there is a small pay-per-use charge. Each plan includes monthly credits to cover your typical usage. Think of it like a phone plan: you get a monthly allowance, and you only pay extra if you go over.
-            </p>
+          <p
+            className="fade-up text-white/55 text-base mt-4 max-w-2xl mx-auto"
+            style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
+          >
+            For certain actions — phone calls, SMS, emails, and AI-powered features — there is a small pay-per-use charge. Each plan includes monthly credits to cover your typical usage. Think of it like a phone plan: you get a monthly allowance, and you only pay extra if you go over.
+          </p>
+          <a
+            href="#faq"
+            className="fade-up inline-flex items-center gap-1.5 mt-4 text-[#F97316] text-sm font-medium hover:underline"
+            style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "250ms" }}
+          >
+            <ChevronDown className="w-4 h-4" />
+            How do SMS segments work? See explanation below
+          </a>
 
             {/* Credits summary */}
             <div className="fade-up mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto" style={{ transitionDelay: "300ms" }}>
@@ -482,7 +494,7 @@ export default function PricingPage() {
 
           <div className="fade-up overflow-x-auto">
             <table className="w-full min-w-[700px] border-collapse">
-              <thead>
+              <thead className="sticky top-[64px] z-20">
                 <tr>
                   <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Feature</th>
                   {[
@@ -544,7 +556,7 @@ export default function PricingPage() {
                   ]},
                   { category: "Usage Credits", rows: [
                     { label: "Monthly Credits Included", vals: ["$20", "$30", "$50", "$100"] },
-                    { label: "Setup Fee", vals: ["FREE", "FREE", "FREE", "FREE"] },
+                    { label: "Setup Fee", vals: ["$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*"] },
                   ]},
                 ].map((section, si) => (
                   <>
@@ -588,8 +600,13 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Comparison table footnote */}
+      <div className="max-w-6xl mx-auto px-4 pb-4">
+        <p className="text-white/30 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>* $500 setup fee is waived for a limited time for all new accounts. Standard setup fee of $500 applies when this promotion ends.</p>
+      </div>
+
       {/* FAQ Section */}
-      <section className="py-20 bg-[#0D0D0D] border-t border-white/8">
+      <section id="faq" className="py-20 bg-[#0D0D0D] border-t border-white/8">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="fade-up mb-4 flex justify-center">
