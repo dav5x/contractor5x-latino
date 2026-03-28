@@ -5,7 +5,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/hero-bg-c4hcCPQ7mQ9RraSGaCj6Hh.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-bg-8ekWW2wPS6K9JGC5vuztLg.webp";
 
 const stats = [
   { value: "5X", label: "Average Revenue Growth" },
@@ -48,12 +48,12 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${HERO_BG})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${HERO_BG})`, backgroundPosition: "70% center" }}
       />
-      {/* Dark overlay — gradient from left */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/85 to-[#0A0A0A]/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/30" />
+      {/* Dark overlay — heavier on left for text, lighter on right to reveal van */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-[#0A0A0A]/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/50" />
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
