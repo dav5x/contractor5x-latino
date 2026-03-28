@@ -3,7 +3,7 @@
  * Monthly/Annual toggle (20% off), 4 plan cards, monthly credits per plan,
  * full usage rates table from local5x.com, FAQ section
  */
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { CheckCircle2, Zap, Tag, Info, Phone, MessageSquare, Mail, Bot, Mic, Star, Workflow, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -492,9 +492,9 @@ export default function PricingPage() {
             </h2>
           </div>
 
-          <div className="fade-up overflow-x-auto">
+          <div className="fade-up" style={{ overflowX: "auto", position: "relative" }}>
             <table className="w-full min-w-[700px] border-collapse">
-              <thead className="sticky top-[64px] z-20">
+              <thead style={{ position: "sticky", top: "64px", zIndex: 20 }}>
                 <tr>
                   <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Feature</th>
                   {[
@@ -559,8 +559,8 @@ export default function PricingPage() {
                     { label: "Setup Fee", vals: ["$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*"] },
                   ]},
                 ].map((section, si) => (
-                  <>
-                    <tr key={`cat-${si}`}>
+                  <React.Fragment key={`section-${si}`}>
+                    <tr>
                       <td colSpan={5} className="px-4 py-2 bg-white/3 border-y border-white/8">
                         <span className="text-[#F97316] text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{section.category}</span>
                       </td>
@@ -592,7 +592,7 @@ export default function PricingPage() {
                         })}
                       </tr>
                     ))}
-                  </>
+                  </React.Fragment>
                 ))}
               </tbody>
             </table>
