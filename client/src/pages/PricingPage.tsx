@@ -465,6 +465,129 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Plan Comparison Table */}
+      <section className="py-20 bg-[#0D0D0D] border-t border-white/8">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="fade-up mb-4 flex justify-center">
+              <span className="section-label">Side-by-Side Breakdown</span>
+            </div>
+            <h2
+              className="fade-up text-[clamp(2rem,4vw,3.5rem)] font-900 text-white uppercase leading-tight"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
+            >
+              Compare All <span className="text-[#F97316]">Plans</span>
+            </h2>
+          </div>
+
+          <div className="fade-up overflow-x-auto">
+            <table className="w-full min-w-[700px] border-collapse">
+              <thead>
+                <tr>
+                  <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Feature</th>
+                  {[
+                    { name: "Essentials", price: annual ? 159 : 199, popular: false, highlight: false },
+                    { name: "Starter", price: annual ? 239 : 299, popular: false, highlight: true },
+                    { name: "Growth", price: annual ? 399 : 499, popular: true, highlight: false },
+                    { name: "Dominator", price: annual ? 799 : 999, popular: false, highlight: false },
+                  ].map((p) => (
+                    <th key={p.name} className={`text-center px-4 py-3 text-xs uppercase tracking-widest font-semibold border-b ${
+                      p.popular ? "bg-[#1A1208] border-[#F97316]/40 text-[#F97316]" : p.highlight ? "bg-[#111820] border-sky-500/20 text-sky-400" : "bg-[#111111] border-white/8 text-white/60"
+                    }`} style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}>
+                      <div>{p.name}</div>
+                      <div className="text-lg font-bold mt-0.5">${p.price}<span className="text-xs font-normal opacity-60">/mo</span></div>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { category: "Job Promoter", rows: [
+                    { label: "Monthly Posts", vals: ["Up to 2", "Up to 10", "Up to 15", "Up to 25"] },
+                    { label: "Video Posts", vals: ["—", "—", "✓ Included", "✓ Included"] },
+                    { label: "Volume Level", vals: ["Low", "Medium", "Higher", "Max"] },
+                  ]},
+                  { category: "Lead Generation", rows: [
+                    { label: "Lead Closer (CRM)", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Automated Follow-Up", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Custom Intake Forms", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Two-Way SMS & Calls", vals: ["—", "✓", "✓", "✓"] },
+                  ]},
+                  { category: "AI Agent", rows: [
+                    { label: "AI Phone & Chat Agent", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Custom AI Training", vals: ["—", "—", "—", "✓"] },
+                    { label: "Voice AI Calls", vals: ["—", "✓", "✓", "✓"] },
+                  ]},
+                  { category: "Google & Reviews", rows: [
+                    { label: "Google Listing Optimizer", vals: ["✓", "✓", "✓", "✓"] },
+                    { label: "Automated Review Requests", vals: ["✓", "✓", "✓", "✓"] },
+                    { label: "AI Review Replies", vals: ["✓", "✓", "✓", "✓"] },
+                    { label: "Reputation Monitoring", vals: ["✓", "✓", "✓", "✓"] },
+                  ]},
+                  { category: "Website", rows: [
+                    { label: "Smart Website (Done-For-You)", vals: ["—", "—", "✓", "✓"] },
+                    { label: "SEO & AIO Strategy", vals: ["—", "—", "—", "✓ Advanced"] },
+                  ]},
+                  { category: "Re-Activator", rows: [
+                    { label: "Past Customer Campaigns", vals: ["—", "—", "✓", "✓"] },
+                    { label: "Email & SMS Campaigns", vals: ["—", "✓", "✓", "✓"] },
+                  ]},
+                  { category: "Paid Ads", rows: [
+                    { label: "Paid Ad Management", vals: ["—", "—", "—", "✓"] },
+                  ]},
+                  { category: "Support & Reporting", rows: [
+                    { label: "Monthly Performance Report", vals: ["✓", "✓", "✓", "✓"] },
+                    { label: "Onboarding Support", vals: ["✓", "✓", "✓", "White-Glove"] },
+                    { label: "Check-In Calls", vals: ["—", "Bi-Monthly", "Bi-Weekly", "Weekly"] },
+                    { label: "Dedicated Account Manager", vals: ["—", "—", "—", "✓"] },
+                    { label: "Priority Support", vals: ["—", "—", "✓", "✓"] },
+                  ]},
+                  { category: "Usage Credits", rows: [
+                    { label: "Monthly Credits Included", vals: ["$20", "$30", "$50", "$100"] },
+                    { label: "Setup Fee", vals: ["FREE", "FREE", "FREE", "FREE"] },
+                  ]},
+                ].map((section, si) => (
+                  <>
+                    <tr key={`cat-${si}`}>
+                      <td colSpan={5} className="px-4 py-2 bg-white/3 border-y border-white/8">
+                        <span className="text-[#F97316] text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{section.category}</span>
+                      </td>
+                    </tr>
+                    {section.rows.map((row, ri) => (
+                      <tr key={`row-${si}-${ri}`} className="border-b border-white/5 hover:bg-white/2 transition-colors">
+                        <td className="px-4 py-3 text-white/60 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>{row.label}</td>
+                        {row.vals.map((val, vi) => {
+                          const isPopular = vi === 2;
+                          const isHighlight = vi === 1;
+                          const isCheck = val === "✓";
+                          const isDash = val === "—";
+                          return (
+                            <td key={vi} className={`px-4 py-3 text-center text-sm ${
+                              isPopular ? "bg-[#1A1208]/60" : isHighlight ? "bg-[#111820]/40" : ""
+                            }`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                              {isCheck ? (
+                                <CheckCircle2 className="w-4 h-4 text-[#F97316] mx-auto" />
+                              ) : isDash ? (
+                                <span className="text-white/20">—</span>
+                              ) : (
+                                <span className={`font-semibold ${
+                                  val.startsWith("$") || val === "FREE" ? "text-[#F97316]" :
+                                  val.startsWith("✓") ? "text-[#F97316]" : "text-white/70"
+                                }`}>{val}</span>
+                              )}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    ))}
+                  </>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-[#0D0D0D] border-t border-white/8">
         <div className="max-w-3xl mx-auto px-4">
