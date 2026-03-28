@@ -80,7 +80,7 @@ export default function HeroSection() {
               className="text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] font-900 uppercase mb-6"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
             >
-              <span className="text-[#F97316]">RESULTS 5X</span>
+              <span className="text-[#F97316]">RESULTS</span>
             </h1>
           </div>
 
@@ -106,7 +106,7 @@ export default function HeroSection() {
               className="btn-glow pulse-glow bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-7 py-4 rounded-sm transition-all duration-200 flex items-center gap-2 text-base"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Book a Free 15-Min Demo
+              Get Started
               <ArrowRight className="w-4 h-4" />
             </a>
             <a

@@ -131,7 +131,7 @@ export default function ContactSection() {
                     className="text-white text-xl font-700 uppercase mb-6"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
                   >
-                    Book Your Free Demo
+                    Get Started Today
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-2 gap-4">
@@ -229,7 +229,7 @@ export default function ContactSection() {
                       className="btn-glow w-full bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold py-4 rounded-sm transition-all duration-200 flex items-center justify-center gap-2 text-base"
                       style={{ fontFamily: "'DM Sans', sans-serif" }}
                     >
-                      Book My Free Demo
+                      Get Started
                       <ArrowRight className="w-4 h-4" />
                     </button>
 

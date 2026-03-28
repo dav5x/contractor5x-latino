@@ -84,7 +84,7 @@ export default function Navbar() {
               className="btn-glow pulse-glow bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold text-sm px-5 py-2.5 rounded-sm transition-all duration-200 flex items-center gap-2"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Book Free Demo
+              Get Started
             </a>
           </div>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
               className="mt-4 bg-[#F97316] text-black font-semibold text-sm px-5 py-3 rounded-sm text-center"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Book Free Demo
+              Get Started
             </a>
           </div>
         </div>
