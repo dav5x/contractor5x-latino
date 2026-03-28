@@ -9,6 +9,8 @@ import SolutionsPage from "./pages/SolutionsPage";
 import SolutionDetailPage from "./pages/SolutionDetailPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import TradesPage from "./pages/TradesPage";
+import TradePage from "./pages/TradePage";
 
 function Router() {
   return (
@@ -18,6 +20,8 @@ function Router() {
       <Route path="/solutions/:id" component={SolutionDetailPage} />
       <Route path="/learn" component={BlogPage} />
       <Route path="/learn/:slug" component={BlogPostPage} />
+      <Route path="/trades" component={TradesPage} />
+      <Route path="/trades/:tradeId" component={TradePage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
