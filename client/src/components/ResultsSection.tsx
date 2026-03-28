@@ -1,72 +1,19 @@
 /*
- * DESIGN: Industrial Brutalism — Big stats, testimonial cards, orange accents
- * Counter animation on scroll entry
+ * DESIGN: Industrial Brutalism — Results Section (Home Page)
+ * Features 4 real case study cards + animated counters + link to /results
+ * Dark background, orange accents, Barlow Condensed headlines
  */
 import { useEffect, useRef, useState } from "react";
-import { Star, Quote } from "lucide-react";
+import { Link } from "wouter";
+import { ArrowRight, Star, Quote, Play } from "lucide-react";
+import { caseStudies } from "@/lib/caseStudiesData";
+import { Button } from "@/components/ui/button";
 
 const bigStats = [
-  { value: 500, suffix: "+", label: "Contractors Served" },
-  { value: 78, suffix: "%", label: "Average Lead Increase" },
+  { value: 420, suffix: "%", label: "Average Lead Increase", decimal: false },
+  { value: 200, suffix: "+", label: "5-Star Reviews Generated", decimal: false },
   { value: 4.9, suffix: "★", label: "Average Client Rating", decimal: true },
-  { value: 5, suffix: "X", label: "Average Revenue Growth" },
-];
-
-const testimonials = [
-  {
-    name: "Marcus T.",
-    trade: "HVAC Contractor",
-    location: "Phoenix, AZ",
-    stars: 5,
-    quote:
-      "Before Contractor5x, I was losing leads every day because I couldn't respond fast enough. Now the AI handles all my initial inquiries and I'm booking 3x more jobs. Best investment I've made in my business.",
-    result: "+312% leads in 90 days",
-  },
-  {
-    name: "Shawn D.",
-    trade: "Tile & Flooring",
-    location: "Austin, TX",
-    stars: 5,
-    quote:
-      "The Job Promoter completely transformed how I showcase my work. My Instagram went from empty to 2,000 followers in 3 months, and my Google reviews went from 8 to 67. Customers now call me instead of the other way around.",
-    result: "67 Google reviews in 3 months",
-  },
-  {
-    name: "Carlos R.",
-    trade: "General Contractor",
-    location: "Miami, FL",
-    stars: 5,
-    quote:
-      "I was skeptical about AI, but Contractor5x made it simple. Their team set everything up, and now I have a system that works while I'm on the job site. My revenue is up 40% this year.",
-    result: "+40% revenue year over year",
-  },
-  {
-    name: "Jennifer K.",
-    trade: "Pest Control",
-    location: "Denver, CO",
-    stars: 5,
-    quote:
-      "The Customer Re-Activator alone paid for the entire service. We re-engaged 200+ past customers in the first month and booked $18,000 in jobs we would have never gotten otherwise.",
-    result: "$18K from re-activated customers",
-  },
-  {
-    name: "Dave M.",
-    trade: "Plumbing",
-    location: "Chicago, IL",
-    stars: 5,
-    quote:
-      "My Google ranking went from page 3 to the top 3 in my area within 6 weeks. The Google Listing Optimizer is worth every penny. I'm now the first result when anyone searches for plumbers near me.",
-    result: "Top 3 Google ranking in 6 weeks",
-  },
-  {
-    name: "Tony B.",
-    trade: "Electrical",
-    location: "Seattle, WA",
-    stars: 5,
-    quote:
-      "The AI Agent never misses a call. I used to lose jobs because I couldn't answer while on a job site. Now every lead gets an immediate response and my close rate has doubled.",
-    result: "2X close rate improvement",
-  },
+  { value: 100, suffix: "%", label: "Client Retention Rate", decimal: false },
 ];
 
 function AnimatedCounter({ value, suffix, decimal }: { value: number; suffix: string; decimal?: boolean }) {
@@ -96,15 +43,13 @@ function AnimatedCounter({ value, suffix, decimal }: { value: number; suffix: st
       },
       { threshold: 0.5 }
     );
-
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [value, started, decimal]);
 
   return (
-    <div ref={ref} className="stat-number" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-      {decimal ? count.toFixed(1) : count}
-      {suffix}
+    <div ref={ref} className="stat-number" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}>
+      {decimal ? count.toFixed(1) : count}{suffix}
     </div>
   );
 }
@@ -121,7 +66,6 @@ export default function ResultsSection() {
       },
       { threshold: 0.05 }
     );
-
     const el = sectionRef.current;
     if (el) el.querySelectorAll(".fade-up").forEach((child) => observer.observe(child));
     return () => observer.disconnect();
@@ -130,22 +74,34 @@ export default function ResultsSection() {
   return (
     <section id="results" className="py-24 bg-[#0A0A0A]" ref={sectionRef}>
       <div className="container">
+
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-12">
           <div className="fade-up mb-4">
-            <span className="section-label">Proven Results</span>
+            <span className="section-label">Real Results</span>
           </div>
-          <h2
-            className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
-            style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
-          >
-            Contractors Love To{" "}
-            <span className="text-[#F97316]">5X</span>
-          </h2>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <h2
+              className="fade-up text-[clamp(2.5rem,5vw,4rem)] font-900 text-white uppercase leading-tight"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900, transitionDelay: "100ms" }}
+            >
+              Contractors Love To{" "}
+              <span className="text-[#F97316]">5X</span>
+            </h2>
+            <Link href="/results">
+              <Button
+                variant="outline"
+                className="border-orange-500/50 text-orange-400 hover:bg-orange-500/10 whitespace-nowrap fade-up"
+                style={{ transitionDelay: "200ms" }}
+              >
+                All Case Studies <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
 
         {/* Big stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20 p-8 bg-[#141414] border border-white/8 rounded-sm">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16 p-8 bg-[#141414] border border-white/8 rounded-sm">
           {bigStats.map((stat, i) => (
             <div
               key={stat.label}
@@ -160,57 +116,82 @@ export default function ResultsSection() {
           ))}
         </div>
 
-        {/* Testimonials grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {testimonials.map((t, i) => (
-            <div
-              key={t.name}
-              className="fade-up feature-card bg-[#141414] border border-white/8 p-6 rounded-sm flex flex-col"
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: t.stars }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
-                ))}
-              </div>
-
-              {/* Quote icon */}
-              <Quote className="w-6 h-6 text-[#F97316]/30 mb-3" />
-
-              {/* Quote text */}
-              <p
-                className="text-white/70 text-sm leading-relaxed flex-1 mb-5"
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
+        {/* Case Study Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {caseStudies.map((study, i) => (
+            <Link key={study.slug} href={`/results/${study.slug}`}>
+              <div
+                className="fade-up group bg-[#141414] border border-white/8 hover:border-orange-500/50 rounded-sm overflow-hidden transition-all duration-300 cursor-pointer h-full"
+                style={{ transitionDelay: `${i * 80}ms` }}
               >
-                "{t.quote}"
-              </p>
-
-              {/* Result badge */}
-              <div className="mb-4">
-                <span className="inline-block bg-[#F97316]/10 border border-[#F97316]/20 text-[#F97316] text-xs font-medium px-3 py-1 rounded-sm" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                  {t.result}
-                </span>
-              </div>
-
-              {/* Attribution */}
-              <div className="flex items-center gap-3 pt-4 border-t border-white/8">
-                <div className="w-9 h-9 bg-[#F97316]/15 rounded-full flex items-center justify-center">
-                  <span className="text-[#F97316] font-semibold text-sm" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    {t.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <div className="text-white font-medium text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    {t.name}
-                  </div>
-                  <div className="text-white/40 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    {t.trade} · {t.location}
+                {/* Image */}
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={study.heroImage}
+                    alt={study.company}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent" />
+                  {study.videoTestimonial && (
+                    <div className="absolute top-3 right-3 bg-orange-500 rounded-full p-2">
+                      <Play className="w-3 h-3 text-white fill-white" />
+                    </div>
+                  )}
+                  <div className="absolute bottom-3 left-3">
+                    <span className="bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold px-2 py-1 rounded-sm uppercase tracking-widest">
+                      {study.trade}
+                    </span>
                   </div>
                 </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <h3
+                    className="text-xl font-black uppercase text-white group-hover:text-orange-400 transition-colors leading-tight mb-2"
+                    style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                  >
+                    {study.company}
+                  </h3>
+                  <p className="text-white/40 text-sm mb-4 line-clamp-2">{study.tagline}</p>
+
+                  {/* Top 2 metrics */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    {study.results.slice(0, 2).map((r, ri) => (
+                      <div key={ri} className="bg-[#1A1A1A] border border-white/5 rounded-sm p-3">
+                        <div
+                          className="text-2xl font-black text-orange-500 leading-none mb-1"
+                          style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                        >
+                          {r.metric}
+                        </div>
+                        <div className="text-white/40 text-xs leading-tight">{r.label}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Quote snippet */}
+                  <div className="border-l-2 border-orange-500/40 pl-3 mb-4">
+                    <p className="text-white/40 text-xs italic line-clamp-2">"{study.quote}"</p>
+                    <p className="text-orange-400 text-xs font-bold mt-1">— {study.ownerName}</p>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-orange-400 text-sm font-bold uppercase tracking-wide group-hover:gap-4 transition-all">
+                    Read Full Story <ArrowRight className="w-4 h-4" />
+                  </div>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="fade-up text-center">
+          <p className="text-white/40 text-sm mb-4">Want results like these for your trade business?</p>
+          <Link href="/#contact">
+            <Button className="bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold px-8 py-3">
+              Get Started Today
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

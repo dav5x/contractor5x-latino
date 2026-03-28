@@ -213,6 +213,13 @@ export default function Navbar() {
 
             {/* Static links */}
             <a
+              href="/results"
+              className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            >
+              Results
+            </a>
+            <a
               href="/pricing"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
@@ -297,6 +304,10 @@ export default function Navbar() {
                 </Link>
               </div>
             )}
+
+            <Link href="/results" onClick={() => setMenuOpen(false)} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              Results
+            </Link>
 
             <Link href="/pricing" onClick={() => setMenuOpen(false)} className="text-base font-medium text-white/80 hover:text-[#F97316] transition-colors py-3 border-b border-white/5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Pricing

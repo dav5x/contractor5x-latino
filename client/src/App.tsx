@@ -12,6 +12,8 @@ import BlogPostPage from "./pages/BlogPostPage";
 import TradesPage from "./pages/TradesPage";
 import TradePage from "./pages/TradePage";
 import PricingPage from "./pages/PricingPage";
+import ResultsPage from "./pages/ResultsPage";
+import CaseStudyPage from "./pages/CaseStudyPage";
 
 function Router() {
   return (
@@ -24,6 +26,8 @@ function Router() {
       <Route path="/trades" component={TradesPage} />
       <Route path="/trades/:tradeId" component={TradePage} />
       <Route path="/pricing" component={PricingPage} />
+      <Route path="/results" component={ResultsPage} />
+      <Route path="/results/:slug" component={CaseStudyPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
