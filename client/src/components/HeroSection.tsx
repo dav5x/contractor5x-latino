@@ -14,9 +14,8 @@ const stats = [
 ];
 
 const badges = [
-  "No credit card required",
-  "14-day free trial",
-  "Setup in under 10 minutes",
+  "30-day money back guarantee",
+  "Results in 30 days or less",
 ];
 
 export default function HeroSection() {

@@ -7,7 +7,7 @@ import { Star, Shield, Award, Users } from "lucide-react";
 const trustItems = [
   { icon: Users, text: "500+ Active Contractors" },
   { icon: Star, text: "4.9★ Average Rating" },
-  { icon: Shield, text: "14-Day Free Trial" },
+  { icon: Shield, text: "30-Day Money Back Guarantee" },
   { icon: Award, text: "#1 AI Marketing for Trades" },
   { icon: Users, text: "HVAC · Plumbing · Electrical · Roofing" },
   { icon: Star, text: "Results in 30 Days or Less" },

@@ -139,7 +139,7 @@ export default function HowItWorksSection() {
             Get Started Today — Free Demo
           </a>
           <p className="text-white/40 text-sm mt-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            No credit card required · Setup in under 10 minutes
+            30-day money back guarantee · Results in 30 days or less
           </p>
         </div>
       </div>

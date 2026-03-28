@@ -97,7 +97,7 @@ export default function PricingSection() {
             className="fade-up text-white/60 text-lg mt-3 max-w-xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
-            Every plan includes a 14-day free trial. No credit card required. Cancel anytime.
+            Every plan includes a 30-day money back guarantee. Cancel anytime.
           </p>
         </div>
 
