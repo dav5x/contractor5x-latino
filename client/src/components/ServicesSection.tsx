@@ -3,6 +3,7 @@
  * Alternating text/image layout for each service
  */
 import { useState, useEffect, useRef } from "react";
+import { Link } from "wouter";
 import {
   Zap,
   Camera,
@@ -319,18 +320,14 @@ export default function ServicesSection() {
               ))}
             </div>
 
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-              }}
+            <Link
+              href={`/solutions/${activeService.id}`}
               className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-6 py-3 rounded-sm transition-all duration-200 text-sm"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Learn More About {activeService.title}
               <ChevronRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
 
           {/* Right: Image */}
