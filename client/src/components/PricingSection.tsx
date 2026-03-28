@@ -1,5 +1,5 @@
 /*
- * DESIGN: Industrial Brutalism — Four pricing tiers, orange popular badge, dark cards
+ * DESIGN: Industrial Brutalism — Five pricing tiers, orange popular badge, dark cards
  * Monthly/Annual toggle (20% off), Job Promoter in all plans at tiered volumes
  * $500 setup fee waived — limited-time promo banner
  * Link to /pricing for full details
@@ -94,6 +94,28 @@ const basePlans = [
     popular: false,
     highlight: false,
   },
+  {
+    name: "Elite",
+    price: { monthly: 1999, yearly: 1599 },
+    badge: "Full Market Takeover",
+    tagline: "For contractors who want to dominate their entire region",
+    subTagline: "Multi-location, custom build-out, and enterprise-grade AI.",
+    jobPromoterLabel: "Unlimited Volume",
+    jobPromoterDetail: "Unlimited posts/month + video",
+    features: [
+      "Everything in Dominator, plus:",
+      "Multi-Location Management",
+      "Custom AI Workflow Build-Out",
+      "Advanced Paid Ads (Google + Meta)",
+      "Competitor Conquest Campaigns",
+      "Dedicated Creative Team",
+      "Monthly Executive Report",
+      "$200 Usage Credits/Month",
+    ],
+    cta: "Book a Call",
+    popular: false,
+    highlight: false,
+  },
 ];
 
 export default function PricingSection() {
@@ -180,8 +202,8 @@ export default function PricingSection() {
           </div>
         </div>
 
-        {/* Pricing cards — 4-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        {/* Pricing cards — 5-column grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-5 max-w-7xl mx-auto">
           {basePlans.map((plan, i) => {
             const displayPrice = annual ? plan.price.yearly : plan.price.monthly;
             return (

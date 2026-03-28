@@ -109,6 +109,32 @@ const plans = [
     highlight: false,
     color: "border-white/10",
   },
+  {
+    name: "Elite",
+    price: { monthly: 1999, yearly: 1599 },
+    badge: "Full Market Takeover",
+    tagline: "Dominate your entire region",
+    subTagline: "Multi-location, custom AI build-out, and enterprise-grade marketing.",
+    jobPromoterLabel: "Unlimited Volume",
+    jobPromoterPosts: "Unlimited posts/month + video",
+    credits: 200,
+    features: [
+      "Everything in Dominator, plus:",
+      "Multi-Location Management",
+      "Custom AI Workflow Build-Out",
+      "Advanced Paid Ads (Google + Meta)",
+      "Competitor Conquest Campaigns",
+      "Dedicated Creative Team",
+      "Job Promoter — Unlimited Volume",
+      "Unlimited Videos/Month",
+      "Monthly Executive Report",
+      "$200 Usage Credits/Month",
+    ],
+    cta: "Book a Call",
+    popular: false,
+    highlight: false,
+    color: "border-amber-400/40",
+  },
 ];
 
 const usageRates = [
@@ -258,7 +284,7 @@ export default function PricingPage() {
 
       {/* Plan cards */}
       <section className="pb-20 px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 max-w-7xl mx-auto">
           {plans.map((plan, i) => (
             <div
               key={plan.name}
@@ -498,13 +524,14 @@ export default function PricingPage() {
                 <tr>
                   <th className="text-left px-4 py-3 text-white/40 text-xs uppercase tracking-widest font-medium bg-[#111111] border-b border-white/8" style={{ fontFamily: "'DM Sans', sans-serif", width: "34%" }}>Feature</th>
                   {[
-                    { name: "Essentials", price: annual ? 159 : 199, popular: false, highlight: false },
-                    { name: "Starter", price: annual ? 239 : 299, popular: false, highlight: true },
-                    { name: "Growth", price: annual ? 399 : 499, popular: true, highlight: false },
-                    { name: "Dominator", price: annual ? 799 : 999, popular: false, highlight: false },
+                    { name: "Essentials", price: annual ? 159 : 199, popular: false, highlight: false, elite: false },
+                    { name: "Starter", price: annual ? 239 : 299, popular: false, highlight: true, elite: false },
+                    { name: "Growth", price: annual ? 399 : 499, popular: true, highlight: false, elite: false },
+                    { name: "Dominator", price: annual ? 799 : 999, popular: false, highlight: false, elite: false },
+                    { name: "Elite", price: annual ? 1599 : 1999, popular: false, highlight: false, elite: true },
                   ].map((p) => (
                     <th key={p.name} className={`text-center px-4 py-3 text-xs uppercase tracking-widest font-semibold border-b ${
-                      p.popular ? "bg-[#1A1208] border-[#F97316]/40 text-[#F97316]" : p.highlight ? "bg-[#111820] border-sky-500/20 text-sky-400" : "bg-[#111111] border-white/8 text-white/60"
+                      p.popular ? "bg-[#1A1208] border-[#F97316]/40 text-[#F97316]" : p.highlight ? "bg-[#111820] border-sky-500/20 text-sky-400" : p.elite ? "bg-[#1A1500] border-amber-400/30 text-amber-400" : "bg-[#111111] border-white/8 text-white/60"
                     }`} style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}>
                       <div>{p.name}</div>
                       <div className="text-lg font-bold mt-0.5">${p.price}<span className="text-xs font-normal opacity-60">/mo</span></div>
@@ -515,53 +542,59 @@ export default function PricingPage() {
               <tbody>
                 {[
                   { category: "Job Promoter", rows: [
-                    { label: "Monthly Posts", vals: ["Up to 2", "Up to 10", "Up to 15", "Up to 25"] },
-                    { label: "Video Posts", vals: ["—", "—", "✓ Included", "✓ Included"] },
-                    { label: "Volume Level", vals: ["Low", "Medium", "Higher", "Max"] },
+                    { label: "Monthly Posts", vals: ["Up to 2", "Up to 10", "Up to 15", "Up to 25", "Unlimited"] },
+                    { label: "Video Posts", vals: ["—", "—", "✓ Included", "✓ Included", "✓ Unlimited"] },
+                    { label: "Volume Level", vals: ["Low", "Medium", "Higher", "Max", "Unlimited"] },
                   ]},
                   { category: "Lead Generation", rows: [
-                    { label: "Lead Closer (CRM)", vals: ["—", "✓", "✓", "✓"] },
-                    { label: "Automated Follow-Up", vals: ["—", "✓", "✓", "✓"] },
-                    { label: "Custom Intake Forms", vals: ["—", "✓", "✓", "✓"] },
-                    { label: "Two-Way SMS & Calls", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Lead Closer (CRM)", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Automated Follow-Up", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Custom Intake Forms", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Two-Way SMS & Calls", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "AI Agent", rows: [
-                    { label: "AI Phone & Chat Agent", vals: ["—", "✓", "✓", "✓"] },
-                    { label: "Custom AI Training", vals: ["—", "—", "—", "✓"] },
-                    { label: "Voice AI Calls", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "AI Phone & Chat Agent", vals: ["—", "✓", "✓", "✓", "✓"] },
+                    { label: "Custom AI Training", vals: ["—", "—", "—", "✓", "✓ Advanced"] },
+                    { label: "Voice AI Calls", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "Google & Reviews", rows: [
-                    { label: "Google Listing Optimizer", vals: ["✓", "✓", "✓", "✓"] },
-                    { label: "Automated Review Requests", vals: ["✓", "✓", "✓", "✓"] },
-                    { label: "AI Review Replies", vals: ["✓", "✓", "✓", "✓"] },
-                    { label: "Reputation Monitoring", vals: ["✓", "✓", "✓", "✓"] },
+                    { label: "Google Listing Optimizer", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "Automated Review Requests", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "AI Review Replies", vals: ["✓", "✓", "✓", "✓", "✓"] },
+                    { label: "Reputation Monitoring", vals: ["✓", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "Website", rows: [
-                    { label: "Smart Website (Done-For-You)", vals: ["—", "—", "✓", "✓"] },
-                    { label: "SEO & AIO Strategy", vals: ["—", "—", "—", "✓ Advanced"] },
+                    { label: "Smart Website (Done-For-You)", vals: ["—", "—", "✓", "✓", "✓ Custom Build"] },
+                    { label: "SEO & AIO Strategy", vals: ["—", "—", "—", "✓ Advanced", "✓ Enterprise"] },
                   ]},
                   { category: "Re-Activator", rows: [
-                    { label: "Past Customer Campaigns", vals: ["—", "—", "✓", "✓"] },
-                    { label: "Email & SMS Campaigns", vals: ["—", "✓", "✓", "✓"] },
+                    { label: "Past Customer Campaigns", vals: ["—", "—", "✓", "✓", "✓"] },
+                    { label: "Email & SMS Campaigns", vals: ["—", "✓", "✓", "✓", "✓"] },
                   ]},
                   { category: "Paid Ads", rows: [
-                    { label: "Paid Ad Management", vals: ["—", "—", "—", "✓"] },
+                    { label: "Paid Ad Management", vals: ["—", "—", "—", "✓", "✓ Google + Meta"] },
+                    { label: "Competitor Conquest Campaigns", vals: ["—", "—", "—", "—", "✓"] },
+                  ]},
+                  { category: "Multi-Location", rows: [
+                    { label: "Multi-Location Management", vals: ["—", "—", "—", "—", "✓"] },
+                    { label: "Custom AI Workflow Build-Out", vals: ["—", "—", "—", "—", "✓"] },
+                    { label: "Dedicated Creative Team", vals: ["—", "—", "—", "—", "✓"] },
                   ]},
                   { category: "Support & Reporting", rows: [
-                    { label: "Monthly Performance Report", vals: ["✓", "✓", "✓", "✓"] },
-                    { label: "Onboarding Support", vals: ["✓", "✓", "✓", "White-Glove"] },
-                    { label: "Check-In Calls", vals: ["—", "Bi-Monthly", "Bi-Weekly", "Weekly"] },
-                    { label: "Dedicated Account Manager", vals: ["—", "—", "—", "✓"] },
-                    { label: "Priority Support", vals: ["—", "—", "✓", "✓"] },
+                    { label: "Monthly Performance Report", vals: ["✓", "✓", "✓", "✓", "✓ Executive"] },
+                    { label: "Onboarding Support", vals: ["✓", "✓", "✓", "White-Glove", "White-Glove"] },
+                    { label: "Check-In Calls", vals: ["—", "Bi-Monthly", "Bi-Weekly", "Weekly", "Weekly"] },
+                    { label: "Dedicated Account Manager", vals: ["—", "—", "—", "✓", "✓"] },
+                    { label: "Priority Support", vals: ["—", "—", "✓", "✓", "✓"] },
                   ]},
                   { category: "Usage Credits", rows: [
-                    { label: "Monthly Credits Included", vals: ["$20", "$30", "$50", "$100"] },
-                    { label: "Setup Fee", vals: ["$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*"] },
+                    { label: "Monthly Credits Included", vals: ["$20", "$30", "$50", "$100", "$200"] },
+                    { label: "Setup Fee", vals: ["$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*", "$500 WAIVED*"] },
                   ]},
                 ].map((section, si) => (
                   <React.Fragment key={`section-${si}`}>
                     <tr>
-                      <td colSpan={5} className="px-4 py-2 bg-white/3 border-y border-white/8">
+                      <td colSpan={6} className="px-4 py-2 bg-white/3 border-y border-white/8">
                         <span className="text-[#F97316] text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{section.category}</span>
                       </td>
                     </tr>
