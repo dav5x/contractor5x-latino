@@ -81,7 +81,7 @@ export const tradesData: TradeData[] = [
     ],
     solutions: [
       { tool: "Lead Closer", headline: "Never Miss an Emergency Call", desc: "When a homeowner's AC dies at midnight, Lead Closer answers instantly, collects their info, and schedules your tech — even while you sleep.", stat: "78%", statLabel: "of HVAC leads go to first responder" },
-      { tool: "Google Optimizer", headline: "Rank #1 for HVAC Near Me", desc: "We optimize your Google Business Profile with HVAC-specific keywords, seasonal content, and a review generation system that builds your ranking month over month.", stat: "6 weeks", statLabel: "average time to top 3 ranking" },
+      { tool: "Google Optimizer", headline: "Dominate HVAC Searches Near You", desc: "We optimize your Google Business Profile with HVAC-specific keywords, seasonal content, and a review generation system that builds your visibility month over month.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Job Promoter", headline: "Show Off Every Install", desc: "Before/after photos of system replacements, video walkthroughs of new installs — Job Promoter turns your completed jobs into a 24/7 sales tool.", stat: "3.2X", statLabel: "more quote requests from social proof" },
       { tool: "Re-Activator", headline: "Book Maintenance Agreements", desc: "Re-Activator automatically reaches out to past customers with seasonal tune-up offers, turning one-time service calls into recurring annual revenue.", stat: "$12K", statLabel: "average revenue from re-activated HVAC customers" },
     ],
@@ -117,15 +117,15 @@ export const tradesData: TradeData[] = [
     ],
     solutions: [
       { tool: "AI Agent", headline: "Answer Every Emergency Call", desc: "The AI Agent handles calls 24/7 — collecting job details, dispatching your on-call tech, and booking non-emergency appointments automatically.", stat: "2X", statLabel: "close rate with instant response" },
-      { tool: "Google Optimizer", headline: "Own 'Plumber Near Me'", desc: "We build your Google Business Profile into a lead machine — optimized keywords, consistent reviews, and local SEO that puts you at the top of every nearby search.", stat: "Top 3", statLabel: "Google ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for 'Plumber Near Me'", desc: "We build your Google Business Profile into a lead machine — optimized keywords, consistent reviews, and local SEO that significantly improves your visibility in local search.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Lead Closer", headline: "Convert More Quotes to Jobs", desc: "Lead Closer follows up on every estimate automatically — sending reminders, answering questions, and nudging prospects until they book.", stat: "67%", statLabel: "higher quote-to-job conversion" },
       { tool: "Re-Activator", headline: "Turn Past Customers into Repeat Revenue", desc: "Automatically reach out to past customers with water heater maintenance reminders, seasonal drain cleaning offers, and referral requests.", stat: "$9K", statLabel: "average monthly revenue from re-activation" },
     ],
     testimonial: {
-      quote: "My Google ranking went from page 3 to the top 3 in my area within 6 weeks. I'm now the first result when anyone searches for plumbers near me. The AI Agent alone has paid for the entire service — it catches every emergency call I used to miss.",
+      quote: "My Google ranking improved dramatically within weeks. I'm now showing up for searches I never ranked for before. The AI Agent alone has paid for the entire service — it catches every emergency call I used to miss.",
       name: "Dave M.",
       role: "Plumbing Contractor",
-      result: "Top 3 Google ranking, 2X close rate",
+      result: "Improved Google visibility, 2X close rate",
     },
     faqs: [
       { q: "Does this work for drain cleaning, water heaters, and full remodels?", a: "Yes. We customize your lead intake forms and AI responses for every service type — from $150 drain clears to $15,000 bathroom remodels. Each lead gets routed and followed up appropriately." },
@@ -154,7 +154,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "Lead Closer", headline: "Capture Every High-Value Lead", desc: "Lead Closer qualifies every inquiry — filtering small jobs from big ones — and automatically follows up on every estimate until the customer books.", stat: "3X", statLabel: "more panel upgrade bookings" },
       { tool: "Job Promoter", headline: "Document Your Work Before It's Hidden", desc: "We create before/after content of every panel upgrade, EV install, and rewire — turning your invisible work into visible social proof.", stat: "2.8X", statLabel: "more quote requests from content" },
-      { tool: "Google Optimizer", headline: "Rank for High-Intent Searches", desc: "EV charger installation, panel upgrade, electrician near me — we optimize your listing for the searches that bring in the highest-value jobs.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for High-Intent Searches", desc: "EV charger installation, panel upgrade, electrician near me — we optimize your listing for the searches that bring in the highest-value jobs.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "AI Agent", headline: "Answer Every Call, Day or Night", desc: "Whether it's a tripped breaker at midnight or a commercial quote request on Saturday, the AI Agent handles it professionally and books the job.", stat: "24/7", statLabel: "coverage, zero missed calls" },
     ],
     testimonial: {
@@ -190,7 +190,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "Lead Closer", headline: "Win the Follow-Up Battle", desc: "Lead Closer sends automated follow-up sequences over 7–14 days after every estimate — keeping you top of mind while competitors go silent.", stat: "5X", statLabel: "more estimates converted to jobs" },
       { tool: "Job Promoter", headline: "Before & After Content That Sells", desc: "Nothing sells a roof replacement like a dramatic before/after. Job Promoter turns every completed job into compelling content that generates referrals and new leads.", stat: "4.1X", statLabel: "more referrals from visual content" },
-      { tool: "Google Optimizer", headline: "Own Your Local Market", desc: "We build your Google presence to dominate local roofing searches — especially the high-intent ones like 'roof replacement near me' and 'storm damage repair.'", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Local Roofing Searches", desc: "We build your Google presence to significantly improve your visibility for local roofing searches — especially high-intent ones like 'roof replacement near me' and 'storm damage repair.'", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Re-Activator", headline: "Fill Slow Seasons", desc: "Re-Activator reaches out to past customers with gutter cleaning offers, annual inspection reminders, and referral requests — keeping revenue flowing year-round.", stat: "$22K", statLabel: "average revenue from re-activation campaigns" },
     ],
     testimonial: {
@@ -262,7 +262,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "Job Promoter", headline: "Before & After Content That Wins Jobs", desc: "Nothing sells painting like a stunning transformation photo. Job Promoter turns every completed job into scroll-stopping content that generates referrals and new leads.", stat: "4.5X", statLabel: "more quote requests from visual content" },
       { tool: "Lead Closer", headline: "Follow Up Until They Book", desc: "Lead Closer sends a 10-day follow-up sequence after every quote — answering questions, sharing examples of similar work, and gently nudging the customer to commit.", stat: "3X", statLabel: "more quotes converted to jobs" },
-      { tool: "Google Optimizer", headline: "Rank for Local Painting Searches", desc: "We optimize your Google Business Profile with painting-specific keywords and a review generation system that builds your local ranking month over month.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Local Painting Searches", desc: "We optimize your Google Business Profile with painting-specific keywords and a review generation system that builds your local visibility month over month.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Re-Activator", headline: "Keep Revenue Flowing Year-Round", desc: "Re-Activator reaches out to past customers with interior painting offers in winter, touch-up specials in spring, and referral requests after every completed job.", stat: "$8K", statLabel: "average monthly revenue from re-activation" },
     ],
     testimonial: {
@@ -299,7 +299,7 @@ export const tradesData: TradeData[] = [
       { tool: "Re-Activator", headline: "Reduce Churn, Increase Recurring Revenue", desc: "Re-Activator automatically checks in with lawn care customers, sends seasonal service reminders, and makes it easy for them to add services or refer friends.", stat: "85%", statLabel: "customer retention rate with re-activation" },
       { tool: "Job Promoter", headline: "Landscape Transformations That Go Viral", desc: "Before/after landscape transformations are some of the most shareable content on social media. Job Promoter captures every project and distributes it automatically.", stat: "6X", statLabel: "more referrals from project content" },
       { tool: "Lead Closer", headline: "Convert Hardscaping Inquiries to Signed Contracts", desc: "Lead Closer qualifies hardscaping leads, follows up on every estimate, and nurtures prospects through the longer decision cycle for big-ticket projects.", stat: "4X", statLabel: "more hardscaping projects booked" },
-      { tool: "Google Optimizer", headline: "Rank for Every Landscaping Search", desc: "From 'lawn care near me' to 'patio installation contractor,' we optimize your Google presence for every service you offer.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Every Landscaping Search", desc: "From 'lawn care near me' to 'patio installation contractor,' we optimize your Google presence for every service you offer.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
     ],
     testimonial: {
       quote: "My recurring lawn care revenue used to drop 60% in winter. Now Re-Activator keeps my customers engaged year-round with seasonal offers and I've added $4,000/month in off-season revenue. The hardscaping leads from Job Promoter have been incredible — I'm booked 3 months out.",
@@ -334,7 +334,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "Re-Activator", headline: "Convert One-Time to Recurring", desc: "Re-Activator reaches out to every past customer with educational content about prevention and timely offers for quarterly service agreements — automatically.", stat: "$18K", statLabel: "average revenue from re-activation campaigns" },
       { tool: "AI Agent", headline: "Handle Infestation Emergencies Instantly", desc: "When someone discovers a wasp nest or rodent problem, they want help NOW. The AI Agent responds instantly, qualifies the job, and books the appointment.", stat: "24/7", statLabel: "coverage for emergency pest calls" },
-      { tool: "Google Optimizer", headline: "Beat the National Chains Locally", desc: "National chains can't compete with a local company that has 200 five-star reviews and an optimized Google listing. We build that advantage for you.", stat: "Top 3", statLabel: "local ranking vs. national chains" },
+      { tool: "Google Optimizer", headline: "Outrank the National Chains Locally", desc: "National chains can't compete with a local company that has 200 five-star reviews and an optimized Google listing. We build that advantage for you.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Lead Closer", headline: "Nurture Leads Into Service Agreements", desc: "Lead Closer follows up on every inquiry with educational content about pest prevention, building trust and converting one-time inquiries into long-term service agreements.", stat: "3X", statLabel: "more service agreements signed" },
     ],
     testimonial: {
@@ -370,7 +370,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "AI Agent", headline: "Win Every Storm Emergency", desc: "The AI Agent answers every call during and after storms — booking emergency assessments, collecting job details, and dispatching your crew without you being glued to your phone.", stat: "3X", statLabel: "more storm jobs captured" },
       { tool: "Job Promoter", headline: "Dramatic Content That Builds Trust", desc: "Tree removals and dramatic trims are some of the most compelling before/after content in any trade. Job Promoter captures every job and turns it into trust-building social proof.", stat: "5X", statLabel: "more referrals from visual content" },
-      { tool: "Google Optimizer", headline: "Rank for Emergency Tree Searches", desc: "'Tree removal near me,' 'emergency tree service,' 'fallen tree removal' — we optimize your Google presence for the searches that bring in the highest-value jobs.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Emergency Tree Searches", desc: "'Tree removal near me,' 'emergency tree service,' 'fallen tree removal' — we optimize your Google presence for the searches that bring in the highest-value jobs.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Re-Activator", headline: "Annual Trimming Reminders That Fill Slow Seasons", desc: "Re-Activator automatically reaches out to past customers with annual trimming reminders, storm preparation tips, and referral requests — keeping your schedule full year-round.", stat: "$11K", statLabel: "average revenue from re-activation" },
     ],
     testimonial: {
@@ -407,7 +407,7 @@ export const tradesData: TradeData[] = [
       { tool: "Re-Activator", headline: "Keep Weekly Clients for Life", desc: "Re-Activator sends automated check-ins, seasonal service reminders, and equipment upgrade offers — keeping your weekly clients happy and reducing churn to near zero.", stat: "92%", statLabel: "client retention rate with re-activation" },
       { tool: "AI Agent", headline: "Never Miss an Emergency Repair Call", desc: "When a pool pump fails on a Friday afternoon, the AI Agent answers instantly, collects the details, and dispatches your tech — keeping the customer calm and the job yours.", stat: "24/7", statLabel: "emergency repair coverage" },
       { tool: "Job Promoter", headline: "Pool Transformations That Sell Themselves", desc: "A pool renovation or new build is one of the most stunning before/afters in any trade. Job Promoter captures every project and turns it into referral-generating content.", stat: "8X", statLabel: "more referrals from pool build content" },
-      { tool: "Google Optimizer", headline: "Rank for Pool Service in Your Area", desc: "We optimize your Google Business Profile for every pool service you offer — from weekly cleaning to full renovations — building your local ranking month over month.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Pool Service in Your Area", desc: "We optimize your Google Business Profile for every pool service you offer — from weekly cleaning to full renovations — building your local visibility month over month.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
     ],
     testimonial: {
       quote: "I used to lose 20% of my weekly service clients every year to competitors. Since using Contractor5x, my churn rate has dropped to almost nothing. The automated check-ins make customers feel valued, and the Re-Activator has brought back 15 clients I thought I'd lost for good.",
@@ -442,14 +442,14 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "AI Agent", headline: "Answer Every Emergency, Every Time", desc: "The AI Agent handles all calls 24/7 — collecting appliance details, scheduling same-day or next-day appointments, and keeping customers calm during stressful breakdowns.", stat: "24/7", statLabel: "emergency call coverage" },
       { tool: "Re-Activator", headline: "Turn One-Time Customers Into Loyal Clients", desc: "Re-Activator reaches out to past customers with maintenance tips, seasonal reminders, and service offers — keeping you top of mind for every future repair.", stat: "4X", statLabel: "more repeat customers" },
-      { tool: "Google Optimizer", headline: "Rank Above Manufacturer Service Centers", desc: "We optimize your Google Business Profile with appliance-specific keywords and a review generation system that builds your local ranking above the manufacturer service centers.", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found Above Manufacturer Service Centers", desc: "We optimize your Google Business Profile with appliance-specific keywords and a review generation system that builds your local visibility and helps you compete with manufacturer service centers.", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Lead Closer", headline: "Book More Jobs Per Day", desc: "Lead Closer handles all incoming inquiries simultaneously — qualifying jobs, providing estimates, and booking appointments without phone tag.", stat: "2.5X", statLabel: "more jobs booked per day" },
     ],
     testimonial: {
       quote: "I used to miss 30% of my calls because I was always on a job. Now the AI handles every call and I'm booking 2.5x more jobs per day. My Google reviews went from 14 to 78 in three months and I'm now the top result for appliance repair in my city.",
       name: "Steve H.",
       role: "Appliance Repair Owner",
-      result: "2.5X more jobs, top Google ranking",
+      result: "2.5X more jobs, improved Google visibility",
     },
     faqs: [
       { q: "Does this work for all appliance types and brands?", a: "Yes. We customize your lead intake forms to collect appliance type, brand, and model information — ensuring your tech arrives prepared and customers get accurate estimates." },
@@ -478,7 +478,7 @@ export const tradesData: TradeData[] = [
     solutions: [
       { tool: "Lead Closer", headline: "Win the Long Follow-Up Battle", desc: "Lead Closer runs 14-day follow-up sequences after every estimate — sharing energy savings data, financing options, and examples of similar projects until the customer commits.", stat: "4X", statLabel: "more estimates converted to signed contracts" },
       { tool: "Job Promoter", headline: "Before & After Content That Justifies the Investment", desc: "A window transformation is dramatic — especially when you show the energy efficiency data alongside the visual improvement. Job Promoter captures every install.", stat: "3.8X", statLabel: "more referrals from project content" },
-      { tool: "Google Optimizer", headline: "Rank for Window Replacement Searches", desc: "We optimize your Google presence for high-intent searches like 'window replacement near me,' 'energy efficient windows,' and 'door installation contractor.'", stat: "Top 3", statLabel: "local ranking in 6 weeks average" },
+      { tool: "Google Optimizer", headline: "Get Found for Window Replacement Searches", desc: "We optimize your Google presence for high-intent searches like 'window replacement near me,' 'energy efficient windows,' and 'door installation contractor.'", stat: "6 weeks", statLabel: "average time to see ranking improvement" },
       { tool: "Re-Activator", headline: "Seasonal Campaigns That Fill Your Pipeline", desc: "Re-Activator reaches out to past customers and referral sources before peak season — with energy savings reminders, financing offers, and referral requests.", stat: "$15K", statLabel: "average revenue from seasonal campaigns" },
     ],
     testimonial: {

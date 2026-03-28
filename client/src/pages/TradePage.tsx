@@ -8,6 +8,8 @@ import { tradesById, tradesData, TradeData } from "@/lib/tradesData";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ChevronRight, Star, Zap } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -31,8 +33,10 @@ export default function TradePage() {
   if (!trade) {
     return (
       <div className="min-h-screen bg-[#0D0D0D] flex flex-col items-center justify-center text-white">
-        <h1 className="text-4xl font-black mb-4">Trade Not Found</h1>
+        <Navbar />
+        <h1 className="text-4xl font-black mb-4 mt-32">Trade Not Found</h1>
         <Link href="/trades"><Button className="bg-orange-500 hover:bg-orange-600">View All Trades</Button></Link>
+        <Footer />
       </div>
     );
   }
@@ -41,6 +45,7 @@ export default function TradePage() {
 
   return (
     <div className="min-h-screen bg-[#0D0D0D] text-white">
+      <Navbar />
       {/* ── HERO ── */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div
@@ -118,6 +123,7 @@ export default function TradePage() {
 
       {/* ── BOTTOM CTA ── */}
       <BottomCTA trade={trade} />
+      <Footer />
     </div>
   );
 }
