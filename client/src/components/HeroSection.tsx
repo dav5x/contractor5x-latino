@@ -5,7 +5,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-bg-8ekWW2wPS6K9JGC5vuztLg.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-v2-XE4JDCKHTb3urUncENhcgf.webp";
 
 const stats = [
   { value: "5X", label: "Average Revenue Growth" },
@@ -49,11 +49,11 @@ export default function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${HERO_BG})`, backgroundPosition: "70% center" }}
+        style={{ backgroundImage: `url(${HERO_BG})`, backgroundPosition: "75% center" }}
       />
-      {/* Dark overlay — heavy on far left for text, fades to nearly transparent on right to reveal van */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #0A0A0A 30%, rgba(10,10,10,0.75) 55%, rgba(10,10,10,0.05) 100%)' }} />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/30" />
+      {/* Dark overlay — solid on far left for text, fades to transparent on right to show glowing van */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #0A0A0A 35%, rgba(10,10,10,0.65) 52%, rgba(10,10,10,0.0) 100%)' }} />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent" />
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
