@@ -14,6 +14,7 @@ import TradePage from "./pages/TradePage";
 import PricingPage from "./pages/PricingPage";
 import ResultsPage from "./pages/ResultsPage";
 import CaseStudyPage from "./pages/CaseStudyPage";
+import VideoPage from "./pages/Video";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/results" component={ResultsPage} />
       <Route path="/results/:slug" component={CaseStudyPage} />
       <Route path="/404" component={NotFound} />
+      <Route path="/video" component={VideoPage} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -88,7 +88,7 @@ export default function HeroSection(){
 								<span className="text-sm font-medium">Agenda una llamada</span>
 							</a>
 
-							<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors px-4 py-4 border border-white/15 hover:border-white/30 rounded-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+							<a href="/video" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors px-4 py-4 border border-white/15 hover:border-white/30 rounded-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 								<div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
 									<Play className="w-3.5 h-3.5 fill-white text-white ml-0.5" />
 								</div>
