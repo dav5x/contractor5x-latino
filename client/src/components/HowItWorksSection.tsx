@@ -64,7 +64,7 @@ export default function HowItWorksSection() {
             <span className="text-[#F97316]">Menos de Una Semana</span>
           </h2>
           <p
-            className="fade-up text-white/60 text-lg mt-3 max-w-xl"
+            className="fade-up text-white text-xl mt-3 max-w-2xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
             No necesitas skills técnicas. Nuestro equipo se encarga de todo — tú solo llegas y haces buen trabajo.
@@ -93,7 +93,7 @@ export default function HowItWorksSection() {
                       </div>
                     </div>
                     <span
-                      className="text-4xl font-900 text-white/10 select-none"
+                      className="text-4xl font-900 text-white select-none"
                       style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}
                     >
                       {step.number}
@@ -107,7 +107,7 @@ export default function HowItWorksSection() {
                     {step.title}
                   </h3>
                   <p
-                    className="text-white/55 text-sm leading-relaxed"
+                    className="text-white text-base leading-relaxed"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
                     {step.desc}
@@ -138,7 +138,7 @@ export default function HowItWorksSection() {
           >
             Empieza Ya — Demo Gratis
           </a>
-          <p className="text-white/40 text-sm mt-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+          <p className="text-white text-base mt-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Garantía de 30 días o te devolvemos tu dinero · Resultados en 30 días o menos
           </p>
         </div>

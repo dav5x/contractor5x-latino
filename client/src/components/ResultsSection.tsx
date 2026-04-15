@@ -109,7 +109,7 @@ export default function ResultsSection() {
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <AnimatedCounter value={stat.value} suffix={stat.suffix} decimal={stat.decimal} />
-              <div className="text-white/50 text-sm mt-2 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <div className="text-white text-base mt-2 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 {stat.label}
               </div>
             </div>
@@ -147,12 +147,12 @@ export default function ResultsSection() {
                 {/* Content */}
                 <div className="p-6">
                   <h3
-                    className="text-xl font-black uppercase text-white group-hover:text-orange-400 transition-colors leading-tight mb-2"
+                    className="text-4xl font-black uppercase text-white group-hover:text-orange-400 transition-colors leading-tight mb-2"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                   >
                     {study.company}
                   </h3>
-                  <p className="text-white/40 text-sm mb-4 line-clamp-2">{study.tagline}</p>
+                  <p className="text-white text-base mb-4 line-clamp-2">{study.tagline}</p>
 
                   {/* Top 2 metrics */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
@@ -164,7 +164,7 @@ export default function ResultsSection() {
                         >
                           {r.metric}
                         </div>
-                        <div className="text-white/40 text-xs leading-tight">{r.label}</div>
+                        <div className="text-white text-sm leading-tight">{r.label}</div>
                       </div>
                     ))}
                   </div>
@@ -186,7 +186,7 @@ export default function ResultsSection() {
 
         {/* Bottom CTA */}
         <div className="fade-up text-center">
-          <p className="text-white/40 text-sm mb-4">¿Quieres resultados así para tu negocio de trade?</p>
+          <p className="text-white text-base mb-4">¿Quieres resultados así para tu negocio de trade?</p>
           <Link href="/#contact">
             <Button className="bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold px-8 py-3">
               Empieza Ya Hoy

@@ -4,6 +4,8 @@ import { Link, useLocation } from "wouter";
 import { tradesData } from "@/lib/tradesData";
 import LogoLatino from "./LogoLatino";
 
+const LOGO_URL = "/img/logo-latino.png";
+
 const solutions = [
 	{ id: "lead-closer", title: "Lead Closer", label: "Máquina de Ventas 24/7", icon: Zap, href: "/solutions/lead-closer" },
 	{ id: "job-promoter", title: "Job Promoter", label: "Motor de Contenido Visual", icon: Camera, href: "/solutions/job-promoter" },
@@ -20,6 +22,11 @@ const learnLinks = [
 	{ label: "Marketing con AI", href: "/learn?cat=AI+Marketing", desc: "Cómo el AI está cambiando los trades" },
 	{ label: "Crecimiento de Negocio", href: "/learn?cat=Business+Growth", desc: "Escala tu negocio de trade" },
 ];
+
+const navItemBase =
+  "flex items-center gap-1 px-3 py-2 text-[15px] font-black uppercase transition-colors duration-200 select-none tracking-[0.06em]";
+const navItemInactive = "text-white hover:text-[#F97316]";
+const navItemActive = "text-[#F97316]";
 
 export default function Navbar(){
 	const [scrolled, setScrolled] = useState(false);
@@ -74,15 +81,18 @@ export default function Navbar(){
 			<div className="container">
 				<div className="flex items-center justify-between h-16 md:h-20">
 					{/* Logo */}
-					<Link href="/" className="flex items-center group">
-						<LogoLatino heightClass="h-9 md:h-11" />
+					<Link href="/" className="flex items-center flex-shrink-0">
+						<img src={LOGO_URL} alt="Contractor5x Latino" className="h-9 md:h-11 w-auto object-contain" style={{width: '350px'}} />
 					</Link>
 
 					{/* Desktop Nav */}
-					<nav className="hidden md:flex items-center gap-6">
+					<nav className="hidden md:flex items-center gap-0" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
 						{/* Solutions mega menu */}
 						<div className="relative" ref={solutionsRef}>
-							<button onClick={() => { setSolutionsOpen(!solutionsOpen); setLearnOpen(false); setTradesOpen(false); }} className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${solutionsOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
+							<button
+								onClick={() => { setSolutionsOpen(!solutionsOpen); setLearnOpen(false); setTradesOpen(false); }}
+								className={`${navItemBase} ${solutionsOpen ? navItemActive : navItemInactive}`}
+								style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
 								Soluciones
 								<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${solutionsOpen ? "rotate-180 text-[#F97316]" : ""}`} />
 							</button>
@@ -128,7 +138,10 @@ export default function Navbar(){
 
 						{/* Learn dropdown */}
 						<div className="relative" ref={learnRef}>
-							<button onClick={() => { setLearnOpen(!learnOpen); setSolutionsOpen(false); setTradesOpen(false); }} className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${learnOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
+							<button
+								onClick={() => { setLearnOpen(!learnOpen); setSolutionsOpen(false); setTradesOpen(false); }}
+								className={`${navItemBase} ${solutionsOpen ? navItemActive : navItemInactive}`}
+								style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
 								Aprende
 								<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${learnOpen ? "rotate-180 text-[#F97316]" : ""}`} />
 							</button>
@@ -155,7 +168,10 @@ export default function Navbar(){
 
 						{/* Trades mega menu */}
 						<div className="relative" ref={tradesRef}>
-							<button onClick={() => { setTradesOpen(!tradesOpen); setSolutionsOpen(false); setLearnOpen(false); }} className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${tradesOpen ? "text-[#F97316]" : "text-white/70 hover:text-white"}`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
+							<button
+								onClick={() => { setTradesOpen(!tradesOpen); setSolutionsOpen(false); setLearnOpen(false); }}
+								className={`${navItemBase} ${solutionsOpen ? navItemActive : navItemInactive}`}
+								style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
 								Industrias
 								<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${tradesOpen ? "rotate-180 text-[#F97316]" : ""}`} />
 							</button>
@@ -193,22 +209,20 @@ export default function Navbar(){
 						</div>
 
 						{/* Static links */}
-						<a href="/results" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-							Resultados
-						</a>
-
-						<a href="/pricing" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-							Precios
-						</a>
+						<a href="/results" className={`${navItemBase} ${solutionsOpen ? navItemActive : navItemInactive}`} style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Resultados</a>
+						<a href="/pricing" className={`${navItemBase} ${solutionsOpen ? navItemActive : navItemInactive}`} style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>Precios</a>
 					</nav>
 
 					{/* Desktop CTA */}
 					<div className="hidden md:flex items-center gap-3">
-						<a href="https://contractor5x.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-white transition-colors px-3 py-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+						<a href="https://app.local5x.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-white transition-colors px-3 py-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 							Entrar
 						</a>
-						<a href="/#contact" onClick={(e) => scrollToSection(e, "#contact")} className="bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold text-sm px-5 py-2.5 rounded-sm transition-all duration-200 flex items-center gap-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+						<a href="/#contact" onClick={(e) => scrollToSection(e, "#contact")} className="bg-[#F97316] hover:bg-[#EA6C0A] text-black font-black text-sm px-4 py-2.5 lg:px-6 transition-all duration-200 whitespace-nowrap uppercase tracking-wide" style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.08em" }}>
 							Empieza Ya
+						</a>
+						<a  href="/#contact" onClick={(e) => scrollToSection(e, "#contact")} className="bg-white hover:bg-[#EA6C0A] text-black font-black text-sm px-4 py-2.5 lg:px-6 transition-all duration-200 whitespace-nowrap uppercase tracking-wide" style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.08em" }}>
+							Agenda una llamada
 						</a>
 					</div>
 

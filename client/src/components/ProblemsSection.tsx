@@ -1,6 +1,3 @@
-/*
- * DESIGN: Industrial Brutalism — Dark surface cards, orange X icons, bold problem statements
- */
 import { useEffect, useRef } from "react";
 import { XCircle } from "lucide-react";
 
@@ -69,7 +66,7 @@ export default function ProblemsSection() {
             Los Problemas Que Frenan a los Contractors
           </h2>
           <p
-            className="fade-up text-white/60 text-lg mt-4 max-w-xl"
+            className="fade-up text-white text-xl mt-4 max-w-2xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
             Cada contractor con quien hablamos enfrenta estos seis retos. 
@@ -91,13 +88,13 @@ export default function ProblemsSection() {
                 </div>
                 <div>
                   <h3
-                    className="text-white font-semibold text-base mb-2"
+                    className="text-white font-semibold text-lg mb-2"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
                     {problem.title}
                   </h3>
                   <p
-                    className="text-white/50 text-sm leading-relaxed"
+                    className="text-white text-base leading-relaxed"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
                     {problem.desc}

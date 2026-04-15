@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
-import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Play, Phone, CheckCircle2 } from "lucide-react";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/DggHMYqYmKSoMpB2pB5sTZ/van-hero-no-qr_785ff1fc.png";
 
 const stats = [
-	{ value: "5X", label: "Crecimiento Promedio de Ingresos" },
+	{ value: "5X", label: "Multiplica los Resultados" },
 	{ value: "78%", label: "Más Leads Cerrados" },
 	{ value: "24/7", label: "El AI Trabaja Para Ti" },
 ];
@@ -64,7 +64,6 @@ export default function HeroSection(){
 							<h1 className="text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] font-900 text-white uppercase mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}>
 								MULTIPLICA TUS
 							</h1>
-
 							<h1 className="text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] font-900 uppercase mb-6" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 900 }}>
 								<span className="text-[#F97316]">RESULTADOS</span>
 							</h1>
@@ -72,7 +71,7 @@ export default function HeroSection(){
 
 						{/* Subheadline */}
 						<div className="fade-up" style={{ transitionDelay: "200ms" }}>
-							<p className="text-lg md:text-xl text-white/75 max-w-xl leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>Ponemos un equipo de agentes AI dentro de tu negocio de trades — manejando leads, mostrando tu trabajo, y llenando tu pipeline mientras tú te concentras en el job site.</p>
+							<p className="text-xl md:text-xl text-white max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>Ponemos un equipo de agentes humanos y AI para asegurar una presencia web espectaculary un manejo adecuado de leads, mostrando tu trabajo de manera eficaz y recurrente, y llenando tu pipeline mientras tú te concentras en el job site.</p>
 						</div>
 
 						{/* CTA Buttons */}
@@ -80,6 +79,13 @@ export default function HeroSection(){
 							<a href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });}} className="btn-glow pulse-glow bg-[#F97316] hover:bg-[#EA6C0A] text-black font-semibold px-7 py-4 rounded-sm transition-all duration-200 flex items-center gap-2 text-base" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 								Empieza Ya
 								<ArrowRight className="w-4 h-4" />
+							</a>
+
+							<a href="#contact" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors px-4 py-4 border border-white/15 hover:border-white/30 rounded-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+								<div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+									<Phone className="w-3.5 h-3.5 fill-white text-white ml-0.5" />
+								</div>
+								<span className="text-sm font-medium">Agenda una llamada</span>
 							</a>
 
 							<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors px-4 py-4 border border-white/15 hover:border-white/30 rounded-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -109,7 +115,7 @@ export default function HeroSection(){
 									<div className="stat-number" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
 										{stat.value}
 									</div>
-									<div className="text-xs text-white/50 mt-1 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+									<div className="text-base text-white mt-1 uppercase tracking-wider" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 										{stat.label}
 									</div>
 								</div>

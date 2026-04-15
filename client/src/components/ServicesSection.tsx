@@ -221,7 +221,7 @@ export default function ServicesSection() {
             <span className="text-[#F97316]">Crecer 5X</span>
           </h2>
           <p
-            className="fade-up text-white/60 text-lg mt-3 max-w-xl"
+            className="fade-up text-white text-xl mt-3 max-w-2xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
             Seis herramientas con AI diseñadas específicamente para contratistas que quieren pasar menos tiempo persiguiendo leads y más tiempo haciendo lo que aman.
@@ -286,7 +286,7 @@ export default function ServicesSection() {
               </p>
             </blockquote>
 
-            <p className="text-white/70 mb-8 leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <p className="text-white mb-8 leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               {activeService.desc}
             </p>
 
@@ -300,7 +300,7 @@ export default function ServicesSection() {
                   >
                     {stat.value}
                   </div>
-                  <div className="text-xs text-white/40 mt-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <div className="text-base text-white mt-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     {stat.label}
                   </div>
                 </div>
@@ -312,7 +312,7 @@ export default function ServicesSection() {
               {activeService.features.map((feature) => (
                 <div key={feature} className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#F97316] flex-shrink-0" />
-                  <span className="text-sm text-white/70" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <span className="text-base text-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     {feature}
                   </span>
                 </div>

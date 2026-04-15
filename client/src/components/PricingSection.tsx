@@ -1,9 +1,3 @@
-/*
- * DESIGN: Industrial Brutalism — Cinco niveles de precios, badge naranja popular, tarjetas oscuras
- * Toggle Mensual/Anual (20% off), Job Promoter en todos los planes con volúmenes escalonados
- * $500 setup fee waived — banner promo por tiempo limitado
- * Link a /pricing para detalles completos
- */
 import { useState, useEffect, useRef } from "react";
 import { CheckCircle2, Zap, Tag, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
@@ -19,12 +13,13 @@ const basePlans = [
     jobPromoterDetail: "Hasta 2 posts/mes",
     features: [
       "Google Listing Optimizer",
+      "Smart Website sin esfuerzo",
       "Generación Automática de Reviews",
       "Respuestas a Reviews con AI",
       "Monitoreo de Reputación",
       "Reporte Mensual de Performance",
       "Soporte de Onboarding",
-      "$20 Créditos de Uso/Mes",
+      "$10 Créditos de Uso/Mes",
     ],
     cta: "Empieza Ya",
     popular: false,
@@ -40,12 +35,12 @@ const basePlans = [
     jobPromoterDetail: "Hasta 10 posts/mes",
     features: [
       "Todo en Essentials, más:",
+      "Smart Website sin esfuerzo",
       "Lead Closer (CRM + Automatización)",
       "AI Agent (Llamadas & Chat)",
       "SMS & Call Tracking bidireccional",
       "Campañas por Email & SMS",
-      "Llamada Check-In cada dos meses",
-      "$30 Créditos de Uso/Mes",
+      "$20 Créditos de Uso/Mes",
     ],
     cta: "Empieza Ya",
     popular: false,
@@ -64,9 +59,8 @@ const basePlans = [
       "Smart Website sin esfuerzo",
       "Re-Activator para tu base de clientes",
       "Hasta 15 videos/mes",
-      "Llamadas de estrategia quincenales",
       "Soporte prioritario",
-      "$50 Créditos de Uso/Mes",
+      "$30 Créditos de Uso/Mes",
     ],
     cta: "Empieza Ya",
     popular: true,
@@ -82,15 +76,15 @@ const basePlans = [
     jobPromoterDetail: "Hasta 25 posts/mes + video",
     features: [
       "Todo en Growth, más:",
+      "Smart Website sin esfuerzo",
       "Account Manager dedicado",
       "Entrenamiento custom de AI Agent",
       "SEO avanzado & estrategia AIO",
       "Manejo de ads pagados",
-      "Llamadas de estrategia semanales",
       "Onboarding White-Glove",
-      "$100 Créditos de Uso/Mes",
+      "$90 Créditos de Uso/Mes",
     ],
-    cta: "Agenda una Llamada",
+    cta: "Empieza Ya",
     popular: false,
     highlight: false,
   },
@@ -104,21 +98,22 @@ const basePlans = [
     jobPromoterDetail: "Posts ilimitados/mes + video",
     features: [
       "Todo en Dominator, más:",
+      "Smart Website sin esfuerzo",
       "Gestión multi-locación",
       "Build-out custom de workflows AI",
       "Ads pagados avanzados (Google + Meta)",
       "Campañas para conquistar competencia",
       "Equipo creativo dedicado",
       "Reporte ejecutivo mensual",
-      "$200 Créditos de Uso/Mes",
+      "$190 Créditos de Uso/Mes",
     ],
-    cta: "Agenda una Llamada",
+    cta: "Empieza Ya",
     popular: false,
     highlight: false,
   },
 ];
 
-export default function PricingSection() {
+export default function PricingSection(){
   const [annual, setAnnual] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -153,7 +148,7 @@ export default function PricingSection() {
             <span className="text-[#F97316]">Crecimiento</span>
           </h2>
           <p
-            className="fade-up text-white/60 text-lg mt-3 max-w-xl mx-auto"
+            className="fade-up text-white text-xl mt-3 max-w-2xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
             Cada plan incluye garantía de devolución de dinero por 30 días. Cancela cuando quieras.
@@ -188,8 +183,8 @@ export default function PricingSection() {
           </div>
         </div>
 
-        {/* ⚡ Setup Fee Waived Promo Banner */}
-        <div className="fade-up mb-10 max-w-3xl mx-auto" style={{ transitionDelay: "300ms" }}>
+        {/* Setup Fee Waived Promo Banner */}
+        <div className="fade-up mb-10 max-w-5xl mx-auto" style={{ transitionDelay: "300ms" }}>
           <div className="flex items-center justify-center gap-3 bg-[#F97316]/10 border border-[#F97316]/40 rounded-sm px-6 py-4">
             <Tag className="w-5 h-5 text-[#F97316] flex-shrink-0" />
             <p className="text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -197,13 +192,13 @@ export default function PricingSection() {
               <span className="text-white font-medium">Setup Fee de $500</span>{" "}
               <span className="text-white/70 line-through mr-1">$500</span>
               <span className="text-[#F97316] font-bold">GRATIS</span>
-              <span className="text-white/60 ml-2 text-sm">— Empieza hoy, no pagas nada para configurar.</span>
+              <span className="text-white ml-2 text-base">— Empieza hoy, no pagas nada para configurar.</span>
             </p>
           </div>
         </div>
 
         {/* Pricing cards — 5-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-5 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-5 w-full mx-auto">
           {basePlans.map((plan, i) => {
             const displayPrice = annual ? plan.price.yearly : plan.price.monthly;
             return (
@@ -238,15 +233,15 @@ export default function PricingSection() {
                 {/* Plan name + tagline */}
                 <div className="mb-4">
                   <h3
-                    className="text-white font-700 text-xl uppercase mb-1"
+                    className="text-white font-700 text-2xl uppercase mb-1"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
                   >
                     {plan.name}
                   </h3>
-                  <p className="text-[#F97316] text-xs font-semibold uppercase tracking-wide mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <p className="text-[#F97316] text-sm font-semibold uppercase tracking-wide mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     {plan.tagline}
                   </p>
-                  <p className="text-white/45 text-xs leading-snug" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <p className="text-white text-sm leading-snug" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     {plan.subTagline}
                   </p>
                 </div>
@@ -254,23 +249,23 @@ export default function PricingSection() {
                 {/* Price */}
                 <div className="mb-4 pb-4 border-b border-white/10">
                   <div className="flex items-end gap-1">
-                    <span className="text-white/50 text-lg" style={{ fontFamily: "'DM Sans', sans-serif" }}>$</span>
+                    <span className="text-white text-lg" style={{ fontFamily: "'DM Sans', sans-serif" }}>$</span>
                     <span
                       className="text-5xl font-500 text-white transition-all duration-300"
                       style={{ fontFamily: "'JetBrains Mono', monospace" }}
                     >
                       {displayPrice}
                     </span>
-                    <span className="text-white/50 text-sm mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>/mo</span>
+                    <span className="text-white text-sm mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>/mo</span>
                   </div>
                   {annual && (
-                    <div className="mt-0.5 text-white/35 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    <div className="mt-0.5 text-white text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                       Facturado anualmente · antes ${plan.price.monthly}/mo
                     </div>
                   )}
                   {/* Setup fee waived inline note */}
                   <div className="mt-1.5 flex items-center gap-1.5">
-                    <span className="text-white/35 text-xs line-through" style={{ fontFamily: "'DM Sans', sans-serif" }}>+$500 setup</span>
+                    <span className="text-white text-xs line-through" style={{ fontFamily: "'DM Sans', sans-serif" }}>+$500 setup</span>
                     <span className="text-[#F97316] text-xs font-semibold" style={{ fontFamily: "'DM Sans', sans-serif" }}>GRATIS</span>
                   </div>
                 </div>
@@ -303,7 +298,7 @@ export default function PricingSection() {
                           className={`text-sm ${
                             feature.startsWith("Everything")
                               ? "text-[#F97316] font-medium"
-                              : "text-white/65"
+                              : "text-white"
                           }`}
                           style={{ fontFamily: "'DM Sans', sans-serif" }}
                         >
@@ -338,7 +333,7 @@ export default function PricingSection() {
 
         {/* Bottom note + link to full pricing page */}
         <div className="mt-10 text-center fade-up flex flex-col items-center gap-4" style={{ transitionDelay: "500ms" }}>
-          <p className="text-white/40 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+          <p className="text-white text-base" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Todos los planes incluyen soporte de onboarding · Sin contratos largos · Cancela cuando quieras
           </p>
           <Link

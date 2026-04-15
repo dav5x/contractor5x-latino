@@ -63,7 +63,7 @@ export default function ContactSection() {
               <span className="text-[#F97316]">5X Tu Negocio?</span>
             </h2>
             <p
-              className="fade-up text-white/65 text-lg leading-relaxed mb-8"
+              className="fade-up text-white text-xl leading-relaxed mb-8"
               style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
             >
               Agenda una demo gratis de 15 minutos y mira exactamente cómo Contractor5x puede transformar tu 
@@ -76,7 +76,7 @@ export default function ContactSection() {
               {benefits.map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#F97316] flex-shrink-0" />
-                  <span className="text-white/75" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <span className="text-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     {benefit}
                   </span>
                 </div>
@@ -85,21 +85,21 @@ export default function ContactSection() {
 
             {/* Contact info */}
             <div className="fade-up space-y-3 pt-8 border-t border-white/8" style={{ transitionDelay: "400ms" }}>
-              <div className="flex items-center gap-3 text-white/50">
+              <div className="flex items-center gap-3 text-white">
                 <Phone className="w-4 h-4 text-[#F97316]" />
-                <span className="text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                <span className="text-base" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                   (555) 123-4567
                 </span>
               </div>
-              <div className="flex items-center gap-3 text-white/50">
+              <div className="flex items-center gap-3 text-white">
                 <Mail className="w-4 h-4 text-[#F97316]" />
-                <span className="text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                <span className="text-base" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                   hello@contractor5x.com
                 </span>
               </div>
-              <div className="flex items-center gap-3 text-white/50">
+              <div className="flex items-center gap-3 text-white">
                 <MapPin className="w-4 h-4 text-[#F97316]" />
-                <span className="text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                <span className="text-base" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                   Sirviendo a contractors por todo Estados Unidos
                 </span>
               </div>

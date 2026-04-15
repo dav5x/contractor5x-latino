@@ -28,7 +28,7 @@ export default function TrustBar() {
             >
               <Icon className="w-3.5 h-3.5 text-[#F97316]" />
               <span
-                className="text-white/50 text-sm"
+                className="text-white text-base"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 {item.text}

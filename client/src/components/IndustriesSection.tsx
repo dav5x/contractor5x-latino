@@ -65,7 +65,7 @@ export default function IndustriesSection() {
             <span className="text-[#F97316]">Aquí Estamos Para Ti</span>
           </h2>
           <p
-            className="fade-up text-white/60 text-lg mt-3 max-w-xl"
+            className="fade-up text-white text-xl mt-3 max-w-2xl"
             style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
           >
             Nuestras soluciones de marketing con AI están hechas a la medida para las necesidades específicas de los negocios locales en todos los specialties.
@@ -92,7 +92,7 @@ export default function IndustriesSection() {
                     {industry.name}
                   </div>
                   <div
-                    className="text-white/40 text-xs mt-0.5"
+                    className="text-white text-xs mt-0.5"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
                     {industry.desc}

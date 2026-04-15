@@ -88,7 +88,7 @@ export default function FeaturesOverview() {
               <span className="text-[#F97316]">Equipo Completo de Marketing</span>
             </h2>
             <p
-              className="fade-up text-white/65 text-lg leading-relaxed mb-10"
+              className="fade-up text-white text-xl leading-relaxed mb-10"
               style={{ fontFamily: "'DM Sans', sans-serif", transitionDelay: "200ms" }}
             >
               2026 es el año en que el AI deja de ser una "herramienta que uso" para ser un "empleado que hace cosas por mí." 
@@ -109,13 +109,13 @@ export default function FeaturesOverview() {
                     </div>
                     <div>
                       <h3
-                        className="text-white font-semibold text-base mb-1"
+                        className="text-white font-semibold text-lg mb-1"
                         style={{ fontFamily: "'DM Sans', sans-serif" }}
                       >
                         {feature.title}
                       </h3>
                       <p
-                        className="text-white/55 text-sm leading-relaxed"
+                        className="text-white/90 text-base leading-relaxed"
                         style={{ fontFamily: "'DM Sans', sans-serif" }}
                       >
                         {feature.desc}
