@@ -30,6 +30,7 @@ const IMGS = {
   website: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80",
   leads: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80",
   ai: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80",
+  mindset: "https://d2xsxph8kpxj0f.cloudfront.net/310519663485111386/EofNE7tr7Zd2Ma3kz46p6x/blog-hero-ai-mindset-6AHwRRjXKpPWGKJWLpj68P.webp",
 };
 
 export const blogPosts: BlogPost[] = [
@@ -394,6 +395,40 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Pro Tip: Haz un chequeo a los 90 días con cada nuevo empleado. Pregúntales qué va bien, qué les frustra, y qué haría su trabajo más fácil. La mayoría de empleados que renuncian lo hacen porque se sintieron ignorados — una simple conversación puede evitar eso." },
       { type: "heading", text: "La Conclusión" },
       { type: "paragraph", text: "Los contractors que ganan la guerra por talento son los que manejan negocios profesionales y organizados que la gente se siente orgullosa de trabajar. Eso empieza con cómo te presentas online, sigue con cómo manejas tus operaciones, y termina con cómo tratas a tu gente cada día." },
+    ],
+  },
+
+  {
+    id: "11",
+    slug: "mindset-ai-marketing-trades",
+    title: "La Mentalidad Que Separa a Los Contratistas Que Ganan con IA",
+    subtitle: "Si crees que la IA 'no es para gente como yo,' este artículo es para ti.",
+    category: "AI Marketing",
+    readTime: "6 min read",
+    date: "March 28, 2026",
+    image: IMGS.mindset,
+    imageAlt: "Equipo de contractor trabajando juntos en un proyecto",
+    excerpt: "Los contratistas que ganan hoy no son los más tech-savvy. Son los que tienen la mentalidad correcta para invertir en lo que funciona. Aquí te contamos qué significa eso para tu negocio.",
+    content: [
+      { type: "paragraph", text: "Hay un momento que todo dueño de negocio de trades vive — el job site está ocupado, el teléfono no para de sonar, y en algún rincón de tu mente sabes que deberías estar haciendo más para mercadear tu negocio. Pero el marketing se siente complicado. La tecnología parece cosa de empresas grandes con presupuestos grandes. ¿Y la inteligencia artificial? Eso suena a ciencia ficción." },
+      { type: "callout", text: "\"Los contratistas que están ganando ahorita no son los más expertos en tecnología. Son los que tienen la mentalidad correcta.\"" },
+      { type: "heading", text: "La Lección de una Historia de Ventas Aprendida a las Malas" },
+      { type: "paragraph", text: "Un líder de ventas compartió algo recientemente que nos hizo reflexionar. Dijo que durante años, su equipo cerraba contratos con cualquier dueño de negocio que apareciera — incluso cuando algo no se sentía bien. Superaban objeciones, convencían a dueños dudosos, y firmaban contratos. Y luego esos clientes se iban rápido, exigían resultados inmediatos, y amenazaban con cancelar en semanas." },
+      { type: "paragraph", text: "¿El punto de quiebre? Dejaron de mirar qué hacía el negocio y empezaron a mirar cómo pensaba el dueño. Los dueños que se quedaban, crecían, y obtenían resultados reales eran los que llegaban con una sola creencia simple: 'Estoy dispuesto a invertir para ganar.' No 'demuéstramelo en 30 días o me voy.' Sino una apertura genuina a probar algo nuevo, confiar en el proceso, y darle tiempo para funcionar." },
+      { type: "heading", text: "Lo Que Esto Significa Para Ti Como Contratista Latino" },
+      { type: "paragraph", text: "Construiste tu negocio con tus manos. Te levantabas antes del amanecer, aprendiste un oficio, ganaste confianza trabajo por trabajo. Eso requirió determinación, disciplina, y la disposición de hacer lo que otros no harían. Ese mismo espíritu es exactamente lo que se necesita para ganar en la era de la IA." },
+      { type: "paragraph", text: "No necesitas entender cómo funciona la IA. No necesitas estar en TikTok. No necesitas saber qué es un 'funnel.' Lo que necesitas es lo mismo que tenías cuando empezaste tu negocio: la disposición de invertir en algo que funciona, aunque todavía no lo entiendas completamente." },
+      { type: "tip", text: "Piensa en cuando compraste tu primera troca nueva. No construiste el motor. Solo sabías: esta herramienta me va a ayudar a hacer más trabajo, más rápido. El marketing con IA es lo mismo." },
+      { type: "heading", text: "La Ola de la IA Ya Está Aquí — Y No Está Esperando" },
+      { type: "paragraph", text: "Tus competidores que tienen sitios web que aparecen en Google están recibiendo las llamadas que tú no estás recibiendo. Los contratistas con sistemas de seguimiento automatizado están cerrando leads que se enfrían para todos los demás. Los dueños de negocio con agentes de IA contestando su teléfono a las 11pm están agendando trabajos mientras tú duermes." },
+      { type: "callout", text: "La pregunta no es si la IA va a afectar tu negocio. Ya lo está haciendo. La pregunta es: ¿vas a ser el contratista que se adaptó, o el que se quedó atrás?" },
+      { type: "heading", text: "Los Dos Tipos de Contratistas Que Vemos" },
+      { type: "paragraph", text: "Tipo 1 — El Escéptico: 'Llevo 20 años haciendo esto sin tecnología. Mi negocio funciona con referencias. No necesito esto.' Este contratista está ocupado hoy. Pero su pipeline es frágil. Una temporada lenta, una mala reseña, un competidor con mejor presencia en línea — y todo cambia." },
+      { type: "paragraph", text: "Tipo 2 — El Inversionista: 'No lo entiendo completamente todavía, pero sé que necesito crecer. Dime cómo funciona.' Este contratista quizás no sea el más experto en tecnología. Pero es entrenable. Confía en el proceso. Y seis meses después, es el que nos llama para decirnos que su volumen de leads se duplicó." },
+      { type: "callout", text: "La diferencia no es inteligencia. No es experiencia. Ni siquiera es presupuesto. Es mentalidad." },
+      { type: "heading", text: "No Tienes Que Hacer Esto Solo" },
+      { type: "paragraph", text: "En Contractor5x, construimos todo nuestro servicio para dueños de negocios de trades que son excelentes en su oficio pero que no fueron a la escuela para aprender marketing. Nosotros manejamos la IA, los sitios web, el seguimiento de leads, la presencia en Google — todo. Tu trabajo es aparecer, hacer un gran trabajo, y estar abierto al crecimiento." },
+      { type: "paragraph", text: "No te estamos pidiendo que te conviertas en un experto en tecnología. Te estamos pidiendo que tengas el mismo valor que tuviste cuando empezaste tu negocio: apuesta por ti mismo, e invierte en lo que funciona. El mundo de la IA no viene por tu trabajo. Viene por tus competidores que no están listos para él. Asegúrate de estar del lado correcto de esa línea." },
     ],
   },
 ];
